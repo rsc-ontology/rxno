@@ -12,8 +12,8 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/mop.owl>
-<http://purl.obolibrary.org/obo/mop/releases/2022-05-11/mop.owl>
-Annotation(dc:date "11:05:2022 11:15")
+<http://purl.obolibrary.org/obo/mop/releases/2022-02-01/mop.owl>
+Annotation(dc:date "01:02:2022 11:15")
 Annotation(dc:description "MOP is the molecular process ontology. It contains the molecular processes that underlie the name reaction ontology RXNO, for example cyclization, methylation and demethylation.")
 Annotation(dc:title "MOP")
 Annotation(terms:license <http://creativecommons.org/licenses/by/4.0/>)
@@ -23,6 +23,10 @@ Declaration(Class(obo:BFO_0000015))
 Declaration(Class(obo:BFO_0000016))
 Declaration(Class(obo:BFO_0000144))
 Declaration(Class(obo:CHEBI_15378))
+Declaration(Class(obo:CHEBI_15734))
+Declaration(Class(obo:CHEBI_16526))
+Declaration(Class(obo:CHEBI_17087))
+Declaration(Class(obo:CHEBI_17478))
 Declaration(Class(obo:CHEBI_18379))
 Declaration(Class(obo:CHEBI_22221))
 Declaration(Class(obo:CHEBI_23367))
@@ -33,18 +37,25 @@ Declaration(Class(obo:CHEBI_26519))
 Declaration(Class(obo:CHEBI_29233))
 Declaration(Class(obo:CHEBI_29441))
 Declaration(Class(obo:CHEBI_29444))
+Declaration(Class(obo:CHEBI_29785))
 Declaration(Class(obo:CHEBI_29810))
+Declaration(Class(obo:CHEBI_30879))
 Declaration(Class(obo:CHEBI_32877))
 Declaration(Class(obo:CHEBI_32955))
 Declaration(Class(obo:CHEBI_33246))
 Declaration(Class(obo:CHEBI_33247))
+Declaration(Class(obo:CHEBI_33308))
+Declaration(Class(obo:CHEBI_33338))
+Declaration(Class(obo:CHEBI_33575))
 Declaration(Class(obo:CHEBI_33595))
 Declaration(Class(obo:CHEBI_33641))
 Declaration(Class(obo:CHEBI_33823))
 Declaration(Class(obo:CHEBI_33839))
+Declaration(Class(obo:CHEBI_35681))
 Declaration(Class(obo:CHEBI_36342))
 Declaration(Class(obo:CHEBI_36357))
 Declaration(Class(obo:CHEBI_36586))
+Declaration(Class(obo:CHEBI_36587))
 Declaration(Class(obo:CHEBI_36823))
 Declaration(Class(obo:CHEBI_36824))
 Declaration(Class(obo:CHEBI_36825))
@@ -57,7 +68,9 @@ Declaration(Class(obo:CHEBI_39142))
 Declaration(Class(obo:CHEBI_39143))
 Declaration(Class(obo:CHEBI_39144))
 Declaration(Class(obo:CHEBI_40574))
+Declaration(Class(obo:CHEBI_42485))
 Declaration(Class(obo:CHEBI_43176))
+Declaration(Class(obo:CHEBI_46883))
 Declaration(Class(obo:CHEBI_48818))
 Declaration(Class(obo:CHEBI_48819))
 Declaration(Class(obo:CHEBI_51100))
@@ -78,6 +91,8 @@ Declaration(Class(obo:CHEBI_53520))
 Declaration(Class(obo:CHEBI_53521))
 Declaration(Class(obo:CHEBI_53522))
 Declaration(Class(obo:CHEBI_73474))
+Declaration(Class(obo:GO_0070206))
+Declaration(Class(obo:IAO_0000030))
 Declaration(Class(obo:MOP_0000000))
 Declaration(Class(obo:MOP_0000001))
 Declaration(Class(obo:MOP_0000002))
@@ -795,7 +810,13 @@ Declaration(Class(obo:MOP_0000713))
 Declaration(Class(obo:MOP_0000714))
 Declaration(Class(obo:MOP_0000715))
 Declaration(Class(obo:MOP_0000716))
+Declaration(Class(obo:MOP_0000717))
+Declaration(Class(obo:MOP_0000718))
+Declaration(Class(obo:MOP_0000719))
+Declaration(Class(obo:MOP_0000720))
 Declaration(Class(obo:MOP_0000721))
+Declaration(Class(obo:MOP_0000722))
+Declaration(Class(obo:MOP_0000723))
 Declaration(Class(obo:MOP_0000724))
 Declaration(Class(obo:MOP_0000725))
 Declaration(Class(obo:MOP_0000726))
@@ -896,6 +917,8 @@ Declaration(Class(obo:MOP_0000821))
 Declaration(Class(obo:MOP_0000822))
 Declaration(Class(obo:MOP_0000823))
 Declaration(Class(obo:MOP_0000824))
+Declaration(Class(obo:MOP_0000825))
+Declaration(Class(obo:MOP_0000826))
 Declaration(Class(obo:MOP_0001000))
 Declaration(Class(obo:MOP_0001001))
 Declaration(Class(obo:MOP_0001002))
@@ -1456,6 +1479,7 @@ Declaration(Class(obo:MOP_0001557))
 Declaration(Class(obo:MOP_0001558))
 Declaration(Class(obo:MOP_0001559))
 Declaration(Class(obo:MOP_0001560))
+Declaration(Class(obo:MOP_0001713))
 Declaration(Class(obo:MOP_0002000))
 Declaration(Class(obo:MOP_0002001))
 Declaration(Class(obo:MOP_0002002))
@@ -3696,15 +3720,12 @@ Declaration(Class(obo:MOP_0005557))
 Declaration(Class(obo:MOP_0005558))
 Declaration(Class(obo:MOP_0005559))
 Declaration(Class(obo:MOP_0005560))
+Declaration(Class(obo:MOP_0005561))
+Declaration(Class(obo:MOP_0006369))
+Declaration(Class(obo:MOP_0006370))
+Declaration(Class(obo:MOP_0006371))
 Declaration(Class(obo:REX_0000368))
 Declaration(Class(obo:REX_0000369))
-Declaration(Class(obo:RXNO_0000019))
-Declaration(Class(obo:RXNO_0000020))
-Declaration(Class(obo:RXNO_0000027))
-Declaration(Class(obo:RXNO_0000033))
-Declaration(Class(obo:RXNO_0000318))
-Declaration(Class(obo:RXNO_0000319))
-Declaration(Class(obo:RXNO_0000336))
 Declaration(ObjectProperty(obo:BFO_0000055))
 Declaration(ObjectProperty(obo:BFO_0000057))
 Declaration(ObjectProperty(obo:BFO_0000077))
@@ -3717,7 +3738,6 @@ Declaration(ObjectProperty(obo:BFO_0000162))
 Declaration(ObjectProperty(obo:MOP_0000769))
 Declaration(ObjectProperty(obo:RO_0002213))
 Declaration(AnnotationProperty(obo:IAO_0000115))
-Declaration(AnnotationProperty(obo:IAO_0000116))
 Declaration(AnnotationProperty(obo:IAO_0000231))
 Declaration(AnnotationProperty(obo:IAO_0000412))
 Declaration(AnnotationProperty(obo:IAO_0100001))
@@ -3751,13 +3771,17 @@ Declaration(AnnotationProperty(rdfs:label))
 
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 
-# Annotation Property: obo:IAO_0000116 (editor note)
+# Annotation Property: obo:IAO_0000231 (terms merged)
 
-AnnotationAssertion(rdfs:label obo:IAO_0000116 "editor note")
+AnnotationAssertion(rdfs:label obo:IAO_0000231 "terms merged")
 
 # Annotation Property: obo:IAO_0000412 (imported from)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
+
+# Annotation Property: obo:IAO_0100001 (term replaced by)
+
+AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by")
 
 # Annotation Property: mop:FORMULA (FORMULA)
 
@@ -3898,6 +3922,26 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_15378 "CHEBI:15378")
 AnnotationAssertion(rdfs:label obo:CHEBI_15378 "hydron")
 SubClassOf(obo:CHEBI_15378 obo:CHEBI_36342)
 
+# Class: obo:CHEBI_15734 (primary alcohol)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_15734 "primary alcohol")
+SubClassOf(obo:CHEBI_15734 obo:CHEBI_30879)
+
+# Class: obo:CHEBI_16526 (carbon dioxide)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_16526 "carbon dioxide")
+SubClassOf(obo:CHEBI_16526 obo:CHEBI_36357)
+
+# Class: obo:CHEBI_17087 (ketone)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_17087 "ketone")
+SubClassOf(obo:CHEBI_17087 obo:CHEBI_36587)
+
+# Class: obo:CHEBI_17478 (aldehyde)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_17478 "aldehyde")
+SubClassOf(obo:CHEBI_17478 obo:CHEBI_36587)
+
 # Class: obo:CHEBI_18379 (nitrile)
 
 AnnotationAssertion(oboInOwl:id obo:CHEBI_18379 "CHEBI:18379")
@@ -3974,6 +4018,11 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_29444 "CHEBI:29444")
 AnnotationAssertion(rdfs:label obo:CHEBI_29444 "isoselenocyanato group")
 SubClassOf(obo:CHEBI_29444 obo:CHEBI_36823)
 
+# Class: obo:CHEBI_29785 (nitro group)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_29785 "nitro group")
+SubClassOf(obo:CHEBI_29785 obo:CHEBI_24433)
+
 # Class: obo:CHEBI_29810 (isocyanato group)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "IUPAC:") Annotation(oboInOwl:hasSynonymType mop:IUPAC_NAME) oboInOwl:hasExactSynonym obo:CHEBI_29810 "isocyanatido")
@@ -3984,6 +4033,11 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "IUPAC:") oboInOwl:hasRelatedS
 AnnotationAssertion(oboInOwl:id obo:CHEBI_29810 "CHEBI:29810")
 AnnotationAssertion(rdfs:label obo:CHEBI_29810 "isocyanato group")
 SubClassOf(obo:CHEBI_29810 obo:CHEBI_36823)
+
+# Class: obo:CHEBI_30879 (alcohol)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_30879 "alcohol")
+SubClassOf(obo:CHEBI_30879 obo:CHEBI_24431)
 
 # Class: obo:CHEBI_32877 (primary amine)
 
@@ -4008,6 +4062,21 @@ SubClassOf(obo:CHEBI_33246 obo:CHEBI_24433)
 AnnotationAssertion(oboInOwl:id obo:CHEBI_33247 "CHEBI:33247")
 AnnotationAssertion(rdfs:label obo:CHEBI_33247 "organic group")
 SubClassOf(obo:CHEBI_33247 obo:CHEBI_24433)
+
+# Class: obo:CHEBI_33308 (carboxylic ester)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_33308 "carboxylic ester")
+SubClassOf(obo:CHEBI_33308 obo:CHEBI_36587)
+
+# Class: obo:CHEBI_33338 (aryl group)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_33338 "aryl group")
+SubClassOf(obo:CHEBI_33338 obo:CHEBI_24433)
+
+# Class: obo:CHEBI_33575 (carboxylic acid)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_33575 "carboxylic acid")
+SubClassOf(obo:CHEBI_33575 obo:CHEBI_36586)
 
 # Class: obo:CHEBI_33595 (cyclic compound)
 
@@ -4034,6 +4103,11 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_33839 "CHEBI:33839")
 AnnotationAssertion(rdfs:label obo:CHEBI_33839 "macromolecule")
 SubClassOf(obo:CHEBI_33839 obo:CHEBI_36357)
 
+# Class: obo:CHEBI_35681 (secondary alcohol)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_35681 "secondary alcohol")
+SubClassOf(obo:CHEBI_35681 obo:CHEBI_30879)
+
 # Class: obo:CHEBI_36342 (subatomic particle)
 
 AnnotationAssertion(oboInOwl:id obo:CHEBI_36342 "CHEBI:36342")
@@ -4052,6 +4126,11 @@ SubClassOf(obo:CHEBI_36357 obo:CHEBI_23367)
 AnnotationAssertion(oboInOwl:id obo:CHEBI_36586 "CHEBI:36586")
 AnnotationAssertion(rdfs:label obo:CHEBI_36586 "carbonyl compound")
 SubClassOf(obo:CHEBI_36586 obo:CHEBI_36357)
+
+# Class: obo:CHEBI_36587 (organic oxo compound)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_36587 "organic oxo compound")
+SubClassOf(obo:CHEBI_36587 obo:CHEBI_36357)
 
 # Class: obo:CHEBI_36823 (pseudohalo groups)
 
@@ -4144,11 +4223,21 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_40574 "CHEBI:40574")
 AnnotationAssertion(rdfs:label obo:CHEBI_40574 "acetyl group")
 SubClassOf(obo:CHEBI_40574 obo:CHEBI_24433)
 
+# Class: obo:CHEBI_42485 (formyl group)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_42485 "formyl group")
+SubClassOf(obo:CHEBI_42485 obo:CHEBI_24433)
+
 # Class: obo:CHEBI_43176 (hydroxy group)
 
 AnnotationAssertion(oboInOwl:id obo:CHEBI_43176 "CHEBI:43176")
 AnnotationAssertion(rdfs:label obo:CHEBI_43176 "hydroxy group")
 SubClassOf(obo:CHEBI_43176 obo:CHEBI_24433)
+
+# Class: obo:CHEBI_46883 (carboxy group)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_46883 "carboxy group")
+SubClassOf(obo:CHEBI_46883 obo:CHEBI_33247)
 
 # Class: obo:CHEBI_48818 (obo:CHEBI_48818)
 
@@ -4287,6 +4376,20 @@ AnnotationAssertion(oboInOwl:id obo:CHEBI_73474 "CHEBI:73474")
 AnnotationAssertion(rdfs:label obo:CHEBI_73474 "acetylenic compound")
 SubClassOf(obo:CHEBI_73474 obo:CHEBI_36357)
 
+# Class: obo:GO_0070206 (protein trimerization)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0070206 "The formation of a protein trimer, a macromolecular structure consisting of three noncovalently associated identical or nonidentical subunits.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0070206 "http://purl.obolibrary.org/obo/go/releases/2022-01-13/go.owl")
+AnnotationAssertion(oboInOwl:hasDbXref obo:GO_0070206 "GOC:hjd")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0070206 "protein trimer assembly")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0070206 "protein trimer biosynthesis")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0070206 "protein trimer biosynthetic process")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0070206 "protein trimer formation")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:GO_0070206 "biological_process")
+AnnotationAssertion(oboInOwl:id obo:GO_0070206 "GO:0070206")
+AnnotationAssertion(rdfs:label obo:GO_0070206 "protein trimerization")
+SubClassOf(obo:GO_0070206 obo:MOP_0000715)
+
 # Class: obo:MOP_0000000 (borylation)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000000 "Formation of a covalent bond between a substrate and a boryl group (-BR'R').")
@@ -4321,6 +4424,7 @@ AnnotationAssertion(oboInOwl:id obo:MOP_0000003 "MOP:0000003")
 AnnotationAssertion(rdfs:comment obo:MOP_0000003 "has_participant: CHEBI:42485")
 AnnotationAssertion(rdfs:label obo:MOP_0000003 "formylation")
 SubClassOf(obo:MOP_0000003 obo:MOP_0000029)
+SubClassOf(obo:MOP_0000003 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_42485))
 
 # Class: obo:MOP_0000004 (acetonylation)
 
@@ -4545,7 +4649,6 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000028 "carboacylation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000028 "MOP:0000028")
 AnnotationAssertion(rdfs:label obo:MOP_0000028 "carboacylation")
 SubClassOf(obo:MOP_0000028 obo:MOP_0000479)
-SubClassOf(obo:MOP_0000028 obo:MOP_0000800)
 SubClassOf(obo:MOP_0000028 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_37838))
 
 # Class: obo:MOP_0000029 (univalent carboacylation)
@@ -4555,7 +4658,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000029 "univalent carboacy
 AnnotationAssertion(oboInOwl:id obo:MOP_0000029 "MOP:0000029")
 AnnotationAssertion(rdfs:comment obo:MOP_0000029 "has_participant: CHEBI:27207")
 AnnotationAssertion(rdfs:label obo:MOP_0000029 "univalent carboacylation")
-SubClassOf(obo:MOP_0000029 obo:MOP_0000458)
+SubClassOf(obo:MOP_0000029 obo:MOP_0000028)
 
 # Class: obo:MOP_0000030 (acetylation)
 
@@ -7983,9 +8086,9 @@ SubClassOf(obo:MOP_0000410 obo:MOP_0000458)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:MOP_0000411 "Formation of a covalent bond between a substrate and an aryl group.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000411 "arylation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000411 "MOP:0000411")
-AnnotationAssertion(rdfs:comment obo:MOP_0000411 "has_participant: CHEBI:33338")
 AnnotationAssertion(rdfs:label obo:MOP_0000411 "arylation")
 SubClassOf(obo:MOP_0000411 obo:MOP_0000410)
+SubClassOf(obo:MOP_0000411 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_33338))
 
 # Class: obo:MOP_0000412 (phenylation)
 
@@ -9137,6 +9240,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:MOP_0000539 "MOP:0000524")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000539 "sulfonylation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000539 "MOP:0000539")
+AnnotationAssertion(rdfs:comment obo:MOP_0000539 "has_participant: CHEBI:51100; has_participant: CHEBI:29825")
 AnnotationAssertion(rdfs:label obo:MOP_0000539 "sulfonylation")
 EquivalentClasses(obo:MOP_0000539 ObjectIntersectionOf(obo:MOP_0000798 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_51100)))
 SubClassOf(obo:MOP_0000539 obo:MOP_0000798)
@@ -9321,7 +9425,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000561 "cyclisation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000561 "MOP:0000561")
 AnnotationAssertion(rdfs:label obo:MOP_0000561 "cyclization")
 SubClassOf(obo:MOP_0000561 obo:MOP_0000543)
-SubClassOf(obo:MOP_0000561 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_52845))
+SubClassOf(obo:MOP_0000561 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33595))
 
 # Class: obo:MOP_0000562 (cycloaddition)
 
@@ -9353,6 +9457,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000565 "MOP:0000565")
 AnnotationAssertion(rdfs:label obo:MOP_0000565 "[4+2] cycloaddition")
 SubClassOf(obo:MOP_0000565 obo:MOP_0000562)
+SubClassOf(obo:MOP_0000565 ObjectSomeValuesFrom(obo:BFO_0000055 obo:MOP_0000826))
 
 # Class: obo:MOP_0000566 (formation of covalent bond with group)
 
@@ -9409,6 +9514,8 @@ AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000571 "2009-06-01T06:07:02Z
 AnnotationAssertion(oboInOwl:id obo:MOP_0000571 "MOP:0000571")
 AnnotationAssertion(rdfs:label obo:MOP_0000571 "aldehyde reduction")
 SubClassOf(obo:MOP_0000571 obo:MOP_0000569)
+SubClassOf(obo:MOP_0000571 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_15734))
+SubClassOf(obo:MOP_0000571 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_17478))
 
 # Class: obo:MOP_0000572 (alcohol oxidation)
 
@@ -9418,24 +9525,31 @@ AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000572 "2009-06-01T06:10:35Z
 AnnotationAssertion(oboInOwl:id obo:MOP_0000572 "MOP:0000572")
 AnnotationAssertion(rdfs:label obo:MOP_0000572 "alcohol oxidation")
 SubClassOf(obo:MOP_0000572 obo:MOP_0000568)
+SubClassOf(obo:MOP_0000572 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_30879))
 
-# Class: obo:MOP_0000573 (primary alcohol oxidation)
+# Class: obo:MOP_0000573 (primary alcohol oxidation to aldehyde)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000573 "An oxidation process where a primary alcohol is transformed into an aldehyde.")
 AnnotationAssertion(oboInOwl:created_by obo:MOP_0000573 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000573 "2009-06-01T06:10:59Z")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000573 "primary alcohol oxidation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000573 "MOP:0000573")
-AnnotationAssertion(rdfs:label obo:MOP_0000573 "primary alcohol oxidation")
+AnnotationAssertion(rdfs:label obo:MOP_0000573 "primary alcohol oxidation to aldehyde")
 SubClassOf(obo:MOP_0000573 obo:MOP_0000572)
+SubClassOf(obo:MOP_0000573 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17478))
+SubClassOf(obo:MOP_0000573 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_15734))
 
-# Class: obo:MOP_0000574 (secondary alcohol oxidation)
+# Class: obo:MOP_0000574 (secondary alcohol oxidation to ketone)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000574 "An oxidation process where a secondary alcohol is transformed into a ketone.")
 AnnotationAssertion(oboInOwl:created_by obo:MOP_0000574 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000574 "2009-06-01T06:11:31Z")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000574 "secondary alcohol oxidation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000574 "MOP:0000574")
-AnnotationAssertion(rdfs:label obo:MOP_0000574 "secondary alcohol oxidation")
+AnnotationAssertion(rdfs:label obo:MOP_0000574 "secondary alcohol oxidation to ketone")
 SubClassOf(obo:MOP_0000574 obo:MOP_0000572)
+SubClassOf(obo:MOP_0000574 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17087))
+SubClassOf(obo:MOP_0000574 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_35681))
 
 # Class: obo:MOP_0000575 (amine oxidation)
 
@@ -9444,7 +9558,7 @@ AnnotationAssertion(oboInOwl:created_by obo:MOP_0000575 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000575 "2009-06-01T06:15:40Z")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000575 "MOP:0000575")
 AnnotationAssertion(rdfs:label obo:MOP_0000575 "amine oxidation")
-SubClassOf(obo:MOP_0000575 obo:MOP_0000568)
+SubClassOf(obo:MOP_0000575 obo:MOP_0000706)
 
 # Class: obo:MOP_0000576 (imine reduction)
 
@@ -9464,6 +9578,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000577 "reduction of ester
 AnnotationAssertion(oboInOwl:id obo:MOP_0000577 "MOP:0000577")
 AnnotationAssertion(rdfs:label obo:MOP_0000577 "ester reduction")
 SubClassOf(obo:MOP_0000577 obo:MOP_0000569)
+SubClassOf(obo:MOP_0000577 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_33308))
 
 # Class: obo:MOP_0000578 (ester reduction to aldehyde)
 
@@ -9475,6 +9590,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000578 "reduction of ester
 AnnotationAssertion(oboInOwl:id obo:MOP_0000578 "MOP:0000578")
 AnnotationAssertion(rdfs:label obo:MOP_0000578 "ester reduction to aldehyde")
 SubClassOf(obo:MOP_0000578 obo:MOP_0000577)
+SubClassOf(obo:MOP_0000578 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17478))
 
 # Class: obo:MOP_0000579 (ester reduction to primary alcohol)
 
@@ -9486,6 +9602,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000579 "reduction of ester
 AnnotationAssertion(oboInOwl:id obo:MOP_0000579 "MOP:0000579")
 AnnotationAssertion(rdfs:label obo:MOP_0000579 "ester reduction to primary alcohol")
 SubClassOf(obo:MOP_0000579 obo:MOP_0000577)
+SubClassOf(obo:MOP_0000579 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_15734))
 
 # Class: obo:MOP_0000580 (ketone reduction)
 
@@ -9497,6 +9614,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000580 "reduction of keton
 AnnotationAssertion(oboInOwl:id obo:MOP_0000580 "MOP:0000580")
 AnnotationAssertion(rdfs:label obo:MOP_0000580 "ketone reduction")
 SubClassOf(obo:MOP_0000580 obo:MOP_0000569)
+SubClassOf(obo:MOP_0000580 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_35681))
+SubClassOf(obo:MOP_0000580 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_17087))
 
 # Class: obo:MOP_0000581 (alkene oxidation)
 
@@ -9538,8 +9657,8 @@ AnnotationAssertion(oboInOwl:created_by obo:MOP_0000584 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000584 "2009-06-02T06:02:46Z")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000584 "MOP:0000584")
 AnnotationAssertion(rdfs:label obo:MOP_0000584 "primary alkene oxidation to carboxylic acid and carbon dioxide")
-SubClassOf(obo:MOP_0000584 obo:MOP_0000581)
-SubClassOf(obo:MOP_0000584 obo:MOP_0000707)
+SubClassOf(obo:MOP_0000584 obo:MOP_0000708)
+SubClassOf(obo:MOP_0000584 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_16526))
 
 # Class: obo:MOP_0000585 (tertiary alkene oxidation to carboxylic acid and ketone)
 
@@ -9548,8 +9667,9 @@ AnnotationAssertion(oboInOwl:created_by obo:MOP_0000585 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000585 "2009-06-02T06:04:14Z")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000585 "MOP:0000585")
 AnnotationAssertion(rdfs:label obo:MOP_0000585 "tertiary alkene oxidation to carboxylic acid and ketone")
-SubClassOf(obo:MOP_0000585 obo:MOP_0000581)
-SubClassOf(obo:MOP_0000585 obo:MOP_0000707)
+SubClassOf(obo:MOP_0000585 obo:MOP_0000708)
+SubClassOf(obo:MOP_0000585 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17087))
+SubClassOf(obo:MOP_0000585 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33575))
 
 # Class: obo:MOP_0000586 (secondary, non-terminal alkene oxidation to aldehydes)
 
@@ -9558,8 +9678,8 @@ AnnotationAssertion(oboInOwl:created_by obo:MOP_0000586 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000586 "2009-06-02T06:06:23Z")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000586 "MOP:0000586")
 AnnotationAssertion(rdfs:label obo:MOP_0000586 "secondary, non-terminal alkene oxidation to aldehydes")
-SubClassOf(obo:MOP_0000586 obo:MOP_0000581)
-SubClassOf(obo:MOP_0000586 obo:MOP_0000707)
+SubClassOf(obo:MOP_0000586 obo:MOP_0000708)
+SubClassOf(obo:MOP_0000586 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17478))
 
 # Class: obo:MOP_0000587 (secondary terminal alkene oxidation to ketone and carbon dioxide)
 
@@ -9568,8 +9688,9 @@ AnnotationAssertion(oboInOwl:created_by obo:MOP_0000587 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000587 "2009-06-02T06:07:44Z")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000587 "MOP:0000587")
 AnnotationAssertion(rdfs:label obo:MOP_0000587 "secondary terminal alkene oxidation to ketone and carbon dioxide")
-SubClassOf(obo:MOP_0000587 obo:MOP_0000581)
-SubClassOf(obo:MOP_0000587 obo:MOP_0000707)
+SubClassOf(obo:MOP_0000587 obo:MOP_0000708)
+SubClassOf(obo:MOP_0000587 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_16526))
+SubClassOf(obo:MOP_0000587 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17087))
 
 # Class: obo:MOP_0000588 (quaternary alkene oxidation to ketones)
 
@@ -9578,8 +9699,8 @@ AnnotationAssertion(oboInOwl:created_by obo:MOP_0000588 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000588 "2009-06-02T06:09:24Z")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000588 "MOP:0000588")
 AnnotationAssertion(rdfs:label obo:MOP_0000588 "quaternary alkene oxidation to ketones")
-SubClassOf(obo:MOP_0000588 obo:MOP_0000581)
-SubClassOf(obo:MOP_0000588 obo:MOP_0000707)
+SubClassOf(obo:MOP_0000588 obo:MOP_0000708)
+SubClassOf(obo:MOP_0000588 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_17087))
 
 # Class: obo:MOP_0000589 (hydrogenation)
 
@@ -9606,8 +9727,13 @@ AnnotationAssertion(oboInOwl:created_by obo:MOP_0000591 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000591 "2009-06-05T04:57:07Z")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000591 "MOP:0000591")
 AnnotationAssertion(rdfs:comment obo:MOP_0000591 "CHEBI:46883.")
+AnnotationAssertion(Annotation(oboInOwl:created_by <https://orcid.org/0000-0002-1595-3213>) rdfs:comment obo:MOP_0000591 "Prior to the resolving of https://github.com/rsc-ontologies/rxno/issues/27 this class was wrongly also defined in RXNO under the ID MOP:0000713 ('acetylene reduction'). 
+Thus the \"has_participant some 'carboxy group'\" axiom, which was not yet present on 'carboxylation' (MOP:0000591) in MOP was copied from this wrongly defined  'carboxylation' in RXNO to the proper one in MOP.
+
+The only RXNO subclass 'Kolbe-Schmitt reaction' (RXNO:0000182) of 'carboxylation' was also moved to be correctly subsumed in RXNO.")
 AnnotationAssertion(rdfs:label obo:MOP_0000591 "carboxylation")
 SubClassOf(obo:MOP_0000591 obo:MOP_0000458)
+SubClassOf(obo:MOP_0000591 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_46883))
 
 # Class: obo:MOP_0000592 (C-carboxylation)
 
@@ -9923,6 +10049,8 @@ SubClassOf(obo:MOP_0000626 obo:MOP_0000620)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C01238") obo:IAO_0000115 obo:MOP_0000627 "A reaction in which two or more reactants or remote reactive sites within the same molecular entity yield a single main product with accompanying formation of a small molecule.")
 AnnotationAssertion(oboInOwl:created_by obo:MOP_0000627 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000627 "2009-09-16T11:30:32Z")
+AnnotationAssertion(oboInOwl:hasAlternativeId obo:MOP_0000627 "RXNO:0000315")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000627 "MOP")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000627 "MOP:0000627")
 AnnotationAssertion(rdfs:label obo:MOP_0000627 "condensation reaction")
 SubClassOf(obo:MOP_0000627 obo:MOP_0000543)
@@ -9932,6 +10060,8 @@ SubClassOf(obo:MOP_0000627 obo:MOP_0000543)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000628 "A condensation reaction where the small molecule produced is water.")
 AnnotationAssertion(oboInOwl:created_by obo:MOP_0000628 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000628 "2009-09-16T11:32:33Z")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000628 "molecular dehydration reaction"@en)
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000628 "MOP")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000628 "MOP:0000628")
 AnnotationAssertion(rdfs:label obo:MOP_0000628 "dehydration reaction")
 SubClassOf(obo:MOP_0000628 obo:MOP_0000627)
@@ -10321,21 +10451,21 @@ SubClassOf(obo:MOP_0000670 obo:MOP_0000642)
 
 # Class: obo:MOP_0000671 (epoxidation)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000671 "A molecular process that results in the formation of an epoxide.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000671 "A cyclisation that results in the formation of an epoxide.")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000671 "MOP:0000671")
 AnnotationAssertion(rdfs:label obo:MOP_0000671 "epoxidation")
-EquivalentClasses(obo:MOP_0000671 ObjectIntersectionOf(obo:MOP_0000543 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_32955)))
-SubClassOf(obo:MOP_0000671 obo:MOP_0000543)
+SubClassOf(obo:MOP_0000671 obo:MOP_0000561)
 SubClassOf(obo:MOP_0000671 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_32955))
 
 # Class: obo:MOP_0000672 (enolization)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000672 "A molecular process where a carbonyl compound is converted an enol. Usually this is a reversible tautomerization but it can be irreversible.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000672 "A 'keto-enol tautomerisation' where a carbonyl compound is converted to an enol. Usually this is a reversible tautomerization but it can be irreversible.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MOP_0000672 "enolisation")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000672 "MOP:0000672")
 AnnotationAssertion(rdfs:label obo:MOP_0000672 "enolization")
 EquivalentClasses(obo:MOP_0000672 ObjectIntersectionOf(obo:MOP_0000725 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33823) ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_36586)))
 SubClassOf(obo:MOP_0000672 obo:MOP_0000725)
+SubClassOf(obo:MOP_0000672 ObjectSomeValuesFrom(obo:BFO_0000055 obo:MOP_0000717))
 SubClassOf(obo:MOP_0000672 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33823))
 SubClassOf(obo:MOP_0000672 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_36586))
 
@@ -10657,7 +10787,9 @@ SubClassOf(obo:MOP_0000707 obo:MOP_0000568)
 
 # Class: obo:MOP_0000708 (alkene oxidative cleavage)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000708 "Oxidative cleavage of an alkene.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000708 "An alkene oxidation where the carbon-carbon double bond is cleaved.")
+AnnotationAssertion(oboInOwl:hasAlternativeId obo:MOP_0000708 "RXNO:0000344")
+AnnotationAssertion(oboInOwl:hasDbXref obo:MOP_0000708 "NAMERXN:1.6")
 AnnotationAssertion(oboInOwl:id obo:MOP_0000708 "MOP:0000708")
 AnnotationAssertion(rdfs:label obo:MOP_0000708 "alkene oxidative cleavage")
 SubClassOf(obo:MOP_0000708 obo:MOP_0000581)
@@ -10716,13 +10848,10 @@ SubClassOf(obo:MOP_0000714 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_52214)
 # Class: obo:MOP_0000715 (trimerization)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://en.wiktionary.org/wiki/trimerization"^^xsd:anyURI) obo:IAO_0000115 obo:MOP_0000715 "The formation of a trimer from three molecular subunits.")
-AnnotationAssertion(obo:IAO_0000116 obo:MOP_0000715 "The GO class \"protein trimerization\" (https://purl.obolibrary.org/obo/GO_0070206) would actually be a subclass of \"trimerization\" according to the definition provided here. However, for the reason of not wanting to inject this subclassOf axiom into GO, we decided to not assert this in MOP as of yet. Further discussion is needed with the GO and/or OBO team to see how this GO class can be integrated.")
 AnnotationAssertion(dc:creator obo:MOP_0000715 <http://orcid.org/0000-0002-4378-6061>)
 AnnotationAssertion(dc:date obo:MOP_0000715 "2022-02-01T09:40:48Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:id obo:MOP_0000715 "MOP:0000715")
 AnnotationAssertion(rdfs:label obo:MOP_0000715 "trimerization"@en)
-AnnotationAssertion(rdfs:seeAlso obo:MOP_0000715 <https://github.com/rsc-ontologies/rxno/issues/45>)
-AnnotationAssertion(rdfs:seeAlso obo:MOP_0000715 <https://github.com/rsc-ontologies/rxno/pull/46#issuecomment-1124151946>)
 SubClassOf(obo:MOP_0000715 obo:MOP_0000543)
 
 # Class: obo:MOP_0000716 (cyclotrimerization)
@@ -10735,6 +10864,41 @@ AnnotationAssertion(rdfs:label obo:MOP_0000716 "cyclotrimerization"@en)
 SubClassOf(obo:MOP_0000716 obo:MOP_0000562)
 SubClassOf(obo:MOP_0000716 obo:MOP_0000715)
 
+# Class: obo:MOP_0000717 (enolisability)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000717 "Disposition that is realised in the process of enolisation")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000717 "RXNO")
+AnnotationAssertion(oboInOwl:id obo:MOP_0000717 "MOP:0000717")
+AnnotationAssertion(rdfs:label obo:MOP_0000717 "enolisability")
+SubClassOf(obo:MOP_0000717 obo:BFO_0000016)
+
+# Class: obo:MOP_0000718 (enolisable carbonyl compound)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000718 "A carbonyl compound that bears the disposition to be enolised.")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000718 "RXNO")
+AnnotationAssertion(oboInOwl:id obo:MOP_0000718 "MOP:0000718")
+AnnotationAssertion(rdfs:comment obo:MOP_0000718 "this surely belongs in ChEBI but put it here pro tem")
+AnnotationAssertion(rdfs:label obo:MOP_0000718 "enolisable carbonyl compound")
+EquivalentClasses(obo:MOP_0000718 ObjectIntersectionOf(obo:CHEBI_36587 ObjectSomeValuesFrom(obo:BFO_0000162 obo:MOP_0000717)))
+SubClassOf(obo:MOP_0000718 obo:CHEBI_36587)
+SubClassOf(obo:MOP_0000718 ObjectSomeValuesFrom(obo:BFO_0000162 obo:MOP_0000717))
+
+# Class: obo:MOP_0000719 (O-dealkylation)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:MOP_0000719 "Breaking of a covalent bond between an alkyl group and an oxygen atom.")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000719 "RXNO")
+AnnotationAssertion(oboInOwl:id obo:MOP_0000719 "MOP:0000719")
+AnnotationAssertion(rdfs:label obo:MOP_0000719 "O-dealkylation")
+SubClassOf(obo:MOP_0000719 obo:MOP_0001369)
+
+# Class: obo:MOP_0000720 ([2+2+1] cycloaddition)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000720 "A cycloaddition in which two participants contribute two electrons and the other participant contributes one electron to the transformation of reactants to products.")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000720 "RXNO")
+AnnotationAssertion(oboInOwl:id obo:MOP_0000720 "MOP:0000720")
+AnnotationAssertion(rdfs:label obo:MOP_0000720 "[2+2+1] cycloaddition")
+SubClassOf(obo:MOP_0000720 obo:MOP_0000562)
+
 # Class: obo:MOP_0000721 ([3,3]-sigmatropic rearrangement)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000721 "A sigmatropic rearrangement where the intermediate consists of two three-electron fragments.")
@@ -10743,6 +10907,27 @@ AnnotationAssertion(oboInOwl:id obo:MOP_0000721 "MOP:0000721")
 AnnotationAssertion(rdfs:comment obo:MOP_0000721 "This term was obsoleted from the RXNO namespace and transferred to MOP because it is a process identifiable by its mechanism rather than the intention of the experimenter.")
 AnnotationAssertion(rdfs:label obo:MOP_0000721 "[3,3]-sigmatropic rearrangement")
 SubClassOf(obo:MOP_0000721 obo:MOP_0000728)
+
+# Class: obo:MOP_0000722 (decarboxylative condensation)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:MOP_0000722 "A reaction in which two or more reactants or remote reactive sites within the same molecular entity yield a single main product with accompanying formation of a carbon dioxide molecule.")
+AnnotationAssertion(oboInOwl:created_by obo:MOP_0000722 "batchelorc")
+AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000722 "2014-03-05T10:00:00Z")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000722 "RXNO")
+AnnotationAssertion(oboInOwl:id obo:MOP_0000722 "MOP:0000722")
+AnnotationAssertion(rdfs:label obo:MOP_0000722 "decarboxylative condensation")
+SubClassOf(obo:MOP_0000722 obo:MOP_0000627)
+SubClassOf(obo:MOP_0000722 ObjectSomeValuesFrom(obo:BFO_0000117 obo:MOP_0001713))
+
+# Class: obo:MOP_0000723 (deethanolative condensation)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:MOP_0000723 "A reaction in which two or more reactants or remote reactive sites within the same molecular entity yield a single main product with accompanying formation of an ethanol molecule.")
+AnnotationAssertion(oboInOwl:created_by obo:MOP_0000723 "batchelorc")
+AnnotationAssertion(oboInOwl:creation_date obo:MOP_0000723 "2014-03-05T10:00:00Z")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000723 "RXNO")
+AnnotationAssertion(oboInOwl:id obo:MOP_0000723 "MOP:0000723")
+AnnotationAssertion(rdfs:label obo:MOP_0000723 "deethanolative condensation")
+SubClassOf(obo:MOP_0000723 obo:MOP_0000825)
 
 # Class: obo:MOP_0000724 (tautomerisation)
 
@@ -11429,6 +11614,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000802 "MOP:0000802")
 AnnotationAssertion(rdfs:label obo:MOP_0000802 "formation of covalent bond with nitrogen centre")
 SubClassOf(obo:MOP_0000802 obo:MOP_0000566)
+SubClassOf(obo:MOP_0000802 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_29785))
 
 # Class: obo:MOP_0000803 (formation of covalent bond with oxygen centre)
 
@@ -11583,6 +11769,23 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:MOP_0000824 "MOP:0000824")
 AnnotationAssertion(rdfs:label obo:MOP_0000824 "alkynylation")
 SubClassOf(obo:MOP_0000824 obo:MOP_0000410)
+
+# Class: obo:MOP_0000825 (dealcoholative condensation)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000825 "A reaction in which two or more reactants or remote reactive sites within the same molecular entity yield a single main product with accompanying formation of an alcohol molecule.")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000825 "RXNO")
+AnnotationAssertion(oboInOwl:id obo:MOP_0000825 "MOP:0000825")
+AnnotationAssertion(rdfs:label obo:MOP_0000825 "dealcoholative condensation")
+SubClassOf(obo:MOP_0000825 obo:MOP_0000627)
+
+# Class: obo:MOP_0000826 (dienophilicity)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0000826 "A disposition which is realised in a [4+2] reaction with a double-bonded system.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:MOP_0000826 "http://goldbook.iupac.org/D01700.html")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0000826 "RXNO")
+AnnotationAssertion(oboInOwl:id obo:MOP_0000826 "MOP:0000826")
+AnnotationAssertion(rdfs:label obo:MOP_0000826 "dienophilicity")
+SubClassOf(obo:MOP_0000826 obo:BFO_0000016)
 
 # Class: obo:MOP_0001000 (deborylation)
 
@@ -16059,6 +16262,16 @@ AnnotationAssertion(oboInOwl:id obo:MOP_0001560 "MOP:0001560")
 AnnotationAssertion(rdfs:comment obo:MOP_0001560 "has_participant: CHEBI:29923")
 AnnotationAssertion(rdfs:label obo:MOP_0001560 "deselenonation")
 SubClassOf(obo:MOP_0001560 obo:MOP_0000567)
+
+# Class: obo:MOP_0001713 (decarboxylation)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:MOP_0001713 "Breaking of a covalent bond between a molecule and a carboxy group.")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0001713 "RXNO")
+AnnotationAssertion(oboInOwl:id obo:MOP_0001713 "MOP:0001713")
+AnnotationAssertion(rdfs:label obo:MOP_0001713 "decarboxylation")
+SubClassOf(obo:MOP_0001713 obo:MOP_0001458)
+SubClassOf(obo:MOP_0001713 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_46883))
+SubClassOf(obo:MOP_0001713 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_16526))
 
 # Class: obo:MOP_0002000 (N-borylation)
 
@@ -33956,6 +34169,39 @@ AnnotationAssertion(rdfs:comment obo:MOP_0005560 "has_participant: CHEBI:29923")
 AnnotationAssertion(rdfs:label obo:MOP_0005560 "C-selenonation")
 SubClassOf(obo:MOP_0005560 obo:MOP_0000560)
 
+# Class: obo:MOP_0005561 (oxidation state)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0005561 "A formal account of the degree of oxidation of an atom.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:MOP_0005561 "http://goldbook.iupac.org/O04365.html")
+AnnotationAssertion(oboInOwl:id obo:MOP_0005561 "MOP:0005561")
+AnnotationAssertion(rdfs:comment obo:MOP_0005561 "It turns out to be formally defined, which makes our definitions a bit poor.")
+AnnotationAssertion(rdfs:label obo:MOP_0005561 "oxidation state")
+SubClassOf(obo:MOP_0005561 obo:IAO_0000030)
+
+# Class: obo:MOP_0006369 (P-alkylation)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:xp") obo:IAO_0000115 obo:MOP_0006369 "The formation of a covalent bond between a phosphorus atom and an alkyl group.")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0006369 "RXNO")
+AnnotationAssertion(oboInOwl:id obo:MOP_0006369 "MOP:0006369")
+AnnotationAssertion(rdfs:label obo:MOP_0006369 "P-alkylation")
+SubClassOf(obo:MOP_0006369 obo:MOP_0000369)
+
+# Class: obo:MOP_0006370 (carbonyl oxidation to alkyne)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0006370 "Oxidation of a carbonyl group to an alkyne.")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0006370 "MOP")
+AnnotationAssertion(oboInOwl:id obo:MOP_0006370 "MOP:0006370")
+AnnotationAssertion(rdfs:label obo:MOP_0006370 "carbonyl oxidation to alkyne")
+SubClassOf(obo:MOP_0006370 obo:MOP_0000568)
+
+# Class: obo:MOP_0006371 ([3+2] cycloaddition)
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:MOP_0006371 "A cycloaddition in which one participant contributes three electrons and the other participant contributes two electrons to the transformation of reactants to products.")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:MOP_0006371 "MOP")
+AnnotationAssertion(oboInOwl:id obo:MOP_0006371 "MOP:0006371")
+AnnotationAssertion(rdfs:label obo:MOP_0006371 "[3+2] cycloaddition")
+SubClassOf(obo:MOP_0006371 obo:MOP_0000562)
+
 # Class: obo:REX_0000368 (obo:REX_0000368)
 
 AnnotationAssertion(obo:IAO_0000231 obo:REX_0000368 obo:IAO_0000227)
@@ -33967,48 +34213,6 @@ AnnotationAssertion(owl:deprecated obo:REX_0000368 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000231 obo:REX_0000369 obo:IAO_0000227)
 AnnotationAssertion(obo:IAO_0100001 obo:REX_0000369 obo:MOP_0000768)
 AnnotationAssertion(owl:deprecated obo:REX_0000369 "true"^^xsd:boolean)
-
-# Class: obo:RXNO_0000019 (obo:RXNO_0000019)
-
-AnnotationAssertion(obo:IAO_0000231 obo:RXNO_0000019 obo:IAO_0000227)
-AnnotationAssertion(obo:IAO_0100001 obo:RXNO_0000019 obo:MOP_0000790)
-AnnotationAssertion(owl:deprecated obo:RXNO_0000019 "true"^^xsd:boolean)
-
-# Class: obo:RXNO_0000020 (obo:RXNO_0000020)
-
-AnnotationAssertion(obo:IAO_0000231 obo:RXNO_0000020 obo:IAO_0000227)
-AnnotationAssertion(obo:IAO_0100001 obo:RXNO_0000020 obo:MOP_0000791)
-AnnotationAssertion(owl:deprecated obo:RXNO_0000020 "true"^^xsd:boolean)
-
-# Class: obo:RXNO_0000027 (obo:RXNO_0000027)
-
-AnnotationAssertion(obo:IAO_0000231 obo:RXNO_0000027 obo:IAO_0000227)
-AnnotationAssertion(obo:IAO_0100001 obo:RXNO_0000027 obo:MOP_0000721)
-AnnotationAssertion(owl:deprecated obo:RXNO_0000027 "true"^^xsd:boolean)
-
-# Class: obo:RXNO_0000033 (obo:RXNO_0000033)
-
-AnnotationAssertion(obo:IAO_0000231 obo:RXNO_0000033 obo:IAO_0000227)
-AnnotationAssertion(obo:IAO_0100001 obo:RXNO_0000033 obo:MOP_0000792)
-AnnotationAssertion(owl:deprecated obo:RXNO_0000033 "true"^^xsd:boolean)
-
-# Class: obo:RXNO_0000318 (obo:RXNO_0000318)
-
-AnnotationAssertion(obo:IAO_0000231 obo:RXNO_0000318 obo:IAO_0000227)
-AnnotationAssertion(obo:IAO_0100001 obo:RXNO_0000318 obo:MOP_0000794)
-AnnotationAssertion(owl:deprecated obo:RXNO_0000318 "true"^^xsd:boolean)
-
-# Class: obo:RXNO_0000319 (obo:RXNO_0000319)
-
-AnnotationAssertion(obo:IAO_0000231 obo:RXNO_0000319 obo:IAO_0000227)
-AnnotationAssertion(obo:IAO_0100001 obo:RXNO_0000319 obo:MOP_0000793)
-AnnotationAssertion(owl:deprecated obo:RXNO_0000319 "true"^^xsd:boolean)
-
-# Class: obo:RXNO_0000336 (obo:RXNO_0000336)
-
-AnnotationAssertion(obo:IAO_0000231 obo:RXNO_0000336 obo:IAO_0000227)
-AnnotationAssertion(obo:IAO_0100001 obo:RXNO_0000336 obo:MOP_0000795)
-AnnotationAssertion(owl:deprecated obo:RXNO_0000336 "true"^^xsd:boolean)
 
 
 )
