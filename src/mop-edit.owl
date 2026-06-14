@@ -9732,7 +9732,7 @@ Thus the \"has_participant some 'carboxy group'\" axiom, which was not yet prese
 
 The only RXNO subclass 'Kolbe-Schmitt reaction' (RXNO:0000182) of 'carboxylation' was also moved to be correctly subsumed in RXNO.")
 AnnotationAssertion(rdfs:label obo:MOP_0000591 "carboxylation")
-SubClassOf(obo:MOP_0000591 obo:MOP_0000458)
+SubClassOf(obo:MOP_0000591 obo:MOP_0000479)
 SubClassOf(obo:MOP_0000591 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_46883))
 
 # Class: obo:MOP_0000592 (C-carboxylation)
@@ -34175,6 +34175,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasDbXref obo:MOP_0005561 "http://goldbook.iupac.org/O04365.html")
 AnnotationAssertion(oboInOwl:id obo:MOP_0005561 "MOP:0005561")
 AnnotationAssertion(rdfs:comment obo:MOP_0005561 "It turns out to be formally defined, which makes our definitions a bit poor.")
+AnnotationAssertion(rdfs:comment obo:MOP_0005561 "The same term was provided in RXNO under the ID MOP:0000712 which conflicts with the same ID in MOP preserved for olefin reduction. The term was deleted from RXNO to be reimported correctly from MOP iwith the new current ID\")")
 AnnotationAssertion(rdfs:label obo:MOP_0005561 "oxidation state")
 SubClassOf(obo:MOP_0005561 obo:IAO_0000030)
 
