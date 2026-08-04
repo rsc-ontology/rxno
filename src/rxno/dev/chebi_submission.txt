@@ -1,0 +1,47 @@
+#
+# New classes for submission to ChEBI.
+#
+
+RXNO:0000472 aldose N-glycosyl compound is_a N-glycosyl compound (CHEBI:21731)
+RXNO:0000085 alpha-hydroxy ketone: is_a ketone (CHEBI:17087)
+RXNO:0000470 aromatic carboxylic anhydride: is_a carboxylic anhydride (CHEBI:35873)
+aromatic diazonium salt: salt (CHEBI:24866) and has_part aromatic diazonium ion (CHEBI:53507)
+aromatic bromide: is_a aromatic halide (CHEBI:new)
+aromatic chloride: is_a aromatic halide (CHEBI:new)
+RXNO:0000288: aromatic halide: organic aromatic compound (CHEBI:33659) and has_part halo group (CHEBI:47854)
+RXNO:0000288: aromatic nitrile: is_a nitrile (CHEBI:18379)
+RXNO:0000288: aromatic pseudohalide: organic aromatic compound (CHEBI:33659) and has_part pseudohalo group (CHEBI:36823)
+RXNO:0000515 azlactone
+RXNO:0000136: barium sulfate is_a barium salt (CHEBI:63320)
+beta-amino carbonyl compound: is_a amine (CHEBI:32952), is_a carbonyl compound (CHEBI:36587)
+beta-amino nitroalkane: is_a C-nitro compound (CHEBI:35716)
+beta-hydroxy nitroalkane: is_a C-nitro compound (CHEBI:35716)
+RXNO:0000525: copper(1+) acetylide is_a acetylide (CHEBI:73478)
+copper(I) halide: is_a inorganic halide (CHEBI:new).  copper(I) chloride (CHEBI:53472) is_a copper(I) halide
+copper(I) pseudohalide: is_a inorganic pseudohalide (CHEBI:new)
+RXNO:0000288: copper(1+) cyanide is_a copper(1+) pseudohalide (CHEBI:new), is_a cyanide salt (CHEBI:36572)
+copper(II) halide: is_a inorganic halide (CHEBI:new). copper(II) chloride (CHEBI:49553) is_a copper(II) halide
+RXNO:0000107: dialkyl malonate is_a malonate ester (CHEBI:38083)
+diaminobiphenyl: 
+RXNO:0000063: diazoketone
+1,3-diene: is_a alkadiene (CHEBI:33646)
+1,4-diene: is_a alkadiene (CHEBI:33646)
+gamma-nitroalcohol: is_a C-nitro compound (CHEBI:35716)
+1,5-hexadiene: is_a alkadiene (CHEBI:33646)
+hydrazobenzene:
+3-hydroxy-1,5-hexadiene:
+RXNO:0000472 ketose N-glycosyl compound is_a N-glycosyl compound (CHEBI:21731)
+RXNO:0000047 metal alkoxide is_a salt (CHEBI:36572)
+RXNO:0000469: ortho-hydroxyaryl ketone is_a ketone (CHEBI:17087)
+organic azide: is_a azides (CHEBI:22680)
+organophosphazo compound: ?! (but looks like this R3P=NR')
+RXNO:0000056: organophosphonate
+organoselenide: is_a organoselenium compound (CHEBI:25712)
+RXNO:0000476: propargyl alcohol is_a acetylenic compound CHEBI:73474
+pseudohalide salt: salt (CHEBI:24866) and has_part pseudohalide anion (CHEBI:36828)
+selenoxide: is_a heterone (CHEBI:36598)
+RXNO:0000106: silver carboxylate: is_a silver coordination entity (CHEBI:33967)
+RXNO:0000480: Tebbe reagent
+RXNO:0000060: trialkyl phosphite: is_a organic phosphite (CHEBI:48135)
+5,6-unsaturated carbonyl compound:
+RXNO:0000050: vicinal diol :is_a diol (CHEBI:23824)
