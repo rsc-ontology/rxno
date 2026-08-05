@@ -1,0 +1,22 @@
+id: rxno
+title: "Named Reaction Ontology"
+github_org: rsc-ontologies
+repo: rxno
+report_fail_on: ERROR
+edit_format: owl
+export_formats:
+  - owl
+  - obo
+  - json
+release_artefacts: 
+  - base
+  - full
+primary_release: full
+import_group:
+  products:
+    - id: ro
+    - id: mop
+    - id: bfo
+    - id: obi
+    - id: omo
+robot_java_args: '-Xmx8G'
