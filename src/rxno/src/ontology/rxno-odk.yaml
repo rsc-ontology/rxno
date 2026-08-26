@@ -17,6 +17,7 @@ import_group:
     - id: ro
     - id: mop
     - id: bfo
+      module_type: custom
     - id: obi
     - id: omo
 robot_java_args: '-Xmx8G'

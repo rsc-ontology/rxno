@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                d36cc76583ba9f1730f082005184a6e551f0ba723fc2b361156e55181c79d309
+CONFIG_HASH=                5a024cf9991112fba0050e7749f807ae6b0e9ac10f92d8205ff3e9e8de6ee7be
 
 
 # ----------------------------------------
@@ -408,6 +408,12 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 		 $(ANNOTATE_CONVERT_FILE)
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
+
+## Module for ontology: bfo (custom)
+$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
+	@echo "ERROR: You have configured bfo as a custom module;"
+	@echo "       This rule needs to be overwritten in rxno.Makefile!"
+	@false
 
 endif # IMP=true
 

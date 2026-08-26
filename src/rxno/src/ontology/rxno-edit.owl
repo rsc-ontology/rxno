@@ -22,8 +22,6 @@ Annotation(oboInOwl:date "16:12:2021 15:55")
 Annotation(oboInOwl:default-namespace "RXNO")
 Annotation(oboInOwl:hasOBOFormatVersion "1.4")
 
-Declaration(Class(obo:BFO_0000015))
-Declaration(Class(obo:BFO_0000016))
 Declaration(Class(obo:CHEBI_13759))
 Declaration(Class(obo:CHEBI_139588))
 Declaration(Class(obo:CHEBI_15379))
@@ -940,7 +938,6 @@ Declaration(Class(obo:RXNO_0000689))
 Declaration(Class(obo:RXNO_0000690))
 Declaration(Class(obo:RXNO_0000691))
 Declaration(Class(obo:RXNO_0000692))
-Declaration(ObjectProperty(obo:BFO_0000055))
 Declaration(ObjectProperty(obo:BFO_0000057))
 Declaration(ObjectProperty(obo:BFO_0000077))
 Declaration(ObjectProperty(obo:BFO_0000078))
@@ -1042,12 +1039,6 @@ AnnotationAssertion(rdfs:label oboInOwl:inSubset "in_subset")
 ############################
 #   Object Properties
 ############################
-
-# Object Property: obo:BFO_0000055 (realizes)
-
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:BFO_0000055 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:BFO_0000055 "BFO:0000055")
-AnnotationAssertion(rdfs:label obo:BFO_0000055 "realizes")
 
 # Object Property: obo:BFO_0000057 (has_participant)
 
@@ -1161,18 +1152,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/rxno.obo#part_of>
 ############################
 #   Classes
 ############################
-
-# Class: obo:BFO_0000015 (process)
-
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:BFO_0000015 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:BFO_0000015 "BFO:0000015")
-AnnotationAssertion(rdfs:label obo:BFO_0000015 "process")
-
-# Class: obo:BFO_0000016 (disposition)
-
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:BFO_0000016 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:BFO_0000016 "BFO:0000016")
-AnnotationAssertion(rdfs:label obo:BFO_0000016 "disposition")
 
 # Class: obo:CHEBI_13759 (alkylamine)
 
