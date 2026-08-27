@@ -30,4 +30,8 @@ import_group:
       use_gzipped: true
       make_base: true
       module_type: custom
+    - id: mop
+      mirror_from: https://raw.githubusercontent.com/rsc-ontology/MOP/main/mop.owl   
+      module_type: slme
+      module_type_slme: BOT
 robot_java_args: '-Xmx8G'

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                6ecb3d907379ec934f98fbb756d564acd55f404ee25e604ae5d143fd1ef116df
+CONFIG_HASH=                8ad62bc054345aa3d4a8cbd0a82fe4ee66371b666617a0b25c41d1d31bf8aa22
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro mop bfo obi iao chebi
+IMPORTS =  ro mop bfo obi iao chebi mop
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -510,6 +510,13 @@ mirror-chebi: | $(TMPDIR)
 	curl -L $(OBOBASE)/chebi.owl.gz --create-dirs -o $(MIRRORDIR)/chebi.owl.gz --retry 4 --max-time 200 && \
 	$(ROBOT) remove -i $(MIRRORDIR)/chebi.owl.gz --base-iri http://purl.obolibrary.org/obo/CHEBI --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 endif
+
+
+## ONTOLOGY: mop
+.PHONY: mirror-mop
+.PRECIOUS: $(MIRRORDIR)/mop.owl
+mirror-mop: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/rsc-ontology/MOP/main/mop.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

@@ -1,0 +1,52 @@
+http://purl.obolibrary.org/obo/MOP_0000003   # formylation
+http://purl.obolibrary.org/obo/MOP_0000411   # arylation
+http://purl.obolibrary.org/obo/MOP_0000422   # allylation
+http://purl.obolibrary.org/obo/MOP_0000543   # molecular process
+http://purl.obolibrary.org/obo/MOP_0000550   # halogenation
+http://purl.obolibrary.org/obo/MOP_0000555   # imination
+http://purl.obolibrary.org/obo/MOP_0000556   # nitration
+http://purl.obolibrary.org/obo/MOP_0000561   # cyclization
+http://purl.obolibrary.org/obo/MOP_0000562   # cycloaddition
+http://purl.obolibrary.org/obo/MOP_0000563   # [2+2] cycloaddition
+http://purl.obolibrary.org/obo/MOP_0000565   # [4+2] cycloaddition
+http://purl.obolibrary.org/obo/MOP_0000566   # formation of covalent bond with group
+http://purl.obolibrary.org/obo/MOP_0000568   # oxidation
+http://purl.obolibrary.org/obo/MOP_0000569   # reduction
+http://purl.obolibrary.org/obo/MOP_0000572   # alcohol oxidation
+http://purl.obolibrary.org/obo/MOP_0000573   # primary alcohol oxidation to aldehyde
+http://purl.obolibrary.org/obo/MOP_0000574   # secondary alcohol oxidation to ketone
+http://purl.obolibrary.org/obo/MOP_0000580   # ketone reduction
+http://purl.obolibrary.org/obo/MOP_0000581   # alkene oxidation
+http://purl.obolibrary.org/obo/MOP_0000589   # hydrogenation
+http://purl.obolibrary.org/obo/MOP_0000591   # carboxylation
+http://purl.obolibrary.org/obo/MOP_0000596   # pseudohalogenation
+http://purl.obolibrary.org/obo/MOP_0000619   # hydrolysis
+http://purl.obolibrary.org/obo/MOP_0000627   # condensation reaction
+http://purl.obolibrary.org/obo/MOP_0000628   # dehydration reaction
+http://purl.obolibrary.org/obo/MOP_0000642   # addition reaction
+http://purl.obolibrary.org/obo/MOP_0000650   # amination
+http://purl.obolibrary.org/obo/MOP_0000656   # elimination reaction
+http://purl.obolibrary.org/obo/MOP_0000671   # epoxidation
+http://purl.obolibrary.org/obo/MOP_0000708   # alkene oxidative cleavage
+http://purl.obolibrary.org/obo/MOP_0000718   # enolisable carbonyl compound
+http://purl.obolibrary.org/obo/MOP_0000719   # O-dealkylation
+http://purl.obolibrary.org/obo/MOP_0000720   # [2+2+1] cycloaddition
+http://purl.obolibrary.org/obo/MOP_0000721   # [3,3]-sigmatropic rearrangement
+http://purl.obolibrary.org/obo/MOP_0000722   # decarboxylative condensation
+http://purl.obolibrary.org/obo/MOP_0000723   # deethanolative condensation
+http://purl.obolibrary.org/obo/MOP_0000730   # Brønsted acid catalysis
+http://purl.obolibrary.org/obo/MOP_0000734   # Lewis acid catalysis
+http://purl.obolibrary.org/obo/MOP_0000740   # acid catalysis
+http://purl.obolibrary.org/obo/MOP_0000791   # aromatic substitution
+http://purl.obolibrary.org/obo/MOP_0000825   # dealcoholative condensation
+http://purl.obolibrary.org/obo/MOP_0001550   # dehalogenation
+http://purl.obolibrary.org/obo/MOP_0001713   # decarboxylation
+http://purl.obolibrary.org/obo/MOP_0002364   # N-methylation
+http://purl.obolibrary.org/obo/MOP_0002369   # N-alkylation
+http://purl.obolibrary.org/obo/MOP_0002411   # N-arylation
+http://purl.obolibrary.org/obo/MOP_0002479   # N-acylation
+http://purl.obolibrary.org/obo/MOP_0003339   # O-silylation
+http://purl.obolibrary.org/obo/MOP_0003479   # O-acylation
+http://purl.obolibrary.org/obo/MOP_0006369   # P-alkylation
+http://purl.obolibrary.org/obo/MOP_0006370   # carbonyl oxidation to alkyne
+http://purl.obolibrary.org/obo/MOP_0006371   # [3+2] cycloaddition
