@@ -8,5 +8,6 @@
     <uri name="http://purl.obolibrary.org/obo/rxno/imports/chebi_import.owl" uri="imports/chebi_import.owl" />
     <uri name="http://purl.obolibrary.org/obo/rxno/imports/mop_import.owl" uri="imports/mop_import.owl" />
     <uri name="http://purl.obolibrary.org/obo/rxno/imports/cob_import.owl" uri="imports/cob_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/rxno/imports/omo_import.owl" uri="imports/omo_import.owl" />
   </group>
 </catalog>
