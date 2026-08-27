@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                3ca7d4a5818a159badd3a48aa12f95f7d4e954cc401aed3efde08d9aabbec592
+CONFIG_HASH=                6ecb3d907379ec934f98fbb756d564acd55f404ee25e604ae5d143fd1ef116df
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro mop bfo obi iao
+IMPORTS =  ro mop bfo obi iao chebi
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -421,6 +421,14 @@ $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
 	@echo "       This rule needs to be overwritten in rxno.Makefile!"
 	@false
 
+## Module for ontology: chebi (custom)
+ifeq ($(IMP_LARGE),true)
+$(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl
+	@echo "ERROR: You have configured chebi as a custom module;"
+	@echo "       This rule needs to be overwritten in rxno.Makefile!"
+	@false
+endif # IMP_LARGE=true
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -492,6 +500,16 @@ mirror-obi: | $(TMPDIR)
 mirror-iao: | $(TMPDIR)
 	curl -L $(OBOBASE)/iao.owl --create-dirs -o $(TMPDIR)/iao-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) remove -i $(TMPDIR)/iao-download.owl --base-iri http://purl.obolibrary.org/obo/IAO --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: chebi
+.PHONY: mirror-chebi
+.PRECIOUS: $(MIRRORDIR)/chebi.owl
+ifeq ($(IMP_LARGE),true)
+mirror-chebi: | $(TMPDIR)
+	curl -L $(OBOBASE)/chebi.owl.gz --create-dirs -o $(MIRRORDIR)/chebi.owl.gz --retry 4 --max-time 200 && \
+	$(ROBOT) remove -i $(MIRRORDIR)/chebi.owl.gz --base-iri http://purl.obolibrary.org/obo/CHEBI --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
+endif
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
