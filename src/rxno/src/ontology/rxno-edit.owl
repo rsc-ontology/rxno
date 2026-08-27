@@ -15,6 +15,7 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 Ontology(<http://purl.obolibrary.org/obo/rxno.owl>
 <http://purl.obolibrary.org/obo/rxno/releases/2021-12-16/rxno.owl>
 Import(<http://purl.obolibrary.org/obo/rxno/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rxno/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/mop_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/omo_import.owl>)
@@ -1004,11 +1005,6 @@ Declaration(ObjectProperty(obo:RXNO_0000425))
 Declaration(ObjectProperty(obo:RXNO_0000469))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/rxno.obo#has_part>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/rxno.obo#part_of>))
-Declaration(AnnotationProperty(obo:IAO_0000115))
-Declaration(AnnotationProperty(obo:IAO_0000116))
-Declaration(AnnotationProperty(obo:IAO_0000231))
-Declaration(AnnotationProperty(obo:IAO_0000412))
-Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(chebi:charge))
 Declaration(AnnotationProperty(chebi:formula))
 Declaration(AnnotationProperty(chebi:inchi))
@@ -1043,14 +1039,6 @@ Declaration(AnnotationProperty(owl:deprecated))
 ############################
 #   Annotation Properties
 ############################
-
-# Annotation Property: obo:IAO_0000115 (definition)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
-
-# Annotation Property: obo:IAO_0000412 (imported from)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
 # Annotation Property: oboInOwl:hasAlternativeId (has_alternative_id)
 
@@ -3136,19 +3124,6 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:CHEBI_73477 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:CHEBI_73477 "CHEBI:73477")
 AnnotationAssertion(rdfs:label obo:CHEBI_73477 "terminal acetylenic compound")
 SubClassOf(obo:CHEBI_73477 obo:CHEBI_73474)
-
-# Class: obo:IAO_0000005 (objective specification)
-
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:IAO_0000005 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:IAO_0000005 "IAO:0000005")
-AnnotationAssertion(rdfs:label obo:IAO_0000005 "objective specification")
-SubClassOf(obo:IAO_0000005 obo:IAO_0000030)
-
-# Class: obo:IAO_0000030 (information content entity)
-
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:IAO_0000030 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:IAO_0000030 "IAO:0000030")
-AnnotationAssertion(rdfs:label obo:IAO_0000030 "information content entity")
 
 # Class: obo:OBI_0000011 (planned process)
 

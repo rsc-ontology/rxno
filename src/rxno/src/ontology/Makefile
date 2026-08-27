@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                320179ebe936ca2830734f33189974bc2fce607a199564381a49e21c91e7ace7
+CONFIG_HASH=                d26d979dfe747a7afeadf05af2d397c792a85b0ba8682406abe9e0b83b502289
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro mop bfo obi omo
+IMPORTS =  ro mop bfo obi omo iao
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -492,6 +492,14 @@ mirror-obi: | $(TMPDIR)
 mirror-omo: | $(TMPDIR)
 	curl -L $(OBOBASE)/omo.owl --create-dirs -o $(TMPDIR)/omo-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/omo-download.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: iao
+.PHONY: mirror-iao
+.PRECIOUS: $(MIRRORDIR)/iao.owl
+mirror-iao: | $(TMPDIR)
+	curl -L $(OBOBASE)/iao.owl --create-dirs -o $(TMPDIR)/iao-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) remove -i $(TMPDIR)/iao-download.owl --base-iri http://purl.obolibrary.org/obo/IAO --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
