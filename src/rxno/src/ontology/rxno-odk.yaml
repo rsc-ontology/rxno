@@ -21,7 +21,6 @@ import_group:
     - id: bfo
       module_type: custom
     - id: obi
-    - id: omo
     - id: iao
       module_type: slme
       module_type_slme: BOT

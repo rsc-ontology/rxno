@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                d26d979dfe747a7afeadf05af2d397c792a85b0ba8682406abe9e0b83b502289
+CONFIG_HASH=                3ca7d4a5818a159badd3a48aa12f95f7d4e954cc401aed3efde08d9aabbec592
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro mop bfo obi omo iao
+IMPORTS =  ro mop bfo obi iao
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -484,14 +484,6 @@ mirror-bfo: | $(TMPDIR)
 mirror-obi: | $(TMPDIR)
 	curl -L $(OBOBASE)/obi.owl --create-dirs -o $(TMPDIR)/obi-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/obi-download.owl -o $(TMPDIR)/$@.owl
-
-
-## ONTOLOGY: omo
-.PHONY: mirror-omo
-.PRECIOUS: $(MIRRORDIR)/omo.owl
-mirror-omo: | $(TMPDIR)
-	curl -L $(OBOBASE)/omo.owl --create-dirs -o $(TMPDIR)/omo-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/omo-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: iao
