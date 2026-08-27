@@ -26,8 +26,6 @@ Annotation(oboInOwl:date "16:12:2021 15:55")
 Annotation(oboInOwl:default-namespace "RXNO")
 Annotation(oboInOwl:hasOBOFormatVersion "1.4")
 
-Declaration(Class(obo:BFO_0000015))
-Declaration(Class(obo:BFO_0000016))
 Declaration(Class(obo:CHEBI_13759))
 Declaration(Class(obo:CHEBI_139588))
 Declaration(Class(obo:CHEBI_15379))
@@ -997,10 +995,6 @@ Declaration(Class(obo:RXNO_0000689))
 Declaration(Class(obo:RXNO_0000690))
 Declaration(Class(obo:RXNO_0000691))
 Declaration(Class(obo:RXNO_0000692))
-Declaration(ObjectProperty(obo:BFO_0000057))
-Declaration(ObjectProperty(obo:BFO_0000077))
-Declaration(ObjectProperty(obo:BFO_0000078))
-Declaration(ObjectProperty(obo:BFO_0000162))
 Declaration(ObjectProperty(obo:OBI_0000417))
 Declaration(ObjectProperty(obo:RXNO_0000416))
 Declaration(ObjectProperty(obo:RXNO_0000417))
@@ -1099,32 +1093,6 @@ AnnotationAssertion(rdfs:label oboInOwl:inSubset "in_subset")
 #   Object Properties
 ############################
 
-# Object Property: obo:BFO_0000057 (has_participant)
-
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:BFO_0000057 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:BFO_0000057 "BFO:0000057")
-AnnotationAssertion(rdfs:label obo:BFO_0000057 "has_participant")
-
-# Object Property: obo:BFO_0000077 (has participant beginning to exist)
-
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:BFO_0000077 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:BFO_0000077 "BFO:0000077")
-AnnotationAssertion(rdfs:label obo:BFO_0000077 "has participant beginning to exist")
-SubObjectPropertyOf(obo:BFO_0000077 obo:BFO_0000057)
-
-# Object Property: obo:BFO_0000078 (has participant ceasing to exist)
-
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:BFO_0000078 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:BFO_0000078 "BFO:0000078")
-AnnotationAssertion(rdfs:label obo:BFO_0000078 "has participant ceasing to exist")
-SubObjectPropertyOf(obo:BFO_0000078 obo:BFO_0000057)
-
-# Object Property: obo:BFO_0000162 (has disposition at all times)
-
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:BFO_0000162 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:BFO_0000162 "BFO:0000162")
-AnnotationAssertion(rdfs:label obo:BFO_0000162 "has disposition at all times")
-
 # Object Property: obo:OBI_0000417 (achieves_planned_objective)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "obi:AR") Annotation(oboInOwl:hasDbXref "obi:BP") Annotation(oboInOwl:hasDbXref "obi:PPPBbranch") obo:IAO_0000115 obo:OBI_0000417 "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.")
@@ -1141,7 +1109,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000416 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000416 "RXNO:0000416")
 AnnotationAssertion(rdfs:comment obo:RXNO_0000416 "can we chain 'has specified reactant' (RXNO:0000424) and has_part ?")
 AnnotationAssertion(rdfs:label obo:RXNO_0000416 "protects")
-SubObjectPropertyOf(obo:RXNO_0000416 obo:BFO_0000078)
+SubObjectPropertyOf(obo:RXNO_0000416 obo:RO_0004009)
 ObjectPropertyDomain(obo:RXNO_0000416 obo:RXNO_0000078)
 ObjectPropertyRange(obo:RXNO_0000416 obo:CHEBI_24433)
 
@@ -1152,7 +1120,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000417 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000417 "RXNO:0000417")
 AnnotationAssertion(rdfs:comment obo:RXNO_0000417 "can we chain 'has specified product' (RXNO:0000423) and has_part ?")
 AnnotationAssertion(rdfs:label obo:RXNO_0000417 "deprotects")
-SubObjectPropertyOf(obo:RXNO_0000417 obo:BFO_0000077)
+SubObjectPropertyOf(obo:RXNO_0000417 obo:RO_0004008)
 ObjectPropertyDomain(obo:RXNO_0000417 obo:RXNO_0000203)
 ObjectPropertyRange(obo:RXNO_0000417 obo:CHEBI_24433)
 
@@ -1163,7 +1131,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000423 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000423 "RXNO:0000423")
 AnnotationAssertion(rdfs:comment obo:RXNO_0000423 "The difference between this and OBI's has_specified_output is that it is necessary that the participant starts to exist during the process.")
 AnnotationAssertion(rdfs:label obo:RXNO_0000423 "has specified product")
-SubObjectPropertyOf(obo:RXNO_0000423 obo:BFO_0000077)
+SubObjectPropertyOf(obo:RXNO_0000423 obo:RO_0004008)
 ObjectPropertyDomain(obo:RXNO_0000423 obo:RXNO_0000001)
 ObjectPropertyRange(obo:RXNO_0000423 obo:CHEBI_23367)
 
@@ -1174,7 +1142,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000424 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000424 "RXNO:0000424")
 AnnotationAssertion(rdfs:comment obo:RXNO_0000424 "The difference between this and OBI's has_specified_input is that it is necessary that the reactant ceases to exist during the process.")
 AnnotationAssertion(rdfs:label obo:RXNO_0000424 "has specified reactant")
-SubObjectPropertyOf(obo:RXNO_0000424 obo:BFO_0000078)
+SubObjectPropertyOf(obo:RXNO_0000424 obo:RO_0004009)
 ObjectPropertyDomain(obo:RXNO_0000424 obo:RXNO_0000001)
 ObjectPropertyRange(obo:RXNO_0000424 obo:CHEBI_23367)
 
@@ -1184,7 +1152,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000425 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000425 "RXNO:0000425")
 AnnotationAssertion(rdfs:label obo:RXNO_0000425 "has_catalyst")
-SubObjectPropertyOf(obo:RXNO_0000425 obo:BFO_0000057)
+SubObjectPropertyOf(obo:RXNO_0000425 obo:RO_0000057)
 
 # Object Property: obo:RXNO_0000469 (has_intermediate)
 
@@ -1192,7 +1160,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000469 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000469 "RXNO:0000469")
 AnnotationAssertion(rdfs:label obo:RXNO_0000469 "has_intermediate")
-SubObjectPropertyOf(obo:RXNO_0000469 obo:BFO_0000057)
+SubObjectPropertyOf(obo:RXNO_0000469 obo:RO_0000057)
 
 # Object Property: <http://purl.obolibrary.org/obo/rxno.obo#has_part> (has_part)
 
@@ -5223,7 +5191,7 @@ The only RXNO subclass 'Kolbe-Schmitt reaction' (RXNO:0000182) of 'carboxylation
 AnnotationAssertion(rdfs:label obo:RXNO_0000182 "Kolbe-Schmitt reaction")
 SubClassOf(obo:RXNO_0000182 obo:MOP_0000591)
 SubClassOf(obo:RXNO_0000182 obo:RXNO_0000002)
-SubClassOf(obo:RXNO_0000182 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_16526))
+SubClassOf(obo:RXNO_0000182 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_16526))
 
 # Class: obo:RXNO_0000183 (Perkow reaction)
 
@@ -6536,9 +6504,9 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:RXNO_0000317 "NAMERXN:3.6")
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000317 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000317 "RXNO:0000317")
 AnnotationAssertion(rdfs:label obo:RXNO_0000317 "ester condensation reaction")
-EquivalentClasses(obo:RXNO_0000317 ObjectIntersectionOf(obo:MOP_0000627 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33308)))
+EquivalentClasses(obo:RXNO_0000317 ObjectIntersectionOf(obo:MOP_0000627 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33308)))
 SubClassOf(obo:RXNO_0000317 obo:MOP_0000627)
-SubClassOf(obo:RXNO_0000317 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_33308))
+SubClassOf(obo:RXNO_0000317 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_33308))
 
 # Class: obo:RXNO_0000318 (obo:RXNO_0000318)
 
@@ -7064,7 +7032,7 @@ AnnotationAssertion(oboInOwl:id obo:RXNO_0000368 "RXNO:0000368")
 AnnotationAssertion(rdfs:label obo:RXNO_0000368 "Crabbé homologation")
 SubClassOf(obo:RXNO_0000368 obo:MOP_0000581)
 SubClassOf(obo:RXNO_0000368 obo:RXNO_0000070)
-SubClassOf(obo:RXNO_0000368 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_32952))
+SubClassOf(obo:RXNO_0000368 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_32952))
 SubClassOf(obo:RXNO_0000368 ObjectSomeValuesFrom(obo:RXNO_0000423 obo:CHEBI_37602))
 SubClassOf(obo:RXNO_0000368 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_16842))
 SubClassOf(obo:RXNO_0000368 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_32878))
@@ -7660,8 +7628,8 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000431 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000431 "RXNO:0000431")
 AnnotationAssertion(rdfs:label obo:RXNO_0000431 "carboxylic acid to primary alcohol reduction")
 SubClassOf(obo:RXNO_0000431 obo:MOP_0000569)
-SubClassOf(obo:RXNO_0000431 ObjectSomeValuesFrom(obo:BFO_0000077 obo:CHEBI_15734))
-SubClassOf(obo:RXNO_0000431 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_33575))
+SubClassOf(obo:RXNO_0000431 ObjectSomeValuesFrom(obo:RO_0004008 obo:CHEBI_15734))
+SubClassOf(obo:RXNO_0000431 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_33575))
 
 # Class: obo:RXNO_0000432 (tert-butyl protection)
 
@@ -8359,7 +8327,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000501 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000501 "RXNO:0000501")
 AnnotationAssertion(rdfs:label obo:RXNO_0000501 "Feist-Bénary synthesis")
 SubClassOf(obo:RXNO_0000501 obo:RXNO_0000346)
-SubClassOf(obo:RXNO_0000501 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_16227))
+SubClassOf(obo:RXNO_0000501 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_16227))
 SubClassOf(obo:RXNO_0000501 ObjectSomeValuesFrom(obo:RXNO_0000423 obo:CHEBI_24129))
 
 # Class: obo:RXNO_0000502 (Boulton-Katritzky rearrangement)
@@ -8993,7 +8961,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000552 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000552 "RXNO:0000552")
 AnnotationAssertion(rdfs:label obo:RXNO_0000552 "Leuckart aldehyde reaction")
 SubClassOf(obo:RXNO_0000552 obo:RXNO_0000101)
-SubClassOf(obo:RXNO_0000552 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_17478))
+SubClassOf(obo:RXNO_0000552 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_17478))
 
 # Class: obo:RXNO_0000553 (Leuckart ketone reaction)
 
@@ -9002,7 +8970,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000553 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000553 "RXNO:0000553")
 AnnotationAssertion(rdfs:label obo:RXNO_0000553 "Leuckart ketone reaction")
 SubClassOf(obo:RXNO_0000553 obo:RXNO_0000101)
-SubClassOf(obo:RXNO_0000553 ObjectSomeValuesFrom(obo:BFO_0000078 obo:CHEBI_17087))
+SubClassOf(obo:RXNO_0000553 ObjectSomeValuesFrom(obo:RO_0004009 obo:CHEBI_17087))
 
 # Class: obo:RXNO_0000554 (Appel bromination with tetrabromomethane)
 
