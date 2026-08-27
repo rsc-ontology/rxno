@@ -11,7 +11,7 @@ Prefix(terms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/bfo_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-08-26/imports/bfo_import.owl>
+<http://purl.obolibrary.org/obo/rxno/releases/2026-08-27/imports/bfo_import.owl>
 Annotation(obo:IAO_0000116 "BFO 2 Reference: BFO does not claim to provide complete coverage of entities of all types. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning - coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation."@en)
 Annotation(obo:IAO_0000116 "BFO 2 Reference: BFO's treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the 'SNAP' and 'SPAN' perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science.")
 Annotation(obo:IAO_0000116 "BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. 'Entity' is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.")
@@ -54,7 +54,7 @@ Annotation(rdfs:seeAlso <http://groups.google.com/group/bfo-discuss>)
 Annotation(rdfs:seeAlso <http://groups.google.com/group/bfo-owl-devel>)
 Annotation(rdfs:seeAlso <http://purl.obolibrary.org/obo/bfo/dev/owl>)
 Annotation(rdfs:seeAlso <https://github.com/BFO-ontology/BFO/tree/master/src/tools/>)
-Annotation(owl:versionInfo "2026-08-26")
+Annotation(owl:versionInfo "2026-08-27")
 Annotation(foaf:homepage <http://basic-formal-ontology.org/>)
 Annotation(foaf:homepage <http://ifomis.org/bfo>)
 Annotation(foaf:homepage <https://github.com/BFO-ontology/BFO>)
