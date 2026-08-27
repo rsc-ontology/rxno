@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                5a024cf9991112fba0050e7749f807ae6b0e9ac10f92d8205ff3e9e8de6ee7be
+CONFIG_HASH=                320179ebe936ca2830734f33189974bc2fce607a199564381a49e21c91e7ace7
 
 
 # ----------------------------------------
@@ -409,6 +409,12 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: ro (custom)
+$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
+	@echo "ERROR: You have configured ro as a custom module;"
+	@echo "       This rule needs to be overwritten in rxno.Makefile!"
+	@false
+
 ## Module for ontology: bfo (custom)
 $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
 	@echo "ERROR: You have configured bfo as a custom module;"
@@ -452,7 +458,7 @@ ifeq ($(MIR),true)
 .PHONY: mirror-ro
 .PRECIOUS: $(MIRRORDIR)/ro.owl
 mirror-ro: | $(TMPDIR)
-	curl -L $(OBOBASE)/ro.owl --create-dirs -o $(TMPDIR)/ro-download.owl --retry 4 --max-time 200 && \
+	curl -L $(OBOBASE)/ro/ro-base.owl --create-dirs -o $(TMPDIR)/ro-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/ro-download.owl -o $(TMPDIR)/$@.owl
 
 

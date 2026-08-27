@@ -1,0 +1,10 @@
+http://purl.obolibrary.org/obo/RO_0000057  # has participant 
+http://purl.obolibrary.org/obo/RO_0000091  # has disposition
+http://purl.obolibrary.org/obo/RO_0004008  # has primary output
+http://purl.obolibrary.org/obo/RO_0004009  # has primary input
+http://purl.obolibrary.org/obo/RO_0018033  # is deprotonated form of 
+http://purl.obolibrary.org/obo/RO_0018034  # is protonated form of 
+http://purl.obolibrary.org/obo/RO_0018036  # is desmotrope of
+http://purl.obolibrary.org/obo/RO_0018037  # is substitutent group from 
+http://purl.obolibrary.org/obo/RO_0018038  # has functional parent
+http://purl.obolibrary.org/obo/RO_0018040  # has parent hydride 
