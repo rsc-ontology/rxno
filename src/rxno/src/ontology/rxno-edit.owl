@@ -16,6 +16,7 @@ Ontology(<http://purl.obolibrary.org/obo/rxno.owl>
 <http://purl.obolibrary.org/obo/rxno/releases/2021-12-16/rxno.owl>
 Import(<http://purl.obolibrary.org/obo/rxno/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/chebi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rxno/imports/cob_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/mop_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/obi_import.owl>)
@@ -893,8 +894,8 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000001 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000001 "RXNO:0000001")
 AnnotationAssertion(rdfs:label obo:RXNO_0000001 "planned reaction step")
-EquivalentClasses(obo:RXNO_0000001 ObjectIntersectionOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:OBI_0000417 obo:RXNO_0000437)))
-SubClassOf(obo:RXNO_0000001 obo:OBI_0000011)
+EquivalentClasses(obo:RXNO_0000001 ObjectIntersectionOf(obo:COB_0000082 ObjectSomeValuesFrom(obo:OBI_0000417 obo:RXNO_0000437)))
+SubClassOf(obo:RXNO_0000001 obo:COB_0000082)
 SubClassOf(obo:RXNO_0000001 ObjectSomeValuesFrom(obo:OBI_0000417 obo:RXNO_0000437))
 SubClassOf(obo:RXNO_0000001 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/rxno.obo#part_of> obo:RXNO_0000329))
 
@@ -4328,7 +4329,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000329 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000329 "RXNO:0000329")
 AnnotationAssertion(rdfs:label obo:RXNO_0000329 "planned synthesis")
-SubClassOf(obo:RXNO_0000329 obo:OBI_0000011)
+SubClassOf(obo:RXNO_0000329 obo:COB_0000082)
 
 # Class: obo:RXNO_0000330 (acetate protection)
 

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                ce7432d0592b1ccb98206ce5a45e68ea244d1c69318ea93296bcc8ac7d657119
+CONFIG_HASH=                abc04fae713a00da326290659ba9e3cb57295827e95dabdb271334bea1dd5893
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro bfo obi iao chebi mop
+IMPORTS =  ro bfo obi iao chebi mop cob
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -515,6 +515,14 @@ endif
 .PRECIOUS: $(MIRRORDIR)/mop.owl
 mirror-mop: | $(TMPDIR)
 	$(ROBOT) convert -I https://raw.githubusercontent.com/rsc-ontology/MOP/main/mop.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: cob
+.PHONY: mirror-cob
+.PRECIOUS: $(MIRRORDIR)/cob.owl
+mirror-cob: | $(TMPDIR)
+	curl -L $(OBOBASE)/cob/cob-base.owl --create-dirs -o $(TMPDIR)/cob-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/cob-download.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
