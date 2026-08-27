@@ -1,0 +1,4 @@
+http://purl.obolibrary.org/obo/OBI_0000417   # achieves_planned_objective
+
+# COB classes used by OBI
+http://purl.obolibrary.org/obo/COB_0000035   # completely executed planned process

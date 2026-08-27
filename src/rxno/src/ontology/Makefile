@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                8ad62bc054345aa3d4a8cbd0a82fe4ee66371b666617a0b25c41d1d31bf8aa22
+CONFIG_HASH=                ce7432d0592b1ccb98206ce5a45e68ea244d1c69318ea93296bcc8ac7d657119
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro mop bfo obi iao chebi mop
+IMPORTS =  ro bfo obi iao chebi mop
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -421,6 +421,12 @@ $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
 	@echo "       This rule needs to be overwritten in rxno.Makefile!"
 	@false
 
+## Module for ontology: obi (custom)
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
+	@echo "ERROR: You have configured obi as a custom module;"
+	@echo "       This rule needs to be overwritten in rxno.Makefile!"
+	@false
+
 ## Module for ontology: chebi (custom)
 ifeq ($(IMP_LARGE),true)
 $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl
@@ -468,14 +474,6 @@ ifeq ($(MIR),true)
 mirror-ro: | $(TMPDIR)
 	curl -L $(OBOBASE)/ro/ro-base.owl --create-dirs -o $(TMPDIR)/ro-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/ro-download.owl -o $(TMPDIR)/$@.owl
-
-
-## ONTOLOGY: mop
-.PHONY: mirror-mop
-.PRECIOUS: $(MIRRORDIR)/mop.owl
-mirror-mop: | $(TMPDIR)
-	curl -L $(OBOBASE)/mop.owl --create-dirs -o $(TMPDIR)/mop-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/mop-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: bfo

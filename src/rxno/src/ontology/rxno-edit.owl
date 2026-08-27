@@ -27,7 +27,6 @@ Annotation(oboInOwl:date "16:12:2021 15:55")
 Annotation(oboInOwl:default-namespace "RXNO")
 Annotation(oboInOwl:hasOBOFormatVersion "1.4")
 
-Declaration(Class(obo:OBI_0000011))
 Declaration(Class(obo:RXNO_0000000))
 Declaration(Class(obo:RXNO_0000001))
 Declaration(Class(obo:RXNO_0000002))
@@ -714,7 +713,6 @@ Declaration(Class(obo:RXNO_0000689))
 Declaration(Class(obo:RXNO_0000690))
 Declaration(Class(obo:RXNO_0000691))
 Declaration(Class(obo:RXNO_0000692))
-Declaration(ObjectProperty(obo:OBI_0000417))
 Declaration(ObjectProperty(obo:RXNO_0000416))
 Declaration(ObjectProperty(obo:RXNO_0000417))
 Declaration(ObjectProperty(obo:RXNO_0000423))
@@ -762,19 +760,19 @@ Declaration(AnnotationProperty(owl:deprecated))
 
 AnnotationAssertion(rdfs:label oboInOwl:hasAlternativeId "has_alternative_id")
 
-# Annotation Property: oboInOwl:hasBroadSynonym (has_broad_synonym)
+# Annotation Property: oboInOwl:hasBroadSynonym (has broad synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasBroadSynonym "has_broad_synonym")
 
-# Annotation Property: oboInOwl:hasDbXref (database_cross_reference)
+# Annotation Property: oboInOwl:hasDbXref (has cross-reference)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "database_cross_reference")
 
-# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
 
-# Annotation Property: oboInOwl:hasNarrowSynonym (has_narrow_synonym)
+# Annotation Property: oboInOwl:hasNarrowSynonym (has narrow synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasNarrowSynonym "has_narrow_synonym")
 
@@ -786,7 +784,7 @@ AnnotationAssertion(rdfs:label oboInOwl:hasOBOFormatVersion "has_obo_format_vers
 
 AnnotationAssertion(rdfs:label oboInOwl:hasOBONamespace "has_obo_namespace")
 
-# Annotation Property: oboInOwl:hasRelatedSynonym (has_related_synonym)
+# Annotation Property: oboInOwl:hasRelatedSynonym (has related synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasRelatedSynonym "has_related_synonym")
 
@@ -798,15 +796,6 @@ AnnotationAssertion(rdfs:label oboInOwl:inSubset "in_subset")
 ############################
 #   Object Properties
 ############################
-
-# Object Property: obo:OBI_0000417 (achieves_planned_objective)
-
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "obi:AR") Annotation(oboInOwl:hasDbXref "obi:BP") Annotation(oboInOwl:hasDbXref "obi:PPPBbranch") obo:IAO_0000115 obo:OBI_0000417 "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.")
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:OBI_0000417 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:OBI_0000417 "OBI:0000417")
-AnnotationAssertion(rdfs:label obo:OBI_0000417 "achieves_planned_objective")
-ObjectPropertyDomain(obo:OBI_0000417 obo:OBI_0000011)
-ObjectPropertyRange(obo:OBI_0000417 obo:IAO_0000005)
 
 # Object Property: obo:RXNO_0000416 (protects)
 
@@ -885,13 +874,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/rxno.obo#part_of>
 ############################
 #   Classes
 ############################
-
-# Class: obo:OBI_0000011 (planned process)
-
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:OBI_0000011 "RXNO")
-AnnotationAssertion(oboInOwl:id obo:OBI_0000011 "OBI:0000011")
-AnnotationAssertion(rdfs:label obo:OBI_0000011 "planned process")
-SubClassOf(obo:OBI_0000011 obo:BFO_0000015)
 
 # Class: obo:RXNO_0000000 (molecular skeleton joining reaction)
 
