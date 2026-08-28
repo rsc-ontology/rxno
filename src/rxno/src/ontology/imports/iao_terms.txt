@@ -1,0 +1,7 @@
+http://purl.obolibrary.org/obo/IAO_0000005 # objective specification
+http://purl.obolibrary.org/obo/IAO_0000115 # definition
+http://purl.obolibrary.org/obo/IAO_0000116 # editor note
+http://purl.obolibrary.org/obo/IAO_0000227 # terms merged
+http://purl.obolibrary.org/obo/IAO_0000231 # has obsolescence reason
+http://purl.obolibrary.org/obo/IAO_0000412 # imported from
+http://purl.obolibrary.org/obo/IAO_0100001 # term replaced by

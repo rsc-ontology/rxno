@@ -1,0 +1,16 @@
+## OBI terms:
+http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
+http://purl.obolibrary.org/obo/OBI_0000684 # specimen collection objective
+http://purl.obolibrary.org/obo/OBI_0002076 # collection of specimens
+http://purl.obolibrary.org/obo/OBI_0100051 # specimen
+
+## COB terms:
+http://purl.obolibrary.org/obo/COB_0000011 # atom
+http://purl.obolibrary.org/obo/COB_0000013 # molecule
+http://purl.obolibrary.org/obo/COB_0000502 # characteristic
+
+## IAO terms: 
+http://purl.obolibrary.org/obo/IAO_0000104 # plan specification
+
+## ChEBI terms: 
+http://purl.obolibrary.org/obo/CHEBI_36342 # subatomic particle

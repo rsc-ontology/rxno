@@ -15,8 +15,29 @@ primary_release: full
 import_group:
   products:
     - id: ro
-    - id: mop
+      use_base: true
+      module_type: custom
     - id: bfo
+      module_type: custom
     - id: obi
+      module_type: custom
+    - id: iao
+      module_type: slme
+      module_type_slme: BOT
+      make_base: true
+    - id: chebi
+      is_large: true
+      use_gzipped: true
+      make_base: true
+      module_type: custom
+    - id: mop
+      mirror_from: https://raw.githubusercontent.com/rsc-ontology/MOP/main/mop.owl   
+      module_type: slme
+      module_type_slme: BOT
+    - id: cob
+      module_type: slme
+      module_type_slme: BOT
+      use_base: true
     - id: omo
+      module_type: mirror
 robot_java_args: '-Xmx8G'

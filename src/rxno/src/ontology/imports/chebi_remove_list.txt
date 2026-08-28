@@ -1,0 +1,67 @@
+http://purl.obolibrary.org/obo/CHEBI_16136  # hydrogen sulfide
+http://purl.obolibrary.org/obo/CHEBI_16183  # methane
+http://purl.obolibrary.org/obo/CHEBI_16716  # benzene
+http://purl.obolibrary.org/obo/CHEBI_18059  # lipid
+http://purl.obolibrary.org/obo/CHEBI_18407  # hydrogen cyanide
+http://purl.obolibrary.org/obo/CHEBI_22563  # anion
+http://purl.obolibrary.org/obo/CHEBI_24473  # halogen
+http://purl.obolibrary.org/obo/CHEBI_24870  # ion
+http://purl.obolibrary.org/obo/CHEBI_25555  # nitrogen atom
+http://purl.obolibrary.org/obo/CHEBI_25696  # organic anion
+http://purl.obolibrary.org/obo/CHEBI_25699  # organic ion
+http://purl.obolibrary.org/obo/CHEBI_25805  # oxygen atom
+http://purl.obolibrary.org/obo/CHEBI_26069  # phosphonic acids
+http://purl.obolibrary.org/obo/CHEBI_26830  # sulfonium compound
+http://purl.obolibrary.org/obo/CHEBI_26833  # sulfur atom
+http://purl.obolibrary.org/obo/CHEBI_27369  # zwitterion
+http://purl.obolibrary.org/obo/CHEBI_27560  # boron atom
+http://purl.obolibrary.org/obo/CHEBI_27561  # oxirane
+http://purl.obolibrary.org/obo/CHEBI_27573  # silicon atom
+http://purl.obolibrary.org/obo/CHEBI_27594  # carbon atom 
+http://purl.obolibrary.org/obo/CHEBI_28024  # cyanic acid
+http://purl.obolibrary.org/obo/CHEBI_28616  # carbamic acid
+http://purl.obolibrary.org/obo/CHEBI_28938  # ammonium
+http://purl.obolibrary.org/obo/CHEBI_29195  # cyanate 
+http://purl.obolibrary.org/obo/CHEBI_29202  # isocyanic acid
+http://purl.obolibrary.org/obo/CHEBI_29277  # dinitride(2-)
+http://purl.obolibrary.org/obo/CHEBI_29369  # peroxy group
+http://purl.obolibrary.org/obo/CHEBI_29337  # azanide
+http://purl.obolibrary.org/obo/CHEBI_29340  # hydridonitrate(2-)
+http://purl.obolibrary.org/obo/CHEBI_29449  # hydrogen azide
+http://purl.obolibrary.org/obo/CHEBI_29917  # thiol group
+http://purl.obolibrary.org/obo/CHEBI_29919  # hydrosulfide
+http://purl.obolibrary.org/obo/CHEBI_30099  # diazynediium
+http://purl.obolibrary.org/obo/CHEBI_30102  # diazynium
+http://purl.obolibrary.org/obo/CHEBI_30103  # diazenide
+http://purl.obolibrary.org/obo/CHEBI_30488  # sulfonium
+http://purl.obolibrary.org/obo/CHEBI_30751  # formic acid
+http://purl.obolibrary.org/obo/CHEBI_33238  # monoatomic entity
+http://purl.obolibrary.org/obo/CHEBI_33408  # pnictogen oxoacid
+http://purl.obolibrary.org/obo/CHEBI_33431  # elemental chlorine
+http://purl.obolibrary.org/obo/CHEBI_33455  # nitrogen oxoacid
+http://purl.obolibrary.org/obo/CHEBI_33457  # phosphorus oxoacid
+http://purl.obolibrary.org/obo/CHEBI_33664  # monocyclic hydrocarbon
+http://purl.obolibrary.org/obo/CHEBI_33693  # oxygen hydride
+http://purl.obolibrary.org/obo/CHEBI_33842  # aromatic annulene
+http://purl.obolibrary.org/obo/CHEBI_35366  # fatty acid
+http://purl.obolibrary.org/obo/CHEBI_35507  # natural product fundamental parent
+http://purl.obolibrary.org/obo/CHEBI_35631  # yohimban
+http://purl.obolibrary.org/obo/CHEBI_36342  # subatomic particle
+http://purl.obolibrary.org/obo/CHEBI_36388  # saturated organic heterocyclic parent
+http://purl.obolibrary.org/obo/CHEBI_36389  # saturated organic heteromonocyclic parent
+http://purl.obolibrary.org/obo/CHEBI_36856  # hydrogen isocyanide
+http://purl.obolibrary.org/obo/CHEBI_36914  # inorganic ion
+http://purl.obolibrary.org/obo/CHEBI_36916  # cation
+http://purl.obolibrary.org/obo/CHEBI_37022  # amino-acid anion
+http://purl.obolibrary.org/obo/CHEBI_37246  # elemental sodium
+http://purl.obolibrary.org/obo/CHEBI_37404  # elemental copper
+http://purl.obolibrary.org/obo/CHEBI_38267  # boronic acid
+http://purl.obolibrary.org/obo/CHEBI_46629  # oxo group
+http://purl.obolibrary.org/obo/CHEBI_48819  # cyano group
+http://purl.obolibrary.org/obo/CHEBI_49637  # hydrogen atom
+http://purl.obolibrary.org/obo/CHEBI_50312  # onium compound
+http://purl.obolibrary.org/obo/CHEBI_50906  # role
+http://purl.obolibrary.org/obo/CHEBI_52845  # cyclic organic group
+http://purl.obolibrary.org/obo/CHEBI_62764  # reactive nitrogen species
+http://purl.obolibrary.org/obo/CHEBI_64767  # anionic group 
+http://purl.obolibrary.org/obo/CHEBI_137980 # metalloid atom

@@ -1,0 +1,132 @@
+http://purl.obolibrary.org/obo/CHEBI_2634    # amidine
+http://purl.obolibrary.org/obo/CHEBI_5653    # hemiacetal
+http://purl.obolibrary.org/obo/CHEBI_13759   # alkylamine
+http://purl.obolibrary.org/obo/CHEBI_15379   # dioxygen
+http://purl.obolibrary.org/obo/CHEBI_15734   # primary alcohol
+http://purl.obolibrary.org/obo/CHEBI_15882   # phenol
+http://purl.obolibrary.org/obo/CHEBI_16134   # ammonia
+http://purl.obolibrary.org/obo/CHEBI_16227   # pyridine
+http://purl.obolibrary.org/obo/CHEBI_16240   # hydrogen peroxide
+http://purl.obolibrary.org/obo/CHEBI_16385   # organic sulfide
+http://purl.obolibrary.org/obo/CHEBI_16526   # carbon dioxide
+http://purl.obolibrary.org/obo/CHEBI_16648   # dialkyl phosphate
+http://purl.obolibrary.org/obo/CHEBI_16670   # peptide
+http://purl.obolibrary.org/obo/CHEBI_16842   # formaldehyde
+http://purl.obolibrary.org/obo/CHEBI_17245   # carbon monoxide
+http://purl.obolibrary.org/obo/CHEBI_17883   # hydrogen chloride
+http://purl.obolibrary.org/obo/CHEBI_17997   # dinitrogen
+http://purl.obolibrary.org/obo/CHEBI_18291   # manganese atom
+http://purl.obolibrary.org/obo/CHEBI_18310   # alkane
+http://purl.obolibrary.org/obo/CHEBI_18379   # nitrile
+http://purl.obolibrary.org/obo/CHEBI_22213   # acridines
+http://purl.obolibrary.org/obo/CHEBI_22339   # alkyne
+http://purl.obolibrary.org/obo/CHEBI_22495   # aminobenzoic acid
+http://purl.obolibrary.org/obo/CHEBI_22680   # azide
+http://purl.obolibrary.org/obo/CHEBI_22698   # benzaldehydes
+http://purl.obolibrary.org/obo/CHEBI_22715   # benzimidazoles
+http://purl.obolibrary.org/obo/CHEBI_23019   # carbonyl group
+http://purl.obolibrary.org/obo/CHEBI_23086   # chalcones
+http://purl.obolibrary.org/obo/CHEBI_23252   # cinnamic acids
+http://purl.obolibrary.org/obo/CHEBI_24079   # formamides
+http://purl.obolibrary.org/obo/CHEBI_24129   # furans
+http://purl.obolibrary.org/obo/CHEBI_25000   # lactone
+http://purl.obolibrary.org/obo/CHEBI_25566   # nitrotoluene
+http://purl.obolibrary.org/obo/CHEBI_25717   # organotin compound
+http://purl.obolibrary.org/obo/CHEBI_25750   # oxime
+http://purl.obolibrary.org/obo/CHEBI_25996   # phenylhydrazines
+http://purl.obolibrary.org/obo/CHEBI_26407   # pyrans
+http://purl.obolibrary.org/obo/CHEBI_26410   # pyrazoles
+http://purl.obolibrary.org/obo/CHEBI_26455   # pyrroles
+http://purl.obolibrary.org/obo/CHEBI_26513   # quinolines
+http://purl.obolibrary.org/obo/CHEBI_26588   # 1,3,5-triazines
+http://purl.obolibrary.org/obo/CHEBI_26708   # sodium atom
+http://purl.obolibrary.org/obo/CHEBI_26878   # tertiary alcohol
+http://purl.obolibrary.org/obo/CHEBI_26961   # thiophenes
+http://purl.obolibrary.org/obo/CHEBI_27363   # zinc atom
+http://purl.obolibrary.org/obo/CHEBI_27385   # tetrachloromethane
+http://purl.obolibrary.org/obo/CHEBI_27539   # isatin
+http://purl.obolibrary.org/obo/CHEBI_28112   # nickel atom
+http://purl.obolibrary.org/obo/CHEBI_28659   # phosphorus atom
+http://purl.obolibrary.org/obo/CHEBI_28694   # copper atom
+http://purl.obolibrary.org/obo/CHEBI_28802   # flavonols
+http://purl.obolibrary.org/obo/CHEBI_29224   # dibromine
+http://purl.obolibrary.org/obo/CHEBI_29312   # sulfanyl
+http://purl.obolibrary.org/obo/CHEBI_29785   # nitro group
+http://purl.obolibrary.org/obo/CHEBI_30096   # diazene
+http://purl.obolibrary.org/obo/CHEBI_31697   # indolin-2-one 
+http://purl.obolibrary.org/obo/CHEBI_32816   # pyruvic acid
+http://purl.obolibrary.org/obo/CHEBI_32863   # secondary amine
+http://purl.obolibrary.org/obo/CHEBI_32876   # tertiary amine
+http://purl.obolibrary.org/obo/CHEBI_32878   # alkene
+http://purl.obolibrary.org/obo/CHEBI_32955   # epoxide
+http://purl.obolibrary.org/obo/CHEBI_33341   # titanium atom
+http://purl.obolibrary.org/obo/CHEBI_33363   # palladium
+http://purl.obolibrary.org/obo/CHEBI_33364   # platinum
+http://purl.obolibrary.org/obo/CHEBI_33403   # elemental sulfur
+http://purl.obolibrary.org/obo/CHEBI_33839   # macromolecule
+http://purl.obolibrary.org/obo/CHEBI_33848   # polycyclic arene
+http://purl.obolibrary.org/obo/CHEBI_33860   # aromatic amine
+http://purl.obolibrary.org/obo/CHEBI_35255   # chloroform
+http://purl.obolibrary.org/obo/CHEBI_35293   # fused compound
+http://purl.obolibrary.org/obo/CHEBI_35353   # isocyanide
+http://purl.obolibrary.org/obo/CHEBI_35562   # 1,2,3-triazole
+http://purl.obolibrary.org/obo/CHEBI_35636   # 17alpha-yohimbol
+http://purl.obolibrary.org/obo/CHEBI_35681   # secondary alcohol
+http://purl.obolibrary.org/obo/CHEBI_35886   # tertiary phosphine
+http://purl.obolibrary.org/obo/CHEBI_36601   # triphenylphosphane oxide
+http://purl.obolibrary.org/obo/CHEBI_36605   # phthalic anhydride
+http://purl.obolibrary.org/obo/CHEBI_36687   # acyl chloride
+http://purl.obolibrary.org/obo/CHEBI_37148   # bromoarene
+http://purl.obolibrary.org/obo/CHEBI_37602   # allenes
+http://purl.obolibrary.org/obo/CHEBI_37613   # cyclohexadiene
+http://purl.obolibrary.org/obo/CHEBI_37735   # phosphonic ester
+http://purl.obolibrary.org/obo/CHEBI_37757   # iodoalkane
+http://purl.obolibrary.org/obo/CHEBI_38757   # isoflavones
+http://purl.obolibrary.org/obo/CHEBI_38784   # oxetanes
+http://purl.obolibrary.org/obo/CHEBI_38976   # alkylbenzene
+http://purl.obolibrary.org/obo/CHEBI_39141   # Brønsted acid
+http://purl.obolibrary.org/obo/CHEBI_39142   # Brønsted base
+http://purl.obolibrary.org/obo/CHEBI_39143   # Lewis acid
+http://purl.obolibrary.org/obo/CHEBI_39144   # Lewis base
+http://purl.obolibrary.org/obo/CHEBI_39447   # pyrimidines
+http://purl.obolibrary.org/obo/CHEBI_39477   # aminoxyls
+http://purl.obolibrary.org/obo/CHEBI_42485   # formyl group
+http://purl.obolibrary.org/obo/CHEBI_43176   # hydroxy group
+http://purl.obolibrary.org/obo/CHEBI_44864   # propane-1,3-dithiol
+http://purl.obolibrary.org/obo/CHEBI_46882   # primary amino group
+http://purl.obolibrary.org/obo/CHEBI_46883   # carboxy group
+http://purl.obolibrary.org/obo/CHEBI_47266   # hydrogen bromide
+http://purl.obolibrary.org/obo/CHEBI_47875   # tetrabromomethane
+http://purl.obolibrary.org/obo/CHEBI_47986   # silyl enol ether
+http://purl.obolibrary.org/obo/CHEBI_47988   # silyl ether
+http://purl.obolibrary.org/obo/CHEBI_48420   # biphenylyltetrazole
+http://purl.obolibrary.org/obo/CHEBI_48513   # carbazoles
+http://purl.obolibrary.org/obo/CHEBI_48901   # thiazoles
+http://purl.obolibrary.org/obo/CHEBI_49553   # copper(II) chloride
+http://purl.obolibrary.org/obo/CHEBI_50075   # dihydropyridine
+http://purl.obolibrary.org/obo/CHEBI_50413   # hydroxyaldehyde
+http://purl.obolibrary.org/obo/CHEBI_50784   # pivalate ester
+http://purl.obolibrary.org/obo/CHEBI_50978   # boronate
+http://purl.obolibrary.org/obo/CHEBI_51080   # nitrate ester
+http://purl.obolibrary.org/obo/CHEBI_51154   # phosphonium ylide
+http://purl.obolibrary.org/obo/CHEBI_51236   # organomagnesium halide
+http://purl.obolibrary.org/obo/CHEBI_51277   # thioester
+http://purl.obolibrary.org/obo/CHEBI_51454   # cyclopropanes
+http://purl.obolibrary.org/obo/CHEBI_51469   # butyllithium
+http://purl.obolibrary.org/obo/CHEBI_51494   # organozinc compound
+http://purl.obolibrary.org/obo/CHEBI_51614   # diarylmethane
+http://purl.obolibrary.org/obo/CHEBI_51839   # alpha-haloketone
+http://purl.obolibrary.org/obo/CHEBI_51849   # beta-ketoester
+http://purl.obolibrary.org/obo/CHEBI_51867   # methyl ketone
+http://purl.obolibrary.org/obo/CHEBI_51929   # arylacetylene
+http://purl.obolibrary.org/obo/CHEBI_52094   # peroxy acid
+http://purl.obolibrary.org/obo/CHEBI_53434   # palladium(II) chloride
+http://purl.obolibrary.org/obo/CHEBI_55380   # beta-hydroxy ketone
+http://purl.obolibrary.org/obo/CHEBI_59769   # acetal
+http://purl.obolibrary.org/obo/CHEBI_59831   # enyne
+http://purl.obolibrary.org/obo/CHEBI_60983   # alkylphosphonate
+http://purl.obolibrary.org/obo/CHEBI_61111   # aminophosphonate
+http://purl.obolibrary.org/obo/CHEBI_73477   # terminal acetylenic compound
+http://purl.obolibrary.org/obo/CHEBI_139588  # alpha-hydroxy ketone
+http://purl.obolibrary.org/obo/CHEBI_172874  # phenylsilane
+http://purl.obolibrary.org/obo/CHEBI_278547  # sodium azide
