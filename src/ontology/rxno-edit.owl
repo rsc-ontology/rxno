@@ -2904,7 +2904,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:db") Annotation(oboInOwl:
 AnnotationAssertion(oboInOwl:hasDbXref obo:RXNO_0000182 "https://www.rsc.org/Merck-Index/reaction/r239/")
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000182 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000182 "RXNO:0000182")
-AnnotationAssertion(Annotation(oboInOwl:created_by <https://orcid.org/0000-0002-1595-3213>) rdfs:comment obo:RXNO_0000182 "Prior to the resolving of https://github.com/rsc-ontologies/rxno/issues/27 the parent of this class was wrongly also defined in RXNO under the ID MOP:0000713 ('acetylene reduction'). 
+AnnotationAssertion(Annotation(oboInOwl:created_by <https://orcid.org/0000-0002-1595-3213>) rdfs:comment obo:RXNO_0000182 "Prior to the resolving of https://github.com/rsc-ontology/rxno/issues/27 the parent of this class was wrongly also defined in RXNO under the ID MOP:0000713 ('acetylene reduction'). 
 Thus the \"has_participant some 'carboxy group'\" axiom, which was not yet present on 'carboxylation' (MOP:0000591) in MOP was copied from this wrongly defined  'carboxylation' in RXNO to the proper one in MOP.
 
 The only RXNO subclass 'Kolbe-Schmitt reaction' (RXNO:0000182) of 'carboxylation' was also moved to be correctly subsumed in RXNO.")
