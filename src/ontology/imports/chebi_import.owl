@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/chebi_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-08-27/imports/chebi_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chebi/254/chebi.owl>)
-Annotation(owl:versionInfo "2026-08-27")
+<http://purl.obolibrary.org/obo/rxno/releases/2026-09-25/imports/chebi_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chebi/255/chebi.owl>)
+Annotation(owl:versionInfo "2026-09-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_134179>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_136622>))
@@ -458,6 +458,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_72695>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_73474>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_73477>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_74222>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_760803>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_76224>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_78840>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_79020>))
@@ -478,7 +479,9 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/1_STAR>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/2_STAR>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/3_STAR>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#date>))
@@ -3730,7 +3733,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33362> "nic
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33362> <http://purl.obolibrary.org/obo/CHEBI_27081>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33362> <http://purl.obolibrary.org/obo/CHEBI_33561>)
 
-# Class: <http://purl.obolibrary.org/obo/CHEBI_33363> (palladium)
+# Class: <http://purl.obolibrary.org/obo/CHEBI_33363> (palladium atom)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_33363> "Chemical element (nickel group element atom) with atomic number 46.")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "cas") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_33363> "cas:7440-05-3")
@@ -3746,12 +3749,12 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "iupac") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/chebi/IUPAC_NAME>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_33363> "palladium")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_33363> "CHEBI:33363")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_33363> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33363> "palladium")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33363> "palladium atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33363> <http://purl.obolibrary.org/obo/CHEBI_33362>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33363> <http://purl.obolibrary.org/obo/CHEBI_33365>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33363> <http://purl.obolibrary.org/obo/CHEBI_88184>)
 
-# Class: <http://purl.obolibrary.org/obo/CHEBI_33364> (platinum)
+# Class: <http://purl.obolibrary.org/obo/CHEBI_33364> (platinum atom)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "cas") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_33364> "cas:7440-06-4")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "webelements") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_33364> "webelements:Pt")
@@ -3765,7 +3768,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "iupac") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/chebi/IUPAC_NAME>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_33364> "platinum")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_33364> "CHEBI:33364")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_33364> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33364> "platinum")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33364> "platinum atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33364> <http://purl.obolibrary.org/obo/CHEBI_33362>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33364> <http://purl.obolibrary.org/obo/CHEBI_33365>)
 
@@ -4609,6 +4612,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_35255> "chloroform")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_35255> <http://purl.obolibrary.org/obo/CHEBI_23148>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_35255> <http://purl.obolibrary.org/obo/CHEBI_64708>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_35255> <http://purl.obolibrary.org/obo/CHEBI_760803>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_35259> (benzofurans)
 
@@ -7028,6 +7032,33 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_74222> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_74222> "gamma-lactam")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_74222> <http://purl.obolibrary.org/obo/CHEBI_24995>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_760803> (trihalomethane)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_760803> "A halomethane in which three of the four hydrogen atoms of methane are replaced by halogen atoms.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:41106330")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:41409503")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:41451341")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:41544563")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:41651895")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:41816851")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:41973060")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:42165937")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:42224848")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:42385132")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:42498379")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:42545614")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:42564971")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "pubmed") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "pubmed:42643994")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "wikipedia.en") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_760803> "wikipedia.en:Trihalomethane")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/CHEBI_760803> "chebi_ontology")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "chebi") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_760803> "THM")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "chebi") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_760803> "THMs")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "chebi") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_760803> "trihalomethanes")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_760803> "CHEBI:760803")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_760803> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_760803> "trihalomethane")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_760803> <http://purl.obolibrary.org/obo/CHEBI_39279>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_76224> (aromatic ketone)
 

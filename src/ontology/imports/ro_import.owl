@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/ro_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-08-27/imports/ro_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro-base.owl>)
-Annotation(owl:versionInfo "2026-08-27")
+<http://purl.obolibrary.org/obo/rxno/releases/2026-09-25/imports/ro_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2026-09-04/ro-base.owl>)
+Annotation(owl:versionInfo "2026-09-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -65,7 +65,11 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_go_onto
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_gocam>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ro/subsets#ro-eco>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/date>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
@@ -375,6 +379,7 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0004047> <http://purl.obo
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0018030> (chemical relationship)
 
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0018030> <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0018030> "chemical relationship")
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0018033> (is deprotonated form of)
@@ -382,6 +387,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0018030> "chem
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0018033> "A is a deprotonated form of B if and only if A is chemical entity that is a Brønsted–Lowry Base (i.e., can receive a proton) and by adding some nonzero number of protons transforms it into B.
 
 This is a transitive relationship and follows this design pattern: https://oborel.github.io/obo-relations/direct-and-indirect-relations.")
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0018033> <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0018033> "obo:chebi#is_conjugate_base_of")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0018033> "is deprotonated form of")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0018033> <http://purl.obolibrary.org/obo/RO_0018030>)
@@ -393,6 +399,7 @@ TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0018033>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0018034> "A is a protonated form of B if and only if A is chemical entity that is a Brønsted–Lowry Acid (i.e., can give up a proton) and by removing some nonzero number of protons transforms it into B.
 
 This is a transitive relationship and follows this design pattern: https://oborel.github.io/obo-relations/direct-and-indirect-relations.")
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0018034> <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0018034> "obo:chebi#is_conjugate_acid_of")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0018034> "is protonated form of")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0018034> <http://purl.obolibrary.org/obo/RO_0018030>)
@@ -403,6 +410,8 @@ TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0018034>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0018036> "Two chemicals are tautomers if they can be readily interconverted.
 
 This commonly refers to prototropy in which a hydrogen's position is changed, such as between ketones and enols. This is also often observed in heterocyclic rings, e.g., ones containing nitrogens and/or have aryl functional groups containing heteroatoms.")
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0018036> <https://orcid.org/0000-0003-4423-4370>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/RO_0018036> "2023-03-18T23:49:31Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0018036> "obo:chebi#is_tautomer_of")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/RO_0018036> "is desmotrope of")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0018036> "is tautomer of"@en)
@@ -412,6 +421,8 @@ SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0018036>)
 # Object Property: <http://purl.obolibrary.org/obo/RO_0018037> (is substitutent group from)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0018037> "Group A is a substituent group from Chemical B if A represents the functional part of A and includes information about where it is connected. A is not itself a chemical with a fully formed chemical graph, but is rather a partial graph with one or more connection points that can be used to attach to another chemical graph, typically as a functionalization.")
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0018037> <https://orcid.org/0000-0003-4423-4370>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/RO_0018037> "2023-03-18T23:49:31Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0018037> "obo:chebi#is_substituent_group_from")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0018037> "is substitutent group from"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0018037> <http://purl.obolibrary.org/obo/RO_0018030>)
@@ -421,6 +432,8 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0018037> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0018038> "Chemical A has functional parent Chemical B if there is chemical transformation through which chemical B can be produced from chemical A. 
 
 For example, the relationship between a salt and a freebased compound is a \"has functional parent\" relationship.")
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0018038> <https://orcid.org/0000-0003-4423-4370>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/RO_0018038> "2023-03-18T23:49:31Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0018038> "obo:chebi#has_functional_parent")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0018038> "has functional parent"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0018038> <http://purl.obolibrary.org/obo/RO_0018030>)
@@ -428,6 +441,8 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0018038> <http://purl.obo
 # Object Property: <http://purl.obolibrary.org/obo/RO_0018040> (has parent hydride)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0018040> "Chemical A has parent hydride Chemical B if there exists a molecular graphical transformation where functional groups on A are replaced with hydrogens in order to yield B.")
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0018040> <https://orcid.org/0000-0003-4423-4370>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/RO_0018040> "2023-03-18T23:49:31Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0018040> "obo:chebi#has_parent_hydride")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0018040> "has parent hydride"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0018040> <http://purl.obolibrary.org/obo/RO_0018030>)
