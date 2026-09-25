@@ -2,19 +2,22 @@ Prefix(:=<http://purl.obolibrary.org/obo/rxno/imports/omo_import.owl#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(pav:=<http://purl.org/pav/>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(sssom:=<https://w3id.org/sssom/>)
 Prefix(terms:=<http://purl.org/dc/terms/>)
 Prefix(protege:=<http://protege.stanford.edu/plugins/owl/protege#>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/omo_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-08-27/imports/omo_import.owl>
-Annotation(dc:source <http://purl.obolibrary.org/obo/omo/releases/2026-03-16/omo.owl>)
-Annotation(owl:versionInfo "2026-08-27")
+<http://purl.obolibrary.org/obo/rxno/releases/2026-09-25/imports/omo_import.owl>
+Annotation(dc:source <http://purl.obolibrary.org/obo/omo/releases/2026-09-25/omo.owl>)
+Annotation(owl:versionInfo "2026-09-25")
 
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000030))
@@ -133,6 +136,7 @@ Declaration(AnnotationProperty(dc:type))
 Declaration(AnnotationProperty(terms:contributor))
 Declaration(AnnotationProperty(terms:created))
 Declaration(AnnotationProperty(terms:license))
+Declaration(AnnotationProperty(pav:authoredBy))
 Declaration(AnnotationProperty(oboInOwl:SynonymTypeProperty))
 Declaration(AnnotationProperty(oboInOwl:created_by))
 Declaration(AnnotationProperty(oboInOwl:creation_date))
@@ -141,6 +145,12 @@ Declaration(AnnotationProperty(oboInOwl:hasDbXref))
 Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 Declaration(AnnotationProperty(oboInOwl:hasNarrowSynonym))
 Declaration(AnnotationProperty(oboInOwl:hasRelatedSynonym))
+Declaration(AnnotationProperty(skos:exactMatch))
+Declaration(AnnotationProperty(sssom:mapping_justification))
+Declaration(AnnotationProperty(sssom:object_label))
+Declaration(AnnotationProperty(sssom:object_type))
+Declaration(AnnotationProperty(sssom:subject_label))
+Declaration(AnnotationProperty(sssom:subject_type))
 Declaration(Datatype(xsd:date))
 ############################
 #   Annotation Properties
@@ -533,6 +543,7 @@ AnnotationAssertion(obo:IAO_0000233 obo:OMO_0003000 <https://github.com/informat
 AnnotationAssertion(terms:contributor obo:OMO_0003000 <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(terms:created obo:OMO_0003000 "2023-03-03"^^xsd:date)
 AnnotationAssertion(rdfs:label obo:OMO_0003000 "abbreviation")
+AnnotationAssertion(Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "abbreviation") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "abbreviation") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003000 <http://purl.obolibrary.org/obo/hp#abbreviation>)
 SubAnnotationPropertyOf(obo:OMO_0003000 oboInOwl:SynonymTypeProperty)
 
 # Annotation Property: obo:OMO_0003001 (ambiguous synonym)
@@ -561,6 +572,7 @@ AnnotationAssertion(obo:IAO_0000233 obo:OMO_0003003 <https://github.com/informat
 AnnotationAssertion(terms:contributor obo:OMO_0003003 <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(terms:created obo:OMO_0003003 "2023-03-03"^^xsd:date)
 AnnotationAssertion(rdfs:label obo:OMO_0003003 "layperson synonym")
+AnnotationAssertion(Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "layperson") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "layperson synonym") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003003 <http://purl.obolibrary.org/obo/hp#layperson>)
 SubAnnotationPropertyOf(obo:OMO_0003003 oboInOwl:SynonymTypeProperty)
 
 # Annotation Property: obo:OMO_0003004 (plural form)
@@ -571,6 +583,7 @@ AnnotationAssertion(obo:IAO_0000233 obo:OMO_0003004 <https://github.com/informat
 AnnotationAssertion(terms:contributor obo:OMO_0003004 <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(terms:created obo:OMO_0003004 "2023-03-03"^^xsd:date)
 AnnotationAssertion(rdfs:label obo:OMO_0003004 "plural form")
+AnnotationAssertion(Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "plural form") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "plural form") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003004 <http://purl.obolibrary.org/obo/hp#plural_form>)
 SubAnnotationPropertyOf(obo:OMO_0003004 oboInOwl:SynonymTypeProperty)
 
 # Annotation Property: obo:OMO_0003005 (UK spelling synonym)
@@ -581,6 +594,7 @@ AnnotationAssertion(obo:IAO_0000233 obo:OMO_0003005 <https://github.com/informat
 AnnotationAssertion(terms:contributor obo:OMO_0003005 <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(terms:created obo:OMO_0003005 "2023-03-03"^^xsd:date)
 AnnotationAssertion(rdfs:label obo:OMO_0003005 "UK spelling synonym")
+AnnotationAssertion(Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "uk spelling") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "UK spelling synonym") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003005 <http://purl.obolibrary.org/obo/hp#uk_spelling>)
 SubAnnotationPropertyOf(obo:OMO_0003005 oboInOwl:SynonymTypeProperty)
 
 # Annotation Property: obo:OMO_0003006 (misspelling)
@@ -590,6 +604,10 @@ AnnotationAssertion(obo:IAO_0000233 obo:OMO_0003006 <https://github.com/informat
 AnnotationAssertion(terms:contributor obo:OMO_0003006 <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(terms:created obo:OMO_0003006 "2023-03-03"^^xsd:date)
 AnnotationAssertion(rdfs:label obo:OMO_0003006 "misspelling")
+AnnotationAssertion(Annotation(pav:authoredBy <https://orcid.org/0000-0003-4423-4370>) Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "misspelling") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "misspelling") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003006 <http://purl.obolibrary.org/obo/fovt#misspelling>)
+AnnotationAssertion(Annotation(pav:authoredBy <https://orcid.org/0000-0003-4423-4370>) Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "misspelling") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "misspelling") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003006 <http://purl.obolibrary.org/obo/mondo#MISSPELLING>)
+AnnotationAssertion(Annotation(pav:authoredBy <https://orcid.org/0000-0003-4423-4370>) Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "misspelling") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "misspelling") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003006 <http://purl.obolibrary.org/obo/ncbitaxon#misspelling>)
+AnnotationAssertion(Annotation(pav:authoredBy <https://orcid.org/0000-0003-4423-4370>) Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "misspelling") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "misspelling") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003006 <http://purl.obolibrary.org/obo/uberon/core#MISSPELLING>)
 SubAnnotationPropertyOf(obo:OMO_0003006 oboInOwl:SynonymTypeProperty)
 
 # Annotation Property: obo:OMO_0003007 (misnomer)
@@ -599,6 +617,7 @@ AnnotationAssertion(obo:IAO_0000233 obo:OMO_0003007 <https://github.com/informat
 AnnotationAssertion(terms:contributor obo:OMO_0003007 <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(terms:created obo:OMO_0003007 "2023-03-03"^^xsd:date)
 AnnotationAssertion(rdfs:label obo:OMO_0003007 "misnomer")
+AnnotationAssertion(Annotation(pav:authoredBy <https://orcid.org/0000-0003-4423-4370>) Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "misnomer") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "misnomer") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003007 <http://purl.obolibrary.org/obo/ncbitaxon#misnomer>)
 SubAnnotationPropertyOf(obo:OMO_0003007 oboInOwl:SynonymTypeProperty)
 
 # Annotation Property: obo:OMO_0003008 (previous name)
@@ -630,6 +649,7 @@ AnnotationAssertion(terms:contributor obo:OMO_0003010 <https://orcid.org/0000-00
 AnnotationAssertion(terms:created obo:OMO_0003010 "2023-09-30"^^xsd:date)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMO_0003010 "INN")
 AnnotationAssertion(rdfs:label obo:OMO_0003010 "International Nonproprietary Name")
+AnnotationAssertion(Annotation(pav:authoredBy <https://orcid.org/0000-0003-4423-4370>) Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "INN") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "International Nonproprietary Name") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003010 <http://purl.obolibrary.org/obo/chebi#INN>)
 SubAnnotationPropertyOf(obo:OMO_0003010 oboInOwl:SynonymTypeProperty)
 
 # Annotation Property: obo:OMO_0003011 (latin term)
@@ -640,6 +660,8 @@ AnnotationAssertion(obo:IAO_0000233 obo:OMO_0003011 <https://github.com/informat
 AnnotationAssertion(terms:contributor obo:OMO_0003011 <https://orcid.org/0000-0002-1773-2692>)
 AnnotationAssertion(terms:created obo:OMO_0003011 "2023-10-12"^^xsd:date)
 AnnotationAssertion(rdfs:label obo:OMO_0003011 "latin term")
+AnnotationAssertion(Annotation(pav:authoredBy <https://orcid.org/0000-0002-1773-2692>) Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "latin term") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "latin term") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003011 <http://purl.obolibrary.org/obo/uberon#LATIN>)
+AnnotationAssertion(Annotation(pav:authoredBy <https://orcid.org/0000-0002-1773-2692>) Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:object_label "latin term") Annotation(sssom:object_type owl:AnnotationProperty) Annotation(sssom:subject_label "latin term") Annotation(sssom:subject_type owl:AnnotationProperty) skos:exactMatch obo:OMO_0003011 <http://purl.obolibrary.org/obo/uberon/core#LATIN>)
 SubAnnotationPropertyOf(obo:OMO_0003011 oboInOwl:SynonymTypeProperty)
 
 # Annotation Property: obo:OMO_0003012 (acronym)

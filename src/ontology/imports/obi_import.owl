@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-08-27/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/rxno/releases/2026-09-25/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2026-07-27/obi.owl>)
-Annotation(owl:versionInfo "2026-08-27")
+Annotation(owl:versionInfo "2026-09-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
@@ -60,12 +60,10 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OMO_0001000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000231>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>))
@@ -100,50 +98,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000231> "has
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0100001> "Use on obsolete terms, relating the term to another term that can be used as a substitute"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0100001> "Add as annotation triples in the granting ontology"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0100001> "term replaced by"@en)
-
-# Annotation Property: <http://purl.org/dc/elements/1.1/creator> (Creator)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/creator> "Examples of a Creator include a person, an organisation,
-         or a service.  Typically, the name of a Creator should 
-         be used to indicate the entity."@en-us)
-AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/creator> "An entity primarily responsible for making the content 
-         of the resource."@en-us)
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/creator> "Creator")
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/creator> "Creator"@en-us)
-
-# Annotation Property: <http://purl.org/dc/elements/1.1/date> (Date)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/date> "Typically, Date will be associated with the creation or
-         availability of the resource.  Recommended best practice
-         for encoding the date value is defined in a profile of
-         ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format."@en-us)
-AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/date> "A date associated with an event in the life cycle of the
-         resource."@en-us)
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/date> "Date")
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/date> "Date"@en-us)
-
-# Annotation Property: <http://purl.org/dc/elements/1.1/description> (Description)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/description> "Description may include but is not limited to: an abstract,
-         table of contents, reference to a graphical representation
-         of content or a free-text account of the content."@en-us)
-AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/description> "An account of the content of the resource."@en-us)
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/description> "Description")
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/description> "Description"@en-us)
-
-# Annotation Property: <http://purl.org/dc/elements/1.1/title> (Title)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/title> "
-        Typically, a Title will be a name by which the resource is
-         formally known.
-    "@en-us)
-AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/title> "A name given to the resource."@en-us)
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/title> "Title")
-AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/title> "Title"@en-us)
-
-# Annotation Property: <http://purl.org/dc/terms/license> (<http://purl.org/dc/terms/license>)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/terms/license> "2018-05-11T13:47:29Z"^^xsd:dateTime)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> (has broad synonym)
 
@@ -309,7 +263,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000005> "objective specification"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000005> <http://purl.obolibrary.org/obo/IAO_0000033>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)

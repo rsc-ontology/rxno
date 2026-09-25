@@ -22,8 +22,8 @@ Import(<http://purl.obolibrary.org/obo/rxno/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/ro_import.owl>)
 Annotation(dcterms:description "RXNO is the name reaction ontology. It contains more than 500 classes representing organic reactions such as the Diels–Alder cyclization.")
+Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "RXNO")
-Annotation(terms:license <http://creativecommons.org/licenses/by/4.0/>)
 Annotation(oboInOwl:date "16:12:2021 15:55")
 Annotation(oboInOwl:default-namespace "RXNO")
 Annotation(oboInOwl:hasOBOFormatVersion "1.4")
@@ -732,8 +732,8 @@ Declaration(AnnotationProperty(chebi:smiles))
 Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
+Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-Declaration(AnnotationProperty(terms:license))
 Declaration(AnnotationProperty(oboInOwl:created_by))
 Declaration(AnnotationProperty(oboInOwl:creation_date))
 Declaration(AnnotationProperty(oboInOwl:date))
@@ -765,15 +765,15 @@ AnnotationAssertion(rdfs:label oboInOwl:hasAlternativeId "has_alternative_id")
 
 AnnotationAssertion(rdfs:label oboInOwl:hasBroadSynonym "has_broad_synonym")
 
-# Annotation Property: oboInOwl:hasDbXref (has cross-reference)
+# Annotation Property: oboInOwl:hasDbXref (database_cross_reference)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "database_cross_reference")
 
-# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
 
-# Annotation Property: oboInOwl:hasNarrowSynonym (has narrow synonym)
+# Annotation Property: oboInOwl:hasNarrowSynonym (has_narrow_synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasNarrowSynonym "has_narrow_synonym")
 
@@ -785,7 +785,7 @@ AnnotationAssertion(rdfs:label oboInOwl:hasOBOFormatVersion "has_obo_format_vers
 
 AnnotationAssertion(rdfs:label oboInOwl:hasOBONamespace "has_obo_namespace")
 
-# Annotation Property: oboInOwl:hasRelatedSynonym (has related synonym)
+# Annotation Property: oboInOwl:hasRelatedSynonym (has_related_synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasRelatedSynonym "has_related_synonym")
 
