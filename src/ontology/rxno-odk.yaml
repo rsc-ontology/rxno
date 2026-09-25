@@ -1,8 +1,10 @@
 id: rxno
 title: "Named Reaction Ontology"
-github_org: rsc-ontologies
+github_org: rsc-ontology
 repo: rxno
 report_fail_on: ERROR
+documentation:
+  documentation_system: mkdocs
 edit_format: owl
 export_formats:
   - owl

@@ -3,10 +3,10 @@ layout: ontology_detail
 id: rxno
 title: Named Reaction Ontology
 jobs:
-  - id: https://travis-ci.org/rsc-ontologies/rxno
+  - id: https://travis-ci.org/rsc-ontology/rxno
     type: travis-ci
 build:
-  checkout: git clone https://github.com/rsc-ontologies/rxno.git
+  checkout: git clone https://github.com/rsc-ontology/rxno.git
   system: git
   path: "."
 contact:
@@ -15,7 +15,7 @@ contact:
   github: 
 description: Named Reaction Ontology is an ontology...
 domain: stuff
-homepage: https://github.com/rsc-ontologies/rxno
+homepage: https://github.com/rsc-ontology/rxno
 products:
   - id: rxno.owl
     name: "Named Reaction Ontology main release in OWL format"
@@ -35,7 +35,7 @@ dependencies:
 - id: bfo
 - id: obi
 - id: omo
-tracker: https://github.com/rsc-ontologies/rxno/issues
+tracker: https://github.com/rsc-ontology/rxno/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
