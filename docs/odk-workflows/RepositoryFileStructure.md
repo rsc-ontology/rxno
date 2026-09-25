@@ -16,7 +16,7 @@ These are the current imports in RXNO
 
 | Import | URL | Type |
 | ------ | --- | ---- |
-| ro | http://purl.obolibrary.org/obo/ro.owl | custom |
+| ro | http://purl.obolibrary.org/obo/ro.owl | slme |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | custom |
 | obi | http://purl.obolibrary.org/obo/obi.owl | custom |
 | iao | http://purl.obolibrary.org/obo/iao.owl | slme |
