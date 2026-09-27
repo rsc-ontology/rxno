@@ -18,7 +18,6 @@ import_group:
   products:
     - id: ro
       use_base: true
-      module_type: custom
     - id: bfo
       module_type: custom
     - id: obi
