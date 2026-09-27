@@ -19,7 +19,7 @@ These are the current imports in RXNO
 | ro | http://purl.obolibrary.org/obo/ro.owl | slme |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | custom |
 | obi | http://purl.obolibrary.org/obo/obi.owl | custom |
-| iao | http://purl.obolibrary.org/obo/iao.owl | slme |
+| iao | http://purl.obolibrary.org/obo/iao.owl | custom |
 | chebi | http://purl.obolibrary.org/obo/chebi.owl | custom |
 | mop | https://raw.githubusercontent.com/rsc-ontology/MOP/main/mop.owl | slme |
 | cob | http://purl.obolibrary.org/obo/cob.owl | slme |
