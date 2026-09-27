@@ -5,4 +5,6 @@ http://purl.obolibrary.org/obo/BFO_0000027 # object aggregate
 http://purl.obolibrary.org/obo/BFO_0000030 # object
 http://purl.obolibrary.org/obo/BFO_0000035 # process boundary
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000144 # process profile
 http://purl.obolibrary.org/obo/BFO_0000145 # relational quality
+http://purl.obolibrary.org/obo/BFO_0000182 # history
