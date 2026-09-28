@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/bfo_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-09-27/imports/bfo_import.owl>
+<http://purl.obolibrary.org/obo/rxno/releases/2026-09-28/imports/bfo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl>)
-Annotation(owl:versionInfo "2026-09-27")
+Annotation(owl:versionInfo "2026-09-28")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -27,6 +27,8 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000232>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000601>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000602>))
@@ -36,6 +38,19 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 ############################
 #   Annotation Properties
 ############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000179> (BFO OWL specification label)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000179> "Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/BFO_0000179> "Really of interest to developers only"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000179> "BFO OWL specification label"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000180> (BFO CLIF specification label)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000180> "Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/BFO_0000180> "Person:Alan Ruttenberg")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/BFO_0000180> "Really of interest to developers only"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000180> "BFO CLIF specification label"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
 
