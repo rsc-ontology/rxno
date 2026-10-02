@@ -15,9 +15,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/omo_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-09-28/imports/omo_import.owl>
+<http://purl.obolibrary.org/obo/rxno/releases/2026-10-02/imports/omo_import.owl>
 Annotation(dc:source <http://purl.obolibrary.org/obo/omo/releases/2026-09-25/omo.owl>)
-Annotation(owl:versionInfo "2026-09-28")
+Annotation(owl:versionInfo "2026-10-02")
 
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000030))
