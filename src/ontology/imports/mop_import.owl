@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/mop_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-09-28/imports/mop_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/mop/releases/2026-08-20/mop.owl>)
-Annotation(owl:versionInfo "2026-09-28")
+<http://purl.obolibrary.org/obo/rxno/releases/2026-10-02/imports/mop_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/mop/releases/2026-09-29/mop.owl>)
+Annotation(owl:versionInfo "2026-10-02")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -284,12 +284,17 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/1_STAR>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/3_STAR>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ro/subsets#ro-eco>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/date>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>))
@@ -361,16 +366,27 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/ro/subsets#ro-eco> <http
 
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> "has_alternative_id")
 
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> (has broad synonym)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "An alternative label for a class or property which has a more general meaning than the preferred name/primary label.")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "has broad synonym"@en)
+
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (database_cross_reference)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.")
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "database_cross_reference")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "has cross-reference")
 
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has_exact_synonym)
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has exact synonym)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has exact synonym"@en)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has_exact_synonym")
 
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> (has_narrow_synonym)
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> (has narrow synonym)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "An alternative label for a class or property which has a more specific meaning than the preferred name/primary label.")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "has narrow synonym"@en)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "has_narrow_synonym")
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion> (has_obo_format_version)
@@ -383,6 +399,8 @@ AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#has
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (has_related_synonym)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "has related synonym"@en)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "has_related_synonym")
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasSynonymType> (has_synonym_type)
@@ -621,6 +639,7 @@ InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002234> <http://purl
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002304> (causally upstream of, positive effect)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002304> "p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q.")
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0002304> <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002304> <http://purl.obolibrary.org/obo/valid_for_go_annotation_extension>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002304> <http://purl.obolibrary.org/obo/valid_for_gocam>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002304> "holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y")
@@ -818,11 +837,14 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0009501> <http://purl.obo
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0018030> (chemical relationship)
 
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0018030> <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0018030> "chemical relationship")
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0018037> (is substitutent group from)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0018037> "Group A is a substituent group from Chemical B if A represents the functional part of A and includes information about where it is connected. A is not itself a chemical with a fully formed chemical graph, but is rather a partial graph with one or more connection points that can be used to attach to another chemical graph, typically as a functionalization.")
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0018037> <https://orcid.org/0000-0003-4423-4370>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/RO_0018037> "2023-03-18T23:49:31Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0018037> "obo:chebi#is_substituent_group_from")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0018037> "is substitutent group from"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0018037> <http://purl.obolibrary.org/obo/RO_0018030>)
@@ -2473,7 +2495,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/MOP_0000591> "2009-06-05T04:57:07Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000591> "MOP:0000591")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MOP_0000591> "CHEBI:46883.")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#created_by> <https://orcid.org/0000-0002-1595-3213>) rdfs:comment <http://purl.obolibrary.org/obo/MOP_0000591> "Prior to the resolving of https://github.com/rsc-ontologies/rxno/issues/27 this class was wrongly also defined in RXNO under the ID MOP:0000713 ('acetylene reduction'). 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#created_by> <https://orcid.org/0000-0002-1595-3213>) rdfs:comment <http://purl.obolibrary.org/obo/MOP_0000591> "Prior to the resolving of https://github.com/rsc-ontology/rxno/issues/27 this class was wrongly also defined in RXNO under the ID MOP:0000713 ('acetylene reduction'). 
 Thus the \"has_participant some 'carboxy group'\" axiom, which was not yet present on 'carboxylation' (MOP:0000591) in MOP was copied from this wrongly defined  'carboxylation' in RXNO to the proper one in MOP.
 
 The only RXNO subclass 'Kolbe-Schmitt reaction' (RXNO:0000182) of 'carboxylation' was also moved to be correctly subsumed in RXNO.")
@@ -2599,7 +2621,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000708> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/MOP_0000717> (enolisability)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000717> "Disposition that is realised in the process of enolisation")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000717> "RXNO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000717> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000717> "MOP:0000717")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000717> "enolisability")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000717> <http://purl.obolibrary.org/obo/BFO_0000016>)
@@ -2607,7 +2629,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000717> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/MOP_0000718> (enolisable carbonyl compound)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000718> "A carbonyl compound that bears the disposition to be enolised.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000718> "RXNO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000718> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000718> "MOP:0000718")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MOP_0000718> "this surely belongs in ChEBI but put it here pro tem")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000718> "enolisable carbonyl compound")
@@ -2618,7 +2640,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000718> ObjectSomeValuesFrom(<ht
 # Class: <http://purl.obolibrary.org/obo/MOP_0000719> (O-dealkylation)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "RSC:xp") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000719> "Breaking of a covalent bond between an alkyl group and an oxygen atom.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000719> "RXNO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000719> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000719> "MOP:0000719")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000719> "O-dealkylation")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000719> <http://purl.obolibrary.org/obo/MOP_0001369>)
@@ -2626,7 +2648,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000719> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/MOP_0000720> ([2+2+1] cycloaddition)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000720> "A cycloaddition in which two participants contribute two electrons and the other participant contributes one electron to the transformation of reactants to products.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000720> "RXNO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000720> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000720> "MOP:0000720")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000720> "[2+2+1] cycloaddition")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000720> <http://purl.obolibrary.org/obo/MOP_0000562>)
@@ -2645,7 +2667,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000721> <http://purl.obolibrary.
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "RSC:xp") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000722> "A reaction in which two or more reactants or remote reactive sites within the same molecular entity yield a single main product with accompanying formation of a carbon dioxide molecule.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/MOP_0000722> "batchelorc")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/MOP_0000722> "2014-03-05T10:00:00Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000722> "RXNO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000722> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000722> "MOP:0000722")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000722> "decarboxylative condensation")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000722> <http://purl.obolibrary.org/obo/MOP_0000627>)
@@ -2656,7 +2678,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000722> ObjectSomeValuesFrom(<ht
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "RSC:xp") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000723> "A reaction in which two or more reactants or remote reactive sites within the same molecular entity yield a single main product with accompanying formation of an ethanol molecule.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/MOP_0000723> "batchelorc")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/MOP_0000723> "2014-03-05T10:00:00Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000723> "RXNO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000723> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000723> "MOP:0000723")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000723> "deethanolative condensation")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000723> <http://purl.obolibrary.org/obo/MOP_0000825>)
@@ -2802,7 +2824,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000820> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/MOP_0000825> (dealcoholative condensation)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000825> "A reaction in which two or more reactants or remote reactive sites within the same molecular entity yield a single main product with accompanying formation of an alcohol molecule.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000825> "RXNO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000825> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000825> "MOP:0000825")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000825> "dealcoholative condensation")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000825> <http://purl.obolibrary.org/obo/MOP_0000627>)
@@ -2811,7 +2833,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000825> <http://purl.obolibrary.
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000826> "A disposition which is realised in a [4+2] reaction with a double-bonded system.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/MOP_0000826> "http://goldbook.iupac.org/D01700.html")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000826> "RXNO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0000826> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000826> "MOP:0000826")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000826> "dienophilicity")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000826> <http://purl.obolibrary.org/obo/BFO_0000016>)
@@ -2851,7 +2873,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0001550> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/MOP_0001713> (decarboxylation)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "RSC:xp") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0001713> "Breaking of a covalent bond between a molecule and a carboxy group.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0001713> "RXNO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0001713> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0001713> "MOP:0001713")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0001713> "decarboxylation")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0001713> <http://purl.obolibrary.org/obo/MOP_0001458>)
@@ -2909,7 +2931,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0003479> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/MOP_0006369> (P-alkylation)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "RSC:xp") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0006369> "The formation of a covalent bond between a phosphorus atom and an alkyl group.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0006369> "RXNO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0006369> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0006369> "MOP:0006369")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0006369> "P-alkylation")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0006369> <http://purl.obolibrary.org/obo/MOP_0000369>)
@@ -3048,6 +3070,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001002> "dom
 ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/OMO_0001002>)
 
 
+DifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>)
+DifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002131>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000062>) <http://purl.obolibrary.org/obo/BFO_0000062>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000063>) <http://purl.obolibrary.org/obo/BFO_0000063>)

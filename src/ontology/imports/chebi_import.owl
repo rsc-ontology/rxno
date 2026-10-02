@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/chebi_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-09-28/imports/chebi_import.owl>
+<http://purl.obolibrary.org/obo/rxno/releases/2026-10-02/imports/chebi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chebi/255/chebi.owl>)
-Annotation(owl:versionInfo "2026-09-28")
+Annotation(owl:versionInfo "2026-10-02")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_134179>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_136622>))
@@ -479,7 +479,9 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/1_STAR>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/2_STAR>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/3_STAR>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#date>))
