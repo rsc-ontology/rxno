@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                19454174231e531d309fd6b04fe12ebc4553bf6b419712be21383786052e76d8
+CONFIG_HASH=                fd8fcdeb6a78adcc7217dcfb28831351b4eaafe787cead36a2286346a86e98ea
 
 
 # ----------------------------------------
@@ -409,12 +409,6 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: ro (custom)
-$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
-	@echo "ERROR: You have configured ro as a custom module;"
-	@echo "       This rule needs to be overwritten in rxno.Makefile!"
-	@false
-
 ## Module for ontology: bfo (custom)
 $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
 	@echo "ERROR: You have configured bfo as a custom module;"
@@ -424,6 +418,12 @@ $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
 ## Module for ontology: obi (custom)
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
 	@echo "ERROR: You have configured obi as a custom module;"
+	@echo "       This rule needs to be overwritten in rxno.Makefile!"
+	@false
+
+## Module for ontology: iao (custom)
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
+	@echo "ERROR: You have configured iao as a custom module;"
 	@echo "       This rule needs to be overwritten in rxno.Makefile!"
 	@false
 

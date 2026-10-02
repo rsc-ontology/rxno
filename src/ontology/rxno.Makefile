@@ -5,30 +5,19 @@
 
 ## Module for ontology: bfo
 
-$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_remove_list.txt | all_robot_plugins
-	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) \
-		remove --input $(MIRRORDIR)/bfo.owl -T $(IMPORTDIR)/bfo_remove_list.txt --select "self descendants instances" \
-		odk:normalize --base-iri http://purl.obolibrary.org/obo/bfo.owl \
-			--subset-decls true --synonym-decls true \
-		repair --merge-axiom-annotations true \
-		$(ANNOTATE_CONVERT_FILE) ; fi
-
-## Module for ontology: ro
-
-$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt $(IMPORTSEED) | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations \
+$(IMPORTDIR)/bfo_import.owl: $(IMPORTDIR)/bfo_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $(MIRRORDIR)/bfo.owl --remove-annotations \
 		 odk:normalize --add-source true \
-		 extract --term-file $(IMPORTDIR)/ro_terms.txt $(T_IMPORTSEED) \
+		 extract --term-file $(IMPORTDIR)/bfo_terms.txt $(T_IMPORTSEED) \
 		         --force true --copy-ontology-annotations true \
 		         --individuals exclude \
 		         --method BOT \
-		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
-		        --term-file $(IMPORTDIR)/ro_terms.txt $(T_IMPORTSEED) \
-		        --select complement --select annotation-properties \
-		 odk:normalize --base-iri http://purl.obolibrary.org/obo/ro.owl \
+		 remove -T $(IMPORTDIR)/bfo_remove_list.txt --select "self descendants instances" --signature true \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo/bfo.owl \
                 --subset-decls true --synonym-decls true \
          repair --merge-axiom-annotations true \
          $(ANNOTATE_CONVERT_FILE)
+
 
 ## Module for ontology: chebi
 
@@ -67,3 +56,24 @@ $(IMPORTDIR)/obi_import.owl: $(IMPORTDIR)/obi_terms.txt $(IMPORTSEED) | all_robo
                 --subset-decls true --synonym-decls true \
          repair --merge-axiom-annotations true \
          $(ANNOTATE_CONVERT_FILE); fi 
+
+## Module for ontology: iao
+# This is basically the default SLME-BOT code from ODK with an additional 
+# remove steps. This second remove step removes currently unused IAO terms,
+# which would otherwise be pulled in by the ROBOT extract step.
+
+$(IMPORTDIR)/iao_import.owl: $(IMPORTDIR)/iao_terms.txt $(IMPORTSEED) | all_robot_plugins
+	if [ $(IMP) = true ]; then $(ROBOT) annotate --input $(MIRRORDIR)/iao.owl --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/iao_terms.txt $(T_IMPORTSEED) \
+		         --force true --copy-ontology-annotations true \
+		         --individuals exclude \
+		         --method BOT \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term-file $(IMPORTDIR)/iao_terms.txt $(T_IMPORTSEED) \
+		        --select complement --select annotation-properties \
+		 remove -T $(IMPORTDIR)/iao_remove_list.txt --select "self descendants instances" --signature true \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo/iao.owl \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE); fi 
