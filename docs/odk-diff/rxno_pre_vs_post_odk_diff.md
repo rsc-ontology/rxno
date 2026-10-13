@@ -1,364 +1,1410 @@
-197 axioms in left ontology but not in right ontology:
-- Annotation(<dc11:description> "RXNO is the name reaction ontology. It contains more than 500 classes representing organic reactions such as the Diels–Alder cyclization.")
-- Annotation(<dc11:title> "RXNO")
-- AnnotationAssertion(<dc11:creator> <RXNO:0000383>[thiol-yne reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000654>[Mukaiyama hydration] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000655>[Favorskii reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000656>[Diimide reduction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000657>[carbonyl group protection] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000658>[acetal protection] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000659>[Miyaura borylation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000660>[Corey-Winter elimination] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000661>[Tsuji-Wilkinson decarbonylation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000662>[Corey-Seebach reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000663>[nitroxide exchange reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000664>[Baeyer pyridine synthesis] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000665>[Corey-Kim oxidation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000666>[Corey-Suggs oxidation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000667>[Corey-Schmidt oxidation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000668>[Albright-Goldman oxidation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000669>[Rubottom oxidation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000670>[Groebke-Blackburn-Bienaymé reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000671>[Baeyer oxindole synthesis] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000672>[Leimgruber-Batcho indole synthesis] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000673>[IBX oxidation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000674>[decarboxylative cross-coupling] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000675>[Balsohn alkylation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000676>[Kabachnik-Fields reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000677>[Baekeland-Manasse-Lederer reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000678>[Aston-Greenburg rearrangement] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000679>[Baddeley isomerization] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000680>[Fukuyama reduction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000681>[Dötz reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000682>[Kulinkovich reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000683>[Kulinkovich-de Meijere reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000684>[Kulinkovich-Szymoniak reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000686>[Jacobsen epoxidation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000687>[Shi epoxidation] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000688>[Asinger reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000689>[haloform reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000690>[Atherton-Todd reaction] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000691>[Baeyer diarylmethane synthesis] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:creator> <RXNO:0000692>[silyl deprotection] <http://orcid.org/0000-0002-4378-6061>)
-- AnnotationAssertion(<dc11:date> <RXNO:0000383>[thiol-yne reaction] "2021-05-05T09:08:42Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000654>[Mukaiyama hydration] "2021-05-11T07:40:36Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000655>[Favorskii reaction] "2021-05-17T08:17:36Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000656>[Diimide reduction] "2021-05-17T08:35:08Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000657>[carbonyl group protection] "2021-05-17T09:33:23Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000658>[acetal protection] "2021-05-17T09:38:59Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000659>[Miyaura borylation] "2021-11-04T10:48:44Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000660>[Corey-Winter elimination] "2021-11-04T11:03:16Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000661>[Tsuji-Wilkinson decarbonylation] "2021-11-04T12:09:26Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000662>[Corey-Seebach reaction] "2021-11-05T07:51:22Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000663>[nitroxide exchange reaction] "2021-11-12T08:28:13Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000664>[Baeyer pyridine synthesis] "2021-11-12T09:25:38Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000665>[Corey-Kim oxidation] "2021-11-15T08:58:15Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000666>[Corey-Suggs oxidation] "2021-11-15T09:09:31Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000667>[Corey-Schmidt oxidation] "2021-11-15T09:20:03Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000668>[Albright-Goldman oxidation] "2021-11-15T09:30:47Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000669>[Rubottom oxidation] "2021-11-15T09:44:42Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000670>[Groebke-Blackburn-Bienaymé reaction] "2021-12-03T09:13:40Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000671>[Baeyer oxindole synthesis] "2021-12-03T14:20:07Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000672>[Leimgruber-Batcho indole synthesis] "2021-12-03T14:45:01Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000673>[IBX oxidation] "2021-11-15T11:24:35Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000674>[decarboxylative cross-coupling] "2021-12-06T08:44:51Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000675>[Balsohn alkylation] "2021-12-06T11:08:37Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000676>[Kabachnik-Fields reaction] "2021-12-13T11:39:08Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000677>[Baekeland-Manasse-Lederer reaction] "2021-12-13T12:52:17Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000678>[Aston-Greenburg rearrangement] "2021-12-14T08:15:45Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000679>[Baddeley isomerization] "2021-12-14T08:45:33Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000680>[Fukuyama reduction] "2021-12-14T09:43:52Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000681>[Dötz reaction] "2021-12-14T10:45:04Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000682>[Kulinkovich reaction] "2021-12-15T09:10:05Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000683>[Kulinkovich-de Meijere reaction] "2021-12-15T10:14:52Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000684>[Kulinkovich-Szymoniak reaction] "2021-12-15T10:47:43Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000686>[Jacobsen epoxidation] "2021-12-16T08:34:02Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000687>[Shi epoxidation] "2021-12-16T08:57:48Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000688>[Asinger reaction] "2021-12-16T09:29:30Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000689>[haloform reaction] "2021-12-16T11:10:42Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000690>[Atherton-Todd reaction] "2021-12-16T12:05:47Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000691>[Baeyer diarylmethane synthesis] "2021-12-16T12:54:23Z"^^xsd:dateTime)
-- AnnotationAssertion(<dc11:date> <RXNO:0000692>[silyl deprotection] "2021-12-16T13:23:35Z"^^xsd:dateTime)
-- AnnotationAssertion(<oboInOwl:created_by> <RXNO:0000344>[alkene oxidative cleavage] "batchelorc")
-- AnnotationAssertion(<oboInOwl:creation_date> <RXNO:0000344>[alkene oxidative cleavage] "2012-03-22T03:15:25Z")
-- AnnotationAssertion(<oboInOwl:hasDbXref> <RXNO:0000344>[alkene oxidative cleavage] "NAMERXN:1.6")
-- AnnotationAssertion(<oboInOwl:hasOBONamespace> <RXNO:0000344>[alkene oxidative cleavage] "RXNO")
-- AnnotationAssertion(<oboInOwl:id> <RXNO:0000344>[alkene oxidative cleavage] "RXNO:0000344")
-- AnnotationAssertion(<rdfs:label> <RXNO:0000344>[alkene oxidative cleavage] "alkene oxidative cleavage")
-- AnnotationAssertion(Annotation(<oboInOwl:hasDbXref> "RSC:db") Annotation(<oboInOwl:hasDbXref> "https://orcid.org/0000-0001-5985-7429") Annotation(<oboInOwl:hasDbXref> "https://orcid.org/0000-0002-4077-4719") <IAO:0000115>[obo:IAO_0000115] <RXNO:0000132>[Monsanto process] "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by a rhodium complex.")
-- AnnotationAssertion(Annotation(<oboInOwl:hasDbXref> "RSC:db") Annotation(<oboInOwl:hasDbXref> "https://orcid.org/0000-0001-5985-7429") Annotation(<oboInOwl:hasDbXref> "https://orcid.org/0000-0002-4077-4719") <IAO:0000115>[obo:IAO_0000115] <RXNO:0000133>[Cativa process] "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by an iridium complex.")
-- AnnotationAssertion(Annotation(<oboInOwl:hasDbXref> "https://orcid.org/0000-0001-5985-7429") <IAO:0000115>[obo:IAO_0000115] <RXNO:0000344>[alkene oxidative cleavage] "An alkene oxidation where the carbon-carbon double bond is cleaved.")
-- Declaration(AnnotationProperty(<dc11:creator>))
-- Declaration(AnnotationProperty(<dc11:date>))
-- Declaration(AnnotationProperty(<dc11:description>))
-- Declaration(AnnotationProperty(<dc11:title>))
-- Declaration(Class(<MOP:0000713>[obo:MOP_0000713]))
-- Declaration(Class(<MOP:0000714>[obo:MOP_0000714]))
-- Declaration(Class(<MOP:0000715>[obo:MOP_0000715]))
-- Declaration(Class(<OBI:0000011>[obo:OBI_0000011]))
-- Declaration(ObjectProperty(<BFO:0000057>[obo:BFO_0000057]))
-- Declaration(ObjectProperty(<BFO:0000077>[obo:BFO_0000077]))
-- Declaration(ObjectProperty(<BFO:0000078>[obo:BFO_0000078]))
-- EquivalentClasses(<RXNO:0000001>[planned reaction step] ObjectIntersectionOf(<OBI:0000011>[obo:OBI_0000011] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000437>[molecular transformation objective])))
-- EquivalentClasses(<RXNO:0000317>[ester condensation reaction] ObjectIntersectionOf(<MOP:0000627>[obo:MOP_0000627] ObjectSomeValuesFrom(<BFO:0000077>[obo:BFO_0000077] <CHEBI:33308>[obo:CHEBI_33308])))
-- OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/rxno.owl>) VersionIRI(<http://purl.obolibrary.org/obo/rxno/releases/2021-12-16/rxno.owl>))
-- SubClassOf(<RXNO:0000001>[planned reaction step] <OBI:0000011>[obo:OBI_0000011])
-- SubClassOf(<RXNO:0000015>[Wittig reaction] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:33641>[obo:CHEBI_33641]))
-- SubClassOf(<RXNO:0000056>[Horner-Wadsworth-Emmons reaction] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:33641>[obo:CHEBI_33641]))
-- SubClassOf(<RXNO:0000057>[Horner reaction] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000440>[molecular skeleton joining objective]))
-- SubClassOf(<RXNO:0000057>[Horner reaction] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:33641>[obo:CHEBI_33641]))
-- SubClassOf(<RXNO:0000057>[Horner reaction] ObjectSomeValuesFrom(<RXNO:0000424>[has specified reactant] <CHEBI:36587>[obo:CHEBI_36587]))
-- SubClassOf(<RXNO:0000062>[Skraup reaction] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:26513>[obo:CHEBI_26513]))
-- SubClassOf(<RXNO:0000071>[Edman degradation] ObjectSomeValuesFrom(<RXNO:0000424>[has specified reactant] <CHEBI:16670>[obo:CHEBI_16670]))
-- SubClassOf(<RXNO:0000078>[protection reaction] ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/rxno.obo#part_of> <RXNO:0000329>[planned synthesis]))
-- SubClassOf(<RXNO:0000079>[Boc protection] ObjectSomeValuesFrom(<RXNO:0000416>[protects] <CHEBI:46882>[obo:CHEBI_46882]))
-- SubClassOf(<RXNO:0000080>[Peterson olefination] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:33641>[obo:CHEBI_33641]))
-- SubClassOf(<RXNO:0000107>[malonic ester synthesis] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000440>[molecular skeleton joining objective]))
-- SubClassOf(<RXNO:0000117>[Julia olefination] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:33641>[obo:CHEBI_33641]))
-- SubClassOf(<RXNO:0000126>[Doebner reaction] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:26513>[obo:CHEBI_26513]))
-- SubClassOf(<RXNO:0000132>[Monsanto process] ObjectSomeValuesFrom(<RXNO:0000424>[has specified reactant] <CHEBI:17245>[obo:CHEBI_17245]))
-- SubClassOf(<RXNO:0000133>[Cativa process] ObjectSomeValuesFrom(<RXNO:0000424>[has specified reactant] <CHEBI:17245>[obo:CHEBI_17245]))
-- SubClassOf(<RXNO:0000137>[Sonogashira coupling] ObjectSomeValuesFrom(<RXNO:0000425>[has_catalyst] <CHEBI:33363>[obo:CHEBI_33363]))
-- SubClassOf(<RXNO:0000160>[Fmoc protection] ObjectSomeValuesFrom(<RXNO:0000416>[protects] <CHEBI:46882>[obo:CHEBI_46882]))
-- SubClassOf(<RXNO:0000164>[Paal-Knorr pyrrole synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:26455>[obo:CHEBI_26455]))
-- SubClassOf(<RXNO:0000182>[Kolbe-Schmitt reaction] <MOP:0000713>[obo:MOP_0000713])
-- SubClassOf(<RXNO:0000182>[Kolbe-Schmitt reaction] ObjectSomeValuesFrom(<BFO:0000078>[obo:BFO_0000078] <CHEBI:16526>[obo:CHEBI_16526]))
-- SubClassOf(<RXNO:0000203>[deprotection reaction] ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/rxno.obo#part_of> <RXNO:0000329>[planned synthesis]))
-- SubClassOf(<RXNO:0000211>[Tamao oxidation] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000468>[molecular substitution objective]))
-- SubClassOf(<RXNO:0000212>[Sakurai reaction, aldehyde or ketone] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000440>[molecular skeleton joining objective]))
-- SubClassOf(<RXNO:0000222>[Polonovski-Potier reaction] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:17478>[obo:CHEBI_17478]))
-- SubClassOf(<RXNO:0000251>[Stork-Wittig olefination] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:33641>[obo:CHEBI_33641]))
-- SubClassOf(<RXNO:0000252>[Cadogan carbazole synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:48513>[obo:CHEBI_48513]))
-- SubClassOf(<RXNO:0000257>[Criegee oxidation] <RXNO:0000344>[alkene oxidative cleavage])
-- SubClassOf(<RXNO:0000269>[alkyne-azide click reaction] <MOP:0000715>[obo:MOP_0000715])
-- SubClassOf(<RXNO:0000270>[copper(I)-catalyzed azide-alkyne cycloaddition] <MOP:0000715>[obo:MOP_0000715])
-- SubClassOf(<RXNO:0000304>[Julia-Kocienski olefination] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:33641>[obo:CHEBI_33641]))
-- SubClassOf(<RXNO:0000307>[Mori-Ban indole synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:24828>[obo:CHEBI_24828]))
-- SubClassOf(<RXNO:0000312>[Clauson-Kaas reaction] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:26455>[obo:CHEBI_26455]))
-- SubClassOf(<RXNO:0000317>[ester condensation reaction] ObjectSomeValuesFrom(<BFO:0000077>[obo:BFO_0000077] <CHEBI:33308>[obo:CHEBI_33308]))
-- SubClassOf(<RXNO:0000324>[benzyl ether protection] ObjectSomeValuesFrom(<RXNO:0000416>[protects] <CHEBI:43176>[obo:CHEBI_43176]))
-- SubClassOf(<RXNO:0000327>[benzylamine deprotection] ObjectSomeValuesFrom(<RXNO:0000417>[deprotects] <CHEBI:46882>[obo:CHEBI_46882]))
-- SubClassOf(<RXNO:0000329>[planned synthesis] <OBI:0000011>[obo:OBI_0000011])
-- SubClassOf(<RXNO:0000337>[nitro reduction to amine] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000453>[functional group modification objective]))
-- SubClassOf(<RXNO:0000338>[amide reduction to amine] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000453>[functional group modification objective]))
-- SubClassOf(<RXNO:0000344>[alkene oxidative cleavage] <MOP:0000581>[obo:MOP_0000581])
-- SubClassOf(<RXNO:0000368>[Crabbé homologation] ObjectSomeValuesFrom(<BFO:0000057>[obo:BFO_0000057] <CHEBI:32952>[obo:CHEBI_32952]))
-- SubClassOf(<RXNO:0000387>[Seyferth-Gilbert homologation] <MOP:0000714>[obo:MOP_0000714])
-- SubClassOf(<RXNO:0000404>[oxa-Pictet-Spengler reaction] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:38104>[obo:CHEBI_38104]))
-- SubClassOf(<RXNO:0000418>[phthalimide protection] ObjectSomeValuesFrom(<RXNO:0000416>[protects] <CHEBI:46882>[obo:CHEBI_46882]))
-- SubClassOf(<RXNO:0000419>[phthalimide deprotection] ObjectSomeValuesFrom(<RXNO:0000417>[deprotects] <CHEBI:46882>[obo:CHEBI_46882]))
-- SubClassOf(<RXNO:0000420>[Kröhnke pyridine synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:26421>[obo:CHEBI_26421]))
-- SubClassOf(<RXNO:0000429>[pivaloyl deprotection] ObjectSomeValuesFrom(<RXNO:0000417>[deprotects] <CHEBI:43176>[obo:CHEBI_43176]))
-- SubClassOf(<RXNO:0000431>[carboxylic acid to primary alcohol reduction] ObjectSomeValuesFrom(<BFO:0000077>[obo:BFO_0000077] <CHEBI:15734>[obo:CHEBI_15734]))
-- SubClassOf(<RXNO:0000431>[carboxylic acid to primary alcohol reduction] ObjectSomeValuesFrom(<BFO:0000078>[obo:BFO_0000078] <CHEBI:33575>[obo:CHEBI_33575]))
-- SubClassOf(<RXNO:0000432>[tert-butyl protection] ObjectSomeValuesFrom(<RXNO:0000416>[protects] <CHEBI:46883>[obo:CHEBI_46883]))
-- SubClassOf(<RXNO:0000434>[tert-butyl ester deprotection] ObjectSomeValuesFrom(<RXNO:0000417>[deprotects] <CHEBI:46883>[obo:CHEBI_46883]))
-- SubClassOf(<RXNO:0000435>[methyl ester deprotection] ObjectSomeValuesFrom(<RXNO:0000417>[deprotects] <CHEBI:46883>[obo:CHEBI_46883]))
-- SubClassOf(<RXNO:0000436>[ethyl ester deprotection] ObjectSomeValuesFrom(<RXNO:0000417>[deprotects] <CHEBI:46883>[obo:CHEBI_46883]))
-- SubClassOf(<RXNO:0000459>[acetoacetic ester synthesis] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000440>[molecular skeleton joining objective]))
-- SubClassOf(<RXNO:0000460>[intramolecular acyloin condensation] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000439>[molecular ring formation objective]))
-- SubClassOf(<RXNO:0000461>[intermolecular acyloin condensation] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000440>[molecular skeleton joining objective]))
-- SubClassOf(<RXNO:0000494>[Bartoli indole synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:24828>[obo:CHEBI_24828]))
-- SubClassOf(<RXNO:0000496>[Barton-Zard reaction] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:26455>[obo:CHEBI_26455]))
-- SubClassOf(<RXNO:0000501>[Feist-Bénary synthesis] ObjectSomeValuesFrom(<BFO:0000057>[obo:BFO_0000057] <CHEBI:16227>[obo:CHEBI_16227]))
-- SubClassOf(<RXNO:0000509>[Cadogan indole synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:24828>[obo:CHEBI_24828]))
-- SubClassOf(<RXNO:0000511>[Madelung indole synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:24828>[obo:CHEBI_24828]))
-- SubClassOf(<RXNO:0000512>[Smith indole synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:24828>[obo:CHEBI_24828]))
-- SubClassOf(<RXNO:0000516>[Bergmann degradation] ObjectSomeValuesFrom(<RXNO:0000424>[has specified reactant] <CHEBI:16670>[obo:CHEBI_16670]))
-- SubClassOf(<RXNO:0000519>[Bernthsen acridine synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:22213>[obo:CHEBI_22213]))
-- SubClassOf(<RXNO:0000523>[Bischler-Möhlau indole synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:24828>[obo:CHEBI_24828]))
-- SubClassOf(<RXNO:0000524>[Camps quinoline synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:26513>[obo:CHEBI_26513]))
-- SubClassOf(<RXNO:0000525>[Castro-Stephens coupling] ObjectSomeValuesFrom(<RXNO:0000425>[has_catalyst] <CHEBI:33363>[obo:CHEBI_33363]))
-- SubClassOf(<RXNO:0000526>[Chichibabin pyridine synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:26421>[obo:CHEBI_26421]))
-- SubClassOf(<RXNO:0000532>[Borsche-Drechsel cyclisation] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:48513>[obo:CHEBI_48513]))
-- SubClassOf(<RXNO:0000541>[palladium-catalysed Kumada coupling] ObjectSomeValuesFrom(<RXNO:0000425>[has_catalyst] <CHEBI:33363>[obo:CHEBI_33363]))
-- SubClassOf(<RXNO:0000552>[Leuckart aldehyde reaction] ObjectSomeValuesFrom(<BFO:0000078>[obo:BFO_0000078] <CHEBI:17478>[obo:CHEBI_17478]))
-- SubClassOf(<RXNO:0000553>[Leuckart ketone reaction] ObjectSomeValuesFrom(<BFO:0000078>[obo:BFO_0000078] <CHEBI:17087>[obo:CHEBI_17087]))
-- SubClassOf(<RXNO:0000605>[Fukuyama coupling] ObjectSomeValuesFrom(<RXNO:0000425>[has_catalyst] <CHEBI:33363>[obo:CHEBI_33363]))
-- SubClassOf(<RXNO:0000622>[Meerwein-Ponndorf-Verley reduction of an aldehyde] <RXNO:0000037>[functional group reduction])
-- SubClassOf(<RXNO:0000623>[Meerwein-Ponndorf-Verley reduction of a ketone] <RXNO:0000037>[functional group reduction])
-- SubClassOf(<RXNO:0000649>[Lemieux-Johnson oxidation] <RXNO:0000344>[alkene oxidative cleavage])
-- SubClassOf(<RXNO:0000650>[Malaprade reaction] <RXNO:0000344>[alkene oxidative cleavage])
-- SubClassOf(<RXNO:0000651>[Fenton 1,2-glycol oxidation] <RXNO:0000012>[functional group oxidation])
-- SubClassOf(<RXNO:0000652>[Fenton alpha-hydroxy carboxylic acid oxidation] <RXNO:0000012>[functional group oxidation])
-- SubClassOf(<RXNO:0000653>[Fenton hydrogen peroxide reduction] <RXNO:0000012>[functional group oxidation])
-- SubClassOf(<RXNO:0000658>[acetal protection] ObjectSomeValuesFrom(<RXNO:0000416>[protects] <CHEBI:23019>[obo:CHEBI_23019]))
-- SubClassOf(<RXNO:0000659>[Miyaura borylation] ObjectSomeValuesFrom(<RXNO:0000425>[has_catalyst] <CHEBI:33363>[obo:CHEBI_33363]))
-- SubClassOf(<RXNO:0000671>[Baeyer oxindole synthesis] <RXNO:0000052>[fused-ring-system formation])
-- SubClassOf(<RXNO:0000672>[Leimgruber-Batcho indole synthesis] ObjectSomeValuesFrom(<RXNO:0000423>[has specified product] <CHEBI:24828>[obo:CHEBI_24828]))
-- SubClassOf(<RXNO:0000686>[Jacobsen epoxidation] <RXNO:0000005>[ring formation reaction step])
-- SubClassOf(<RXNO:0000687>[Shi epoxidation] <RXNO:0000005>[ring formation reaction step])
-- SubClassOf(<RXNO:0000688>[Asinger reaction] <RXNO:0000005>[ring formation reaction step])
-- SubClassOf(<RXNO:0000692>[silyl deprotection] ObjectSomeValuesFrom(<RXNO:0000417>[deprotects] <CHEBI:43176>[obo:CHEBI_43176]))
-- SubObjectPropertyOf(<RXNO:0000416>[protects] <BFO:0000078>[obo:BFO_0000078])
-- SubObjectPropertyOf(<RXNO:0000417>[deprotects] <BFO:0000077>[obo:BFO_0000077])
-- SubObjectPropertyOf(<RXNO:0000423>[has specified product] <BFO:0000077>[obo:BFO_0000077])
-- SubObjectPropertyOf(<RXNO:0000424>[has specified reactant] <BFO:0000078>[obo:BFO_0000078])
-- SubObjectPropertyOf(<RXNO:0000425>[has_catalyst] <BFO:0000057>[obo:BFO_0000057])
-- SubObjectPropertyOf(<RXNO:0000469>[has_intermediate] <BFO:0000057>[obo:BFO_0000057])
+# Ontology comparison
 
-164 axioms in right ontology but not in left ontology:
-+ Annotation(<dc:description> "RXNO is the name reaction ontology. It contains more than 500 classes representing organic reactions such as the Diels–Alder cyclization.")
-+ Annotation(<dc:title> "RXNO")
-+ Annotation(<owl:versionInfo> "2026-10-07")
-+ AnnotationAssertion(<IAO:0100001>[obo:IAO_0100001] <RXNO:0000344>[alkene oxidative cleavage] <MOP:0000708>[obo:MOP_0000708])
-+ AnnotationAssertion(<dc:creator> <RXNO:0000383>[thiol-yne reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000654>[Mukaiyama hydration] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000655>[Favorskii reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000656>[Diimide reduction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000657>[carbonyl group protection] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000658>[acetal protection] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000659>[Miyaura borylation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000660>[Corey-Winter elimination] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000661>[Tsuji-Wilkinson decarbonylation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000662>[Corey-Seebach reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000663>[nitroxide exchange reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000664>[Baeyer pyridine synthesis] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000665>[Corey-Kim oxidation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000666>[Corey-Suggs oxidation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000667>[Corey-Schmidt oxidation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000668>[Albright-Goldman oxidation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000669>[Rubottom oxidation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000670>[Groebke-Blackburn-Bienaymé reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000671>[Baeyer oxindole synthesis] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000672>[Leimgruber-Batcho indole synthesis] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000673>[IBX oxidation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000674>[decarboxylative cross-coupling] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000675>[Balsohn alkylation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000676>[Kabachnik-Fields reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000677>[Baekeland-Manasse-Lederer reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000678>[Aston-Greenburg rearrangement] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000679>[Baddeley isomerization] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000680>[Fukuyama reduction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000681>[Dötz reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000682>[Kulinkovich reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000683>[Kulinkovich-de Meijere reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000684>[Kulinkovich-Szymoniak reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000686>[Jacobsen epoxidation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000687>[Shi epoxidation] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000688>[Asinger reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000689>[haloform reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000690>[Atherton-Todd reaction] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000691>[Baeyer diarylmethane synthesis] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:creator> <RXNO:0000692>[silyl deprotection] <http://orcid.org/0000-0002-4378-6061>)
-+ AnnotationAssertion(<dc:date> <RXNO:0000383>[thiol-yne reaction] "2021-05-05T09:08:42Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000654>[Mukaiyama hydration] "2021-05-11T07:40:36Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000655>[Favorskii reaction] "2021-05-17T08:17:36Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000656>[Diimide reduction] "2021-05-17T08:35:08Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000657>[carbonyl group protection] "2021-05-17T09:33:23Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000658>[acetal protection] "2021-05-17T09:38:59Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000659>[Miyaura borylation] "2021-11-04T10:48:44Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000660>[Corey-Winter elimination] "2021-11-04T11:03:16Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000661>[Tsuji-Wilkinson decarbonylation] "2021-11-04T12:09:26Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000662>[Corey-Seebach reaction] "2021-11-05T07:51:22Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000663>[nitroxide exchange reaction] "2021-11-12T08:28:13Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000664>[Baeyer pyridine synthesis] "2021-11-12T09:25:38Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000665>[Corey-Kim oxidation] "2021-11-15T08:58:15Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000666>[Corey-Suggs oxidation] "2021-11-15T09:09:31Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000667>[Corey-Schmidt oxidation] "2021-11-15T09:20:03Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000668>[Albright-Goldman oxidation] "2021-11-15T09:30:47Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000669>[Rubottom oxidation] "2021-11-15T09:44:42Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000670>[Groebke-Blackburn-Bienaymé reaction] "2021-12-03T09:13:40Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000671>[Baeyer oxindole synthesis] "2021-12-03T14:20:07Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000672>[Leimgruber-Batcho indole synthesis] "2021-12-03T14:45:01Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000673>[IBX oxidation] "2021-11-15T11:24:35Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000674>[decarboxylative cross-coupling] "2021-12-06T08:44:51Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000675>[Balsohn alkylation] "2021-12-06T11:08:37Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000676>[Kabachnik-Fields reaction] "2021-12-13T11:39:08Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000677>[Baekeland-Manasse-Lederer reaction] "2021-12-13T12:52:17Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000678>[Aston-Greenburg rearrangement] "2021-12-14T08:15:45Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000679>[Baddeley isomerization] "2021-12-14T08:45:33Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000680>[Fukuyama reduction] "2021-12-14T09:43:52Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000681>[Dötz reaction] "2021-12-14T10:45:04Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000682>[Kulinkovich reaction] "2021-12-15T09:10:05Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000683>[Kulinkovich-de Meijere reaction] "2021-12-15T10:14:52Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000684>[Kulinkovich-Szymoniak reaction] "2021-12-15T10:47:43Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000686>[Jacobsen epoxidation] "2021-12-16T08:34:02Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000687>[Shi epoxidation] "2021-12-16T08:57:48Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000688>[Asinger reaction] "2021-12-16T09:29:30Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000689>[haloform reaction] "2021-12-16T11:10:42Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000690>[Atherton-Todd reaction] "2021-12-16T12:05:47Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000691>[Baeyer diarylmethane synthesis] "2021-12-16T12:54:23Z"^^xsd:dateTime)
-+ AnnotationAssertion(<dc:date> <RXNO:0000692>[silyl deprotection] "2021-12-16T13:23:35Z"^^xsd:dateTime)
-+ AnnotationAssertion(<owl:deprecated> <RXNO:0000344>[alkene oxidative cleavage] "true"^^xsd:boolean)
-+ AnnotationAssertion(<rdfs:comment> <RXNO:0000344>[alkene oxidative cleavage] "This class belongs to MOP wrt its scope and was already present there.")
-+ AnnotationAssertion(<rdfs:label> <RXNO:0000344>[alkene oxidative cleavage] "DEPRECATED alkene oxidative cleavage")
-+ AnnotationAssertion(Annotation(<oboInOwl:created_by> <https://orcid.org/0000-0002-1595-3213>) <rdfs:comment> <RXNO:0000182>[Kolbe-Schmitt reaction] "Prior to the resolving of https://github.com/rsc-ontology/rxno/issues/27 the parent of this class was wrongly also defined in RXNO under the ID MOP:0000713 ('acetylene reduction'). \nThus the \"has_participant some 'carboxy group'\" axiom, which was not yet present on 'carboxylation' (MOP:0000591) in MOP was copied from this wrongly defined  'carboxylation' in RXNO to the proper one in MOP.\n\nThe only RXNO subclass 'Kolbe-Schmitt reaction' (RXNO:0000182) of 'carboxylation' was also moved to be correctly subsumed in RXNO.")
-+ AnnotationAssertion(Annotation(<oboInOwl:hasDbXref> "RSC:db") Annotation(<oboInOwl:hasDbXref> "https://orcid.org/0000-0001-5985-7429") Annotation(<oboInOwl:hasDbXref> "https://orcid.org/0000-0002-4077-4719") <IAO:0000115>[obo:IAO_0000115] <RXNO:0000132>[Monsanto process] "The reaction of formaldehyde with methanol to form acetic acid, catalysed by a rhodium complex.")
-+ AnnotationAssertion(Annotation(<oboInOwl:hasDbXref> "RSC:db") Annotation(<oboInOwl:hasDbXref> "https://orcid.org/0000-0001-5985-7429") Annotation(<oboInOwl:hasDbXref> "https://orcid.org/0000-0002-4077-4719") <IAO:0000115>[obo:IAO_0000115] <RXNO:0000133>[Cativa process] "The reaction of formaldehyde with methanol to form acetic acid, catalysed by an iridium complex.")
-+ Declaration(AnnotationProperty(<dc:creator>))
-+ Declaration(AnnotationProperty(<dc:date>))
-+ Declaration(AnnotationProperty(<dc:description>))
-+ Declaration(AnnotationProperty(<dc:title>))
-+ Declaration(Class(<COB:0000035>[obo:COB_0000035]))
-+ Declaration(Class(<COB:0000082>[obo:COB_0000082]))
-+ Declaration(Class(<MOP:0000591>[obo:MOP_0000591]))
-+ Declaration(Class(<MOP:0000629>[obo:MOP_0000629]))
-+ Declaration(Class(<MOP:0000708>[obo:MOP_0000708]))
-+ Declaration(Class(<MOP:0006370>[obo:MOP_0006370]))
-+ Declaration(Class(<MOP:0006371>[obo:MOP_0006371]))
-+ Declaration(ObjectProperty(<RO:0000057>[obo:RO_0000057]))
-+ Declaration(ObjectProperty(<RO:0004008>[obo:RO_0004008]))
-+ Declaration(ObjectProperty(<RO:0004009>[obo:RO_0004009]))
-+ EquivalentClasses(<RXNO:0000001>[planned reaction step] ObjectIntersectionOf(<COB:0000082>[obo:COB_0000082] ObjectSomeValuesFrom(<OBI:0000417>[obo:OBI_0000417] <RXNO:0000437>[molecular transformation objective])))
-+ EquivalentClasses(<RXNO:0000317>[ester condensation reaction] ObjectIntersectionOf(<MOP:0000627>[obo:MOP_0000627] ObjectSomeValuesFrom(<RO:0004008>[obo:RO_0004008] <CHEBI:33308>[obo:CHEBI_33308])))
-+ OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/rxno.owl>) VersionIRI(<http://purl.obolibrary.org/obo/rxno/releases/2026-10-07/rxno.owl>))
-+ SubClassOf(<RXNO:0000001>[planned reaction step] <COB:0000035>[obo:COB_0000035])
-+ SubClassOf(<RXNO:0000024>[Heck reaction] <RXNO:0000316>[palladium-catalysed carbon-carbon coupling reaction])
-+ SubClassOf(<RXNO:0000024>[Heck reaction] <RXNO:0000624>[Heck-type reaction])
-+ SubClassOf(<RXNO:0000055>[Vilsmeier-Haack reaction] <RXNO:0000001>[planned reaction step])
-+ SubClassOf(<RXNO:0000072>[Reimer-Tiemann reaction] <RXNO:0000005>[ring formation reaction step])
-+ SubClassOf(<RXNO:0000128>[Kolbe electrolysis] <RXNO:0000001>[planned reaction step])
-+ SubClassOf(<RXNO:0000132>[Monsanto process] ObjectSomeValuesFrom(<RXNO:0000424>[has specified reactant] <CHEBI:16842>[obo:CHEBI_16842]))
-+ SubClassOf(<RXNO:0000133>[Cativa process] ObjectSomeValuesFrom(<RXNO:0000424>[has specified reactant] <CHEBI:16842>[obo:CHEBI_16842]))
-+ SubClassOf(<RXNO:0000139>[Gattermann reaction] <RXNO:0000001>[planned reaction step])
-+ SubClassOf(<RXNO:0000180>[Elbs persulfate oxidation, tolyl variant] <RXNO:0000005>[ring formation reaction step])
-+ SubClassOf(<RXNO:0000182>[Kolbe-Schmitt reaction] <MOP:0000591>[obo:MOP_0000591])
-+ SubClassOf(<RXNO:0000182>[Kolbe-Schmitt reaction] ObjectSomeValuesFrom(<RO:0004009>[obo:RO_0004009] <CHEBI:16526>[obo:CHEBI_16526]))
-+ SubClassOf(<RXNO:0000246>[polymerisation reaction] <MOP:0000629>[obo:MOP_0000629])
-+ SubClassOf(<RXNO:0000257>[Criegee oxidation] <MOP:0000708>[obo:MOP_0000708])
-+ SubClassOf(<RXNO:0000269>[alkyne-azide click reaction] <MOP:0006371>[obo:MOP_0006371])
-+ SubClassOf(<RXNO:0000269>[alkyne-azide click reaction] <RXNO:0000347>[azacycle synthesis])
-+ SubClassOf(<RXNO:0000270>[copper(I)-catalyzed azide-alkyne cycloaddition] <MOP:0006371>[obo:MOP_0006371])
-+ SubClassOf(<RXNO:0000270>[copper(I)-catalyzed azide-alkyne cycloaddition] <RXNO:0000347>[azacycle synthesis])
-+ SubClassOf(<RXNO:0000317>[ester condensation reaction] ObjectSomeValuesFrom(<RO:0004008>[obo:RO_0004008] <CHEBI:33308>[obo:CHEBI_33308]))
-+ SubClassOf(<RXNO:0000329>[planned synthesis] <COB:0000082>[obo:COB_0000082])
-+ SubClassOf(<RXNO:0000368>[Crabbé homologation] ObjectSomeValuesFrom(<RO:0000057>[obo:RO_0000057] <CHEBI:32952>[obo:CHEBI_32952]))
-+ SubClassOf(<RXNO:0000369>[Friedel-Crafts reaction] <RXNO:0000001>[planned reaction step])
-+ SubClassOf(<RXNO:0000387>[Seyferth-Gilbert homologation] <MOP:0006370>[obo:MOP_0006370])
-+ SubClassOf(<RXNO:0000398>[benzimidazole synthesis] <RXNO:0000347>[azacycle synthesis])
-+ SubClassOf(<RXNO:0000431>[carboxylic acid to primary alcohol reduction] ObjectSomeValuesFrom(<RO:0004008>[obo:RO_0004008] <CHEBI:15734>[obo:CHEBI_15734]))
-+ SubClassOf(<RXNO:0000431>[carboxylic acid to primary alcohol reduction] ObjectSomeValuesFrom(<RO:0004009>[obo:RO_0004009] <CHEBI:33575>[obo:CHEBI_33575]))
-+ SubClassOf(<RXNO:0000447>[Duff reaction] <RXNO:0000001>[planned reaction step])
-+ SubClassOf(<RXNO:0000501>[Feist-Bénary synthesis] ObjectSomeValuesFrom(<RO:0000057>[obo:RO_0000057] <CHEBI:16227>[obo:CHEBI_16227]))
-+ SubClassOf(<RXNO:0000552>[Leuckart aldehyde reaction] ObjectSomeValuesFrom(<RO:0004009>[obo:RO_0004009] <CHEBI:17478>[obo:CHEBI_17478]))
-+ SubClassOf(<RXNO:0000553>[Leuckart ketone reaction] ObjectSomeValuesFrom(<RO:0004009>[obo:RO_0004009] <CHEBI:17087>[obo:CHEBI_17087]))
-+ SubClassOf(<RXNO:0000599>[Johnson-Corey-Chaykovsky epoxide synthesis] <RXNO:0000598>[Johnson-Corey-Chaykovsky reaction])
-+ SubClassOf(<RXNO:0000601>[Johnson-Corey-Chaykovsky aziridine synthesis] <RXNO:0000598>[Johnson-Corey-Chaykovsky reaction])
-+ SubClassOf(<RXNO:0000602>[Johnson-Corey-Chaykovsky thiirane synthesis] <RXNO:0000598>[Johnson-Corey-Chaykovsky reaction])
-+ SubClassOf(<RXNO:0000605>[Fukuyama coupling] <RXNO:0000316>[palladium-catalysed carbon-carbon coupling reaction])
-+ SubClassOf(<RXNO:0000619>[Hofmann-Löffler-Freytag piperidine synthesis] <RXNO:0000618>[Hofmann-Löffler-Freytag reaction])
-+ SubClassOf(<RXNO:0000620>[Hofmann-Löffler-Freytag pyrrolidine synthesis] <RXNO:0000618>[Hofmann-Löffler-Freytag reaction])
-+ SubClassOf(<RXNO:0000621>[Hell-Volhard-Zelinsky reaction] <RXNO:0000001>[planned reaction step])
-+ SubClassOf(<RXNO:0000649>[Lemieux-Johnson oxidation] <MOP:0000708>[obo:MOP_0000708])
-+ SubClassOf(<RXNO:0000650>[Malaprade reaction] <MOP:0000708>[obo:MOP_0000708])
-+ SubClassOf(<RXNO:0000651>[Fenton 1,2-glycol oxidation] <RXNO:0000266>[Fenton reaction])
-+ SubClassOf(<RXNO:0000652>[Fenton alpha-hydroxy carboxylic acid oxidation] <RXNO:0000266>[Fenton reaction])
-+ SubClassOf(<RXNO:0000653>[Fenton hydrogen peroxide reduction] <RXNO:0000266>[Fenton reaction])
-+ SubClassOf(<RXNO:0000654>[Mukaiyama hydration] <RXNO:0000001>[planned reaction step])
-+ SubClassOf(<RXNO:0000655>[Favorskii reaction] <RXNO:0000001>[planned reaction step])
-+ SubClassOf(<RXNO:0000656>[Diimide reduction] <RXNO:0000001>[planned reaction step])
-+ SubClassOf(<RXNO:0000659>[Miyaura borylation] <RXNO:0000316>[palladium-catalysed carbon-carbon coupling reaction])
-+ SubClassOf(<RXNO:0000670>[Groebke-Blackburn-Bienaymé reaction] <RXNO:0000349>[heterocycle synthesis])
-+ SubClassOf(<RXNO:0000671>[Baeyer oxindole synthesis] <RXNO:0000395>[indole synthesis])
-+ SubClassOf(<RXNO:0000675>[Balsohn alkylation] <RXNO:0000001>[planned reaction step])
-+ SubClassOf(<RXNO:0000686>[Jacobsen epoxidation] <RXNO:0000346>[oxacycle synthesis])
-+ SubClassOf(<RXNO:0000687>[Shi epoxidation] <RXNO:0000346>[oxacycle synthesis])
-+ SubClassOf(<RXNO:0000688>[Asinger reaction] <RXNO:0000347>[azacycle synthesis])
-+ SubClassOf(<RXNO:0000691>[Baeyer diarylmethane synthesis] <RXNO:0000005>[ring formation reaction step])
-+ SubObjectPropertyOf(<RXNO:0000416>[protects] <RO:0004009>[obo:RO_0004009])
-+ SubObjectPropertyOf(<RXNO:0000417>[deprotects] <RO:0004008>[obo:RO_0004008])
-+ SubObjectPropertyOf(<RXNO:0000423>[has specified product] <RO:0004008>[obo:RO_0004008])
-+ SubObjectPropertyOf(<RXNO:0000424>[has specified reactant] <RO:0004009>[obo:RO_0004009])
-+ SubObjectPropertyOf(<RXNO:0000425>[has_catalyst] <RO:0000057>[obo:RO_0000057])
-+ SubObjectPropertyOf(<RXNO:0000469>[has_intermediate] <RO:0000057>[obo:RO_0000057])
+## Left
+- Ontology IRI: `http://purl.obolibrary.org/obo/rxno.owl`
+- Version IRI: `http://purl.obolibrary.org/obo/rxno/releases/2021-12-16/rxno.owl`
+- Loaded from: `file:/work/rxno_base_pre_odk.owl`
+
+## Right
+- Ontology IRI: `http://purl.obolibrary.org/obo/rxno.owl`
+- Version IRI: `http://purl.obolibrary.org/obo/rxno/releases/2026-10-07/rxno.owl`
+- Loaded from: `file:/work/rxno_base_post_odk.owl`
+
+### Ontology imports 
+
+
+
+### Ontology annotations 
+#### Removed
+- [description](http://purl.org/dc/elements/1.1/description) "RXNO is the name reaction ontology. It contains more than 500 classes representing organic reactions such as the Diels&ndash;Alder cyclization." 
+
+- [title](http://purl.org/dc/elements/1.1/title) "RXNO" 
+
+#### Added
+- [description](http://purl.org/dc/terms/description) "RXNO is the name reaction ontology. It contains more than 500 classes representing organic reactions such as the Diels&ndash;Alder cyclization." 
+
+- [title](http://purl.org/dc/terms/title) "RXNO" 
+
+- [versionInfo](http://www.w3.org/2002/07/owl#versionInfo) "2026-10-07" 
+
+
+### Albright-Goldman oxidation `http://purl.obolibrary.org/obo/RXNO_0000668`
+#### Removed
+- [Albright-Goldman oxidation](http://purl.obolibrary.org/obo/RXNO_0000668) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Albright-Goldman oxidation](http://purl.obolibrary.org/obo/RXNO_0000668) [date](http://purl.org/dc/elements/1.1/date) "2021-11-15T09:30:47Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Albright-Goldman oxidation](http://purl.obolibrary.org/obo/RXNO_0000668) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Albright-Goldman oxidation](http://purl.obolibrary.org/obo/RXNO_0000668) [date](http://purl.org/dc/terms/date) "2021-11-15T09:30:47Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Asinger reaction `http://purl.obolibrary.org/obo/RXNO_0000688`
+#### Removed
+- [Asinger reaction](http://purl.obolibrary.org/obo/RXNO_0000688) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Asinger reaction](http://purl.obolibrary.org/obo/RXNO_0000688) [date](http://purl.org/dc/elements/1.1/date) "2021-12-16T09:29:30Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Asinger reaction](http://purl.obolibrary.org/obo/RXNO_0000688) SubClassOf [ring formation reaction step](http://purl.obolibrary.org/obo/RXNO_0000005) 
+
+#### Added
+- [Asinger reaction](http://purl.obolibrary.org/obo/RXNO_0000688) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Asinger reaction](http://purl.obolibrary.org/obo/RXNO_0000688) [date](http://purl.org/dc/terms/date) "2021-12-16T09:29:30Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Asinger reaction](http://purl.obolibrary.org/obo/RXNO_0000688) SubClassOf [azacycle synthesis](http://purl.obolibrary.org/obo/RXNO_0000347) 
+
+
+### Aston-Greenburg rearrangement `http://purl.obolibrary.org/obo/RXNO_0000678`
+#### Removed
+- [Aston-Greenburg rearrangement](http://purl.obolibrary.org/obo/RXNO_0000678) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Aston-Greenburg rearrangement](http://purl.obolibrary.org/obo/RXNO_0000678) [date](http://purl.org/dc/elements/1.1/date) "2021-12-14T08:15:45Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Aston-Greenburg rearrangement](http://purl.obolibrary.org/obo/RXNO_0000678) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Aston-Greenburg rearrangement](http://purl.obolibrary.org/obo/RXNO_0000678) [date](http://purl.org/dc/terms/date) "2021-12-14T08:15:45Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Atherton-Todd reaction `http://purl.obolibrary.org/obo/RXNO_0000690`
+#### Removed
+- [Atherton-Todd reaction](http://purl.obolibrary.org/obo/RXNO_0000690) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Atherton-Todd reaction](http://purl.obolibrary.org/obo/RXNO_0000690) [date](http://purl.org/dc/elements/1.1/date) "2021-12-16T12:05:47Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Atherton-Todd reaction](http://purl.obolibrary.org/obo/RXNO_0000690) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Atherton-Todd reaction](http://purl.obolibrary.org/obo/RXNO_0000690) [date](http://purl.org/dc/terms/date) "2021-12-16T12:05:47Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### BFO_0000057 `http://purl.obolibrary.org/obo/BFO_0000057`
+#### Removed
+- ObjectProperty: [BFO_0000057](http://purl.obolibrary.org/obo/BFO_0000057) 
+
+
+
+### BFO_0000077 `http://purl.obolibrary.org/obo/BFO_0000077`
+#### Removed
+- ObjectProperty: [BFO_0000077](http://purl.obolibrary.org/obo/BFO_0000077) 
+
+
+
+### BFO_0000078 `http://purl.obolibrary.org/obo/BFO_0000078`
+#### Removed
+- ObjectProperty: [BFO_0000078](http://purl.obolibrary.org/obo/BFO_0000078) 
+
+
+
+### Baddeley isomerization `http://purl.obolibrary.org/obo/RXNO_0000679`
+#### Removed
+- [Baddeley isomerization](http://purl.obolibrary.org/obo/RXNO_0000679) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Baddeley isomerization](http://purl.obolibrary.org/obo/RXNO_0000679) [date](http://purl.org/dc/elements/1.1/date) "2021-12-14T08:45:33Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Baddeley isomerization](http://purl.obolibrary.org/obo/RXNO_0000679) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Baddeley isomerization](http://purl.obolibrary.org/obo/RXNO_0000679) [date](http://purl.org/dc/terms/date) "2021-12-14T08:45:33Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Baekeland-Manasse-Lederer reaction `http://purl.obolibrary.org/obo/RXNO_0000677`
+#### Removed
+- [Baekeland-Manasse-Lederer reaction](http://purl.obolibrary.org/obo/RXNO_0000677) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Baekeland-Manasse-Lederer reaction](http://purl.obolibrary.org/obo/RXNO_0000677) [date](http://purl.org/dc/elements/1.1/date) "2021-12-13T12:52:17Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Baekeland-Manasse-Lederer reaction](http://purl.obolibrary.org/obo/RXNO_0000677) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Baekeland-Manasse-Lederer reaction](http://purl.obolibrary.org/obo/RXNO_0000677) [date](http://purl.org/dc/terms/date) "2021-12-13T12:52:17Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Baeyer diarylmethane synthesis `http://purl.obolibrary.org/obo/RXNO_0000691`
+#### Removed
+- [Baeyer diarylmethane synthesis](http://purl.obolibrary.org/obo/RXNO_0000691) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Baeyer diarylmethane synthesis](http://purl.obolibrary.org/obo/RXNO_0000691) [date](http://purl.org/dc/elements/1.1/date) "2021-12-16T12:54:23Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Baeyer diarylmethane synthesis](http://purl.obolibrary.org/obo/RXNO_0000691) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Baeyer diarylmethane synthesis](http://purl.obolibrary.org/obo/RXNO_0000691) [date](http://purl.org/dc/terms/date) "2021-12-16T12:54:23Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Baeyer diarylmethane synthesis](http://purl.obolibrary.org/obo/RXNO_0000691) SubClassOf [ring formation reaction step](http://purl.obolibrary.org/obo/RXNO_0000005) 
+
+
+### Baeyer oxindole synthesis `http://purl.obolibrary.org/obo/RXNO_0000671`
+#### Removed
+- [Baeyer oxindole synthesis](http://purl.obolibrary.org/obo/RXNO_0000671) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Baeyer oxindole synthesis](http://purl.obolibrary.org/obo/RXNO_0000671) [date](http://purl.org/dc/elements/1.1/date) "2021-12-03T14:20:07Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Baeyer oxindole synthesis](http://purl.obolibrary.org/obo/RXNO_0000671) SubClassOf [fused-ring-system formation](http://purl.obolibrary.org/obo/RXNO_0000052) 
+
+#### Added
+- [Baeyer oxindole synthesis](http://purl.obolibrary.org/obo/RXNO_0000671) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Baeyer oxindole synthesis](http://purl.obolibrary.org/obo/RXNO_0000671) [date](http://purl.org/dc/terms/date) "2021-12-03T14:20:07Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Baeyer oxindole synthesis](http://purl.obolibrary.org/obo/RXNO_0000671) SubClassOf [indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000395) 
+
+
+### Baeyer pyridine synthesis `http://purl.obolibrary.org/obo/RXNO_0000664`
+#### Removed
+- [Baeyer pyridine synthesis](http://purl.obolibrary.org/obo/RXNO_0000664) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Baeyer pyridine synthesis](http://purl.obolibrary.org/obo/RXNO_0000664) [date](http://purl.org/dc/elements/1.1/date) "2021-11-12T09:25:38Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Baeyer pyridine synthesis](http://purl.obolibrary.org/obo/RXNO_0000664) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Baeyer pyridine synthesis](http://purl.obolibrary.org/obo/RXNO_0000664) [date](http://purl.org/dc/terms/date) "2021-11-12T09:25:38Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Balsohn alkylation `http://purl.obolibrary.org/obo/RXNO_0000675`
+#### Removed
+- [Balsohn alkylation](http://purl.obolibrary.org/obo/RXNO_0000675) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Balsohn alkylation](http://purl.obolibrary.org/obo/RXNO_0000675) [date](http://purl.org/dc/elements/1.1/date) "2021-12-06T11:08:37Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Balsohn alkylation](http://purl.obolibrary.org/obo/RXNO_0000675) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Balsohn alkylation](http://purl.obolibrary.org/obo/RXNO_0000675) [date](http://purl.org/dc/terms/date) "2021-12-06T11:08:37Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Balsohn alkylation](http://purl.obolibrary.org/obo/RXNO_0000675) SubClassOf [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) 
+
+
+### Bartoli indole synthesis `http://purl.obolibrary.org/obo/RXNO_0000494`
+#### Removed
+- [Bartoli indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000494) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_24828](http://purl.obolibrary.org/obo/CHEBI_24828) 
+
+
+
+### Barton-Zard reaction `http://purl.obolibrary.org/obo/RXNO_0000496`
+#### Removed
+- [Barton-Zard reaction](http://purl.obolibrary.org/obo/RXNO_0000496) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_26455](http://purl.obolibrary.org/obo/CHEBI_26455) 
+
+
+
+### Bergmann degradation `http://purl.obolibrary.org/obo/RXNO_0000516`
+#### Removed
+- [Bergmann degradation](http://purl.obolibrary.org/obo/RXNO_0000516) SubClassOf [has specified reactant](http://purl.obolibrary.org/obo/RXNO_0000424) some [CHEBI_16670](http://purl.obolibrary.org/obo/CHEBI_16670) 
+
+
+
+### Bernthsen acridine synthesis `http://purl.obolibrary.org/obo/RXNO_0000519`
+#### Removed
+- [Bernthsen acridine synthesis](http://purl.obolibrary.org/obo/RXNO_0000519) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_22213](http://purl.obolibrary.org/obo/CHEBI_22213) 
+
+
+
+### Bischler-Möhlau indole synthesis `http://purl.obolibrary.org/obo/RXNO_0000523`
+#### Removed
+- [Bischler-Möhlau indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000523) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_24828](http://purl.obolibrary.org/obo/CHEBI_24828) 
+
+
+
+### Boc protection `http://purl.obolibrary.org/obo/RXNO_0000079`
+#### Removed
+- [Boc protection](http://purl.obolibrary.org/obo/RXNO_0000079) SubClassOf [protects](http://purl.obolibrary.org/obo/RXNO_0000416) some [CHEBI_46882](http://purl.obolibrary.org/obo/CHEBI_46882) 
+
+
+
+### Borsche-Drechsel cyclisation `http://purl.obolibrary.org/obo/RXNO_0000532`
+#### Removed
+- [Borsche-Drechsel cyclisation](http://purl.obolibrary.org/obo/RXNO_0000532) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_48513](http://purl.obolibrary.org/obo/CHEBI_48513) 
+
+
+
+### COB_0000035 `http://purl.obolibrary.org/obo/COB_0000035`
+
+#### Added
+- Class: [COB_0000035](http://purl.obolibrary.org/obo/COB_0000035) 
+
+
+### COB_0000082 `http://purl.obolibrary.org/obo/COB_0000082`
+
+#### Added
+- Class: [COB_0000082](http://purl.obolibrary.org/obo/COB_0000082) 
+
+
+### Cadogan carbazole synthesis `http://purl.obolibrary.org/obo/RXNO_0000252`
+#### Removed
+- [Cadogan carbazole synthesis](http://purl.obolibrary.org/obo/RXNO_0000252) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_48513](http://purl.obolibrary.org/obo/CHEBI_48513) 
+
+
+
+### Cadogan indole synthesis `http://purl.obolibrary.org/obo/RXNO_0000509`
+#### Removed
+- [Cadogan indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000509) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_24828](http://purl.obolibrary.org/obo/CHEBI_24828) 
+
+
+
+### Camps quinoline synthesis `http://purl.obolibrary.org/obo/RXNO_0000524`
+#### Removed
+- [Camps quinoline synthesis](http://purl.obolibrary.org/obo/RXNO_0000524) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_26513](http://purl.obolibrary.org/obo/CHEBI_26513) 
+
+
+
+### Castro-Stephens coupling `http://purl.obolibrary.org/obo/RXNO_0000525`
+#### Removed
+- [Castro-Stephens coupling](http://purl.obolibrary.org/obo/RXNO_0000525) SubClassOf [has_catalyst](http://purl.obolibrary.org/obo/RXNO_0000425) some [CHEBI_33363](http://purl.obolibrary.org/obo/CHEBI_33363) 
+
+
+
+### Cativa process `http://purl.obolibrary.org/obo/RXNO_0000133`
+#### Removed
+- [Cativa process](http://purl.obolibrary.org/obo/RXNO_0000133) [IAO_0000115](http://purl.obolibrary.org/obo/IAO_0000115) "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by an iridium complex." 
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "https://orcid.org/0000-0001-5985-7429" 
+
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "https://orcid.org/0000-0002-4077-4719" 
+
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "RSC:db" 
+
+- [Cativa process](http://purl.obolibrary.org/obo/RXNO_0000133) SubClassOf [has specified reactant](http://purl.obolibrary.org/obo/RXNO_0000424) some [CHEBI_17245](http://purl.obolibrary.org/obo/CHEBI_17245) 
+
+#### Added
+- [Cativa process](http://purl.obolibrary.org/obo/RXNO_0000133) [IAO_0000115](http://purl.obolibrary.org/obo/IAO_0000115) "The reaction of formaldehyde with methanol to form acetic acid, catalysed by an iridium complex." 
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "https://orcid.org/0000-0001-5985-7429" 
+
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "https://orcid.org/0000-0002-4077-4719" 
+
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "RSC:db" 
+
+- [Cativa process](http://purl.obolibrary.org/obo/RXNO_0000133) SubClassOf [has specified reactant](http://purl.obolibrary.org/obo/RXNO_0000424) some [CHEBI_16842](http://purl.obolibrary.org/obo/CHEBI_16842) 
+
+
+### Chichibabin pyridine synthesis `http://purl.obolibrary.org/obo/RXNO_0000526`
+#### Removed
+- [Chichibabin pyridine synthesis](http://purl.obolibrary.org/obo/RXNO_0000526) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_26421](http://purl.obolibrary.org/obo/CHEBI_26421) 
+
+
+
+### Clauson-Kaas reaction `http://purl.obolibrary.org/obo/RXNO_0000312`
+#### Removed
+- [Clauson-Kaas reaction](http://purl.obolibrary.org/obo/RXNO_0000312) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_26455](http://purl.obolibrary.org/obo/CHEBI_26455) 
+
+
+
+### Corey-Kim oxidation `http://purl.obolibrary.org/obo/RXNO_0000665`
+#### Removed
+- [Corey-Kim oxidation](http://purl.obolibrary.org/obo/RXNO_0000665) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Corey-Kim oxidation](http://purl.obolibrary.org/obo/RXNO_0000665) [date](http://purl.org/dc/elements/1.1/date) "2021-11-15T08:58:15Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Corey-Kim oxidation](http://purl.obolibrary.org/obo/RXNO_0000665) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Corey-Kim oxidation](http://purl.obolibrary.org/obo/RXNO_0000665) [date](http://purl.org/dc/terms/date) "2021-11-15T08:58:15Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Corey-Schmidt oxidation `http://purl.obolibrary.org/obo/RXNO_0000667`
+#### Removed
+- [Corey-Schmidt oxidation](http://purl.obolibrary.org/obo/RXNO_0000667) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Corey-Schmidt oxidation](http://purl.obolibrary.org/obo/RXNO_0000667) [date](http://purl.org/dc/elements/1.1/date) "2021-11-15T09:20:03Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Corey-Schmidt oxidation](http://purl.obolibrary.org/obo/RXNO_0000667) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Corey-Schmidt oxidation](http://purl.obolibrary.org/obo/RXNO_0000667) [date](http://purl.org/dc/terms/date) "2021-11-15T09:20:03Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Corey-Seebach reaction `http://purl.obolibrary.org/obo/RXNO_0000662`
+#### Removed
+- [Corey-Seebach reaction](http://purl.obolibrary.org/obo/RXNO_0000662) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Corey-Seebach reaction](http://purl.obolibrary.org/obo/RXNO_0000662) [date](http://purl.org/dc/elements/1.1/date) "2021-11-05T07:51:22Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Corey-Seebach reaction](http://purl.obolibrary.org/obo/RXNO_0000662) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Corey-Seebach reaction](http://purl.obolibrary.org/obo/RXNO_0000662) [date](http://purl.org/dc/terms/date) "2021-11-05T07:51:22Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Corey-Suggs oxidation `http://purl.obolibrary.org/obo/RXNO_0000666`
+#### Removed
+- [Corey-Suggs oxidation](http://purl.obolibrary.org/obo/RXNO_0000666) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Corey-Suggs oxidation](http://purl.obolibrary.org/obo/RXNO_0000666) [date](http://purl.org/dc/elements/1.1/date) "2021-11-15T09:09:31Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Corey-Suggs oxidation](http://purl.obolibrary.org/obo/RXNO_0000666) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Corey-Suggs oxidation](http://purl.obolibrary.org/obo/RXNO_0000666) [date](http://purl.org/dc/terms/date) "2021-11-15T09:09:31Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Corey-Winter elimination `http://purl.obolibrary.org/obo/RXNO_0000660`
+#### Removed
+- [Corey-Winter elimination](http://purl.obolibrary.org/obo/RXNO_0000660) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Corey-Winter elimination](http://purl.obolibrary.org/obo/RXNO_0000660) [date](http://purl.org/dc/elements/1.1/date) "2021-11-04T11:03:16Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Corey-Winter elimination](http://purl.obolibrary.org/obo/RXNO_0000660) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Corey-Winter elimination](http://purl.obolibrary.org/obo/RXNO_0000660) [date](http://purl.org/dc/terms/date) "2021-11-04T11:03:16Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Crabbé homologation `http://purl.obolibrary.org/obo/RXNO_0000368`
+#### Removed
+- [Crabbé homologation](http://purl.obolibrary.org/obo/RXNO_0000368) SubClassOf [BFO_0000057](http://purl.obolibrary.org/obo/BFO_0000057) some [CHEBI_32952](http://purl.obolibrary.org/obo/CHEBI_32952) 
+
+#### Added
+- [Crabbé homologation](http://purl.obolibrary.org/obo/RXNO_0000368) SubClassOf [RO_0000057](http://purl.obolibrary.org/obo/RO_0000057) some [CHEBI_32952](http://purl.obolibrary.org/obo/CHEBI_32952) 
+
+
+### Criegee oxidation `http://purl.obolibrary.org/obo/RXNO_0000257`
+#### Removed
+- [Criegee oxidation](http://purl.obolibrary.org/obo/RXNO_0000257) SubClassOf [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) 
+
+#### Added
+- [Criegee oxidation](http://purl.obolibrary.org/obo/RXNO_0000257) SubClassOf [MOP_0000708](http://purl.obolibrary.org/obo/MOP_0000708) 
+
+
+### Diimide reduction `http://purl.obolibrary.org/obo/RXNO_0000656`
+#### Removed
+- [Diimide reduction](http://purl.obolibrary.org/obo/RXNO_0000656) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Diimide reduction](http://purl.obolibrary.org/obo/RXNO_0000656) [date](http://purl.org/dc/elements/1.1/date) "2021-05-17T08:35:08Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Diimide reduction](http://purl.obolibrary.org/obo/RXNO_0000656) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Diimide reduction](http://purl.obolibrary.org/obo/RXNO_0000656) [date](http://purl.org/dc/terms/date) "2021-05-17T08:35:08Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Diimide reduction](http://purl.obolibrary.org/obo/RXNO_0000656) SubClassOf [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) 
+
+
+### Doebner reaction `http://purl.obolibrary.org/obo/RXNO_0000126`
+#### Removed
+- [Doebner reaction](http://purl.obolibrary.org/obo/RXNO_0000126) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_26513](http://purl.obolibrary.org/obo/CHEBI_26513) 
+
+
+
+### Duff reaction `http://purl.obolibrary.org/obo/RXNO_0000447`
+
+#### Added
+- [Duff reaction](http://purl.obolibrary.org/obo/RXNO_0000447) SubClassOf [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) 
+
+
+### Dötz reaction `http://purl.obolibrary.org/obo/RXNO_0000681`
+#### Removed
+- [Dötz reaction](http://purl.obolibrary.org/obo/RXNO_0000681) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Dötz reaction](http://purl.obolibrary.org/obo/RXNO_0000681) [date](http://purl.org/dc/elements/1.1/date) "2021-12-14T10:45:04Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Dötz reaction](http://purl.obolibrary.org/obo/RXNO_0000681) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Dötz reaction](http://purl.obolibrary.org/obo/RXNO_0000681) [date](http://purl.org/dc/terms/date) "2021-12-14T10:45:04Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Edman degradation `http://purl.obolibrary.org/obo/RXNO_0000071`
+#### Removed
+- [Edman degradation](http://purl.obolibrary.org/obo/RXNO_0000071) SubClassOf [has specified reactant](http://purl.obolibrary.org/obo/RXNO_0000424) some [CHEBI_16670](http://purl.obolibrary.org/obo/CHEBI_16670) 
+
+
+
+### Elbs persulfate oxidation, tolyl variant `http://purl.obolibrary.org/obo/RXNO_0000180`
+
+#### Added
+- [Elbs persulfate oxidation, tolyl variant](http://purl.obolibrary.org/obo/RXNO_0000180) SubClassOf [ring formation reaction step](http://purl.obolibrary.org/obo/RXNO_0000005) 
+
+
+### Favorskii reaction `http://purl.obolibrary.org/obo/RXNO_0000655`
+#### Removed
+- [Favorskii reaction](http://purl.obolibrary.org/obo/RXNO_0000655) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Favorskii reaction](http://purl.obolibrary.org/obo/RXNO_0000655) [date](http://purl.org/dc/elements/1.1/date) "2021-05-17T08:17:36Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Favorskii reaction](http://purl.obolibrary.org/obo/RXNO_0000655) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Favorskii reaction](http://purl.obolibrary.org/obo/RXNO_0000655) [date](http://purl.org/dc/terms/date) "2021-05-17T08:17:36Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Favorskii reaction](http://purl.obolibrary.org/obo/RXNO_0000655) SubClassOf [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) 
+
+
+### Feist-Bénary synthesis `http://purl.obolibrary.org/obo/RXNO_0000501`
+#### Removed
+- [Feist-Bénary synthesis](http://purl.obolibrary.org/obo/RXNO_0000501) SubClassOf [BFO_0000057](http://purl.obolibrary.org/obo/BFO_0000057) some [CHEBI_16227](http://purl.obolibrary.org/obo/CHEBI_16227) 
+
+#### Added
+- [Feist-Bénary synthesis](http://purl.obolibrary.org/obo/RXNO_0000501) SubClassOf [RO_0000057](http://purl.obolibrary.org/obo/RO_0000057) some [CHEBI_16227](http://purl.obolibrary.org/obo/CHEBI_16227) 
+
+
+### Fenton 1,2-glycol oxidation `http://purl.obolibrary.org/obo/RXNO_0000651`
+#### Removed
+- [Fenton 1,2-glycol oxidation](http://purl.obolibrary.org/obo/RXNO_0000651) SubClassOf [functional group oxidation](http://purl.obolibrary.org/obo/RXNO_0000012) 
+
+#### Added
+- [Fenton 1,2-glycol oxidation](http://purl.obolibrary.org/obo/RXNO_0000651) SubClassOf [Fenton reaction](http://purl.obolibrary.org/obo/RXNO_0000266) 
+
+
+### Fenton alpha-hydroxy carboxylic acid oxidation `http://purl.obolibrary.org/obo/RXNO_0000652`
+#### Removed
+- [Fenton alpha-hydroxy carboxylic acid oxidation](http://purl.obolibrary.org/obo/RXNO_0000652) SubClassOf [functional group oxidation](http://purl.obolibrary.org/obo/RXNO_0000012) 
+
+#### Added
+- [Fenton alpha-hydroxy carboxylic acid oxidation](http://purl.obolibrary.org/obo/RXNO_0000652) SubClassOf [Fenton reaction](http://purl.obolibrary.org/obo/RXNO_0000266) 
+
+
+### Fenton hydrogen peroxide reduction `http://purl.obolibrary.org/obo/RXNO_0000653`
+#### Removed
+- [Fenton hydrogen peroxide reduction](http://purl.obolibrary.org/obo/RXNO_0000653) SubClassOf [functional group oxidation](http://purl.obolibrary.org/obo/RXNO_0000012) 
+
+#### Added
+- [Fenton hydrogen peroxide reduction](http://purl.obolibrary.org/obo/RXNO_0000653) SubClassOf [Fenton reaction](http://purl.obolibrary.org/obo/RXNO_0000266) 
+
+
+### Fmoc protection `http://purl.obolibrary.org/obo/RXNO_0000160`
+#### Removed
+- [Fmoc protection](http://purl.obolibrary.org/obo/RXNO_0000160) SubClassOf [protects](http://purl.obolibrary.org/obo/RXNO_0000416) some [CHEBI_46882](http://purl.obolibrary.org/obo/CHEBI_46882) 
+
+
+
+### Friedel-Crafts reaction `http://purl.obolibrary.org/obo/RXNO_0000369`
+
+#### Added
+- [Friedel-Crafts reaction](http://purl.obolibrary.org/obo/RXNO_0000369) SubClassOf [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) 
+
+
+### Fukuyama coupling `http://purl.obolibrary.org/obo/RXNO_0000605`
+#### Removed
+- [Fukuyama coupling](http://purl.obolibrary.org/obo/RXNO_0000605) SubClassOf [has_catalyst](http://purl.obolibrary.org/obo/RXNO_0000425) some [CHEBI_33363](http://purl.obolibrary.org/obo/CHEBI_33363) 
+
+#### Added
+- [Fukuyama coupling](http://purl.obolibrary.org/obo/RXNO_0000605) SubClassOf [palladium-catalysed carbon-carbon coupling reaction](http://purl.obolibrary.org/obo/RXNO_0000316) 
+
+
+### Fukuyama reduction `http://purl.obolibrary.org/obo/RXNO_0000680`
+#### Removed
+- [Fukuyama reduction](http://purl.obolibrary.org/obo/RXNO_0000680) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Fukuyama reduction](http://purl.obolibrary.org/obo/RXNO_0000680) [date](http://purl.org/dc/elements/1.1/date) "2021-12-14T09:43:52Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Fukuyama reduction](http://purl.obolibrary.org/obo/RXNO_0000680) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Fukuyama reduction](http://purl.obolibrary.org/obo/RXNO_0000680) [date](http://purl.org/dc/terms/date) "2021-12-14T09:43:52Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Gattermann reaction `http://purl.obolibrary.org/obo/RXNO_0000139`
+
+#### Added
+- [Gattermann reaction](http://purl.obolibrary.org/obo/RXNO_0000139) SubClassOf [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) 
+
+
+### Groebke-Blackburn-Bienaymé reaction `http://purl.obolibrary.org/obo/RXNO_0000670`
+#### Removed
+- [Groebke-Blackburn-Bienaymé reaction](http://purl.obolibrary.org/obo/RXNO_0000670) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Groebke-Blackburn-Bienaymé reaction](http://purl.obolibrary.org/obo/RXNO_0000670) [date](http://purl.org/dc/elements/1.1/date) "2021-12-03T09:13:40Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Groebke-Blackburn-Bienaymé reaction](http://purl.obolibrary.org/obo/RXNO_0000670) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Groebke-Blackburn-Bienaymé reaction](http://purl.obolibrary.org/obo/RXNO_0000670) [date](http://purl.org/dc/terms/date) "2021-12-03T09:13:40Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Groebke-Blackburn-Bienaymé reaction](http://purl.obolibrary.org/obo/RXNO_0000670) SubClassOf [heterocycle synthesis](http://purl.obolibrary.org/obo/RXNO_0000349) 
+
+
+### Heck reaction `http://purl.obolibrary.org/obo/RXNO_0000024`
+
+#### Added
+- [Heck reaction](http://purl.obolibrary.org/obo/RXNO_0000024) SubClassOf [palladium-catalysed carbon-carbon coupling reaction](http://purl.obolibrary.org/obo/RXNO_0000316) 
+
+- [Heck reaction](http://purl.obolibrary.org/obo/RXNO_0000024) SubClassOf [Heck-type reaction](http://purl.obolibrary.org/obo/RXNO_0000624) 
+
+
+### Hell-Volhard-Zelinsky reaction `http://purl.obolibrary.org/obo/RXNO_0000621`
+
+#### Added
+- [Hell-Volhard-Zelinsky reaction](http://purl.obolibrary.org/obo/RXNO_0000621) SubClassOf [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) 
+
+
+### Hofmann-Löffler-Freytag piperidine synthesis `http://purl.obolibrary.org/obo/RXNO_0000619`
+
+#### Added
+- [Hofmann-Löffler-Freytag piperidine synthesis](http://purl.obolibrary.org/obo/RXNO_0000619) SubClassOf [Hofmann-Löffler-Freytag reaction](http://purl.obolibrary.org/obo/RXNO_0000618) 
+
+
+### Hofmann-Löffler-Freytag pyrrolidine synthesis `http://purl.obolibrary.org/obo/RXNO_0000620`
+
+#### Added
+- [Hofmann-Löffler-Freytag pyrrolidine synthesis](http://purl.obolibrary.org/obo/RXNO_0000620) SubClassOf [Hofmann-Löffler-Freytag reaction](http://purl.obolibrary.org/obo/RXNO_0000618) 
+
+
+### Horner reaction `http://purl.obolibrary.org/obo/RXNO_0000057`
+#### Removed
+- [Horner reaction](http://purl.obolibrary.org/obo/RXNO_0000057) SubClassOf [OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [molecular skeleton joining objective](http://purl.obolibrary.org/obo/RXNO_0000440) 
+
+- [Horner reaction](http://purl.obolibrary.org/obo/RXNO_0000057) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_33641](http://purl.obolibrary.org/obo/CHEBI_33641) 
+
+- [Horner reaction](http://purl.obolibrary.org/obo/RXNO_0000057) SubClassOf [has specified reactant](http://purl.obolibrary.org/obo/RXNO_0000424) some [CHEBI_36587](http://purl.obolibrary.org/obo/CHEBI_36587) 
+
+
+
+### Horner-Wadsworth-Emmons reaction `http://purl.obolibrary.org/obo/RXNO_0000056`
+#### Removed
+- [Horner-Wadsworth-Emmons reaction](http://purl.obolibrary.org/obo/RXNO_0000056) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_33641](http://purl.obolibrary.org/obo/CHEBI_33641) 
+
+
+
+### IBX oxidation `http://purl.obolibrary.org/obo/RXNO_0000673`
+#### Removed
+- [IBX oxidation](http://purl.obolibrary.org/obo/RXNO_0000673) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [IBX oxidation](http://purl.obolibrary.org/obo/RXNO_0000673) [date](http://purl.org/dc/elements/1.1/date) "2021-11-15T11:24:35Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [IBX oxidation](http://purl.obolibrary.org/obo/RXNO_0000673) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [IBX oxidation](http://purl.obolibrary.org/obo/RXNO_0000673) [date](http://purl.org/dc/terms/date) "2021-11-15T11:24:35Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Jacobsen epoxidation `http://purl.obolibrary.org/obo/RXNO_0000686`
+#### Removed
+- [Jacobsen epoxidation](http://purl.obolibrary.org/obo/RXNO_0000686) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Jacobsen epoxidation](http://purl.obolibrary.org/obo/RXNO_0000686) [date](http://purl.org/dc/elements/1.1/date) "2021-12-16T08:34:02Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Jacobsen epoxidation](http://purl.obolibrary.org/obo/RXNO_0000686) SubClassOf [ring formation reaction step](http://purl.obolibrary.org/obo/RXNO_0000005) 
+
+#### Added
+- [Jacobsen epoxidation](http://purl.obolibrary.org/obo/RXNO_0000686) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Jacobsen epoxidation](http://purl.obolibrary.org/obo/RXNO_0000686) [date](http://purl.org/dc/terms/date) "2021-12-16T08:34:02Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Jacobsen epoxidation](http://purl.obolibrary.org/obo/RXNO_0000686) SubClassOf [oxacycle synthesis](http://purl.obolibrary.org/obo/RXNO_0000346) 
+
+
+### Johnson-Corey-Chaykovsky aziridine synthesis `http://purl.obolibrary.org/obo/RXNO_0000601`
+
+#### Added
+- [Johnson-Corey-Chaykovsky aziridine synthesis](http://purl.obolibrary.org/obo/RXNO_0000601) SubClassOf [Johnson-Corey-Chaykovsky reaction](http://purl.obolibrary.org/obo/RXNO_0000598) 
+
+
+### Johnson-Corey-Chaykovsky epoxide synthesis `http://purl.obolibrary.org/obo/RXNO_0000599`
+
+#### Added
+- [Johnson-Corey-Chaykovsky epoxide synthesis](http://purl.obolibrary.org/obo/RXNO_0000599) SubClassOf [Johnson-Corey-Chaykovsky reaction](http://purl.obolibrary.org/obo/RXNO_0000598) 
+
+
+### Johnson-Corey-Chaykovsky thiirane synthesis `http://purl.obolibrary.org/obo/RXNO_0000602`
+
+#### Added
+- [Johnson-Corey-Chaykovsky thiirane synthesis](http://purl.obolibrary.org/obo/RXNO_0000602) SubClassOf [Johnson-Corey-Chaykovsky reaction](http://purl.obolibrary.org/obo/RXNO_0000598) 
+
+
+### Julia olefination `http://purl.obolibrary.org/obo/RXNO_0000117`
+#### Removed
+- [Julia olefination](http://purl.obolibrary.org/obo/RXNO_0000117) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_33641](http://purl.obolibrary.org/obo/CHEBI_33641) 
+
+
+
+### Julia-Kocienski olefination `http://purl.obolibrary.org/obo/RXNO_0000304`
+#### Removed
+- [Julia-Kocienski olefination](http://purl.obolibrary.org/obo/RXNO_0000304) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_33641](http://purl.obolibrary.org/obo/CHEBI_33641) 
+
+
+
+### Kabachnik-Fields reaction `http://purl.obolibrary.org/obo/RXNO_0000676`
+#### Removed
+- [Kabachnik-Fields reaction](http://purl.obolibrary.org/obo/RXNO_0000676) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Kabachnik-Fields reaction](http://purl.obolibrary.org/obo/RXNO_0000676) [date](http://purl.org/dc/elements/1.1/date) "2021-12-13T11:39:08Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Kabachnik-Fields reaction](http://purl.obolibrary.org/obo/RXNO_0000676) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Kabachnik-Fields reaction](http://purl.obolibrary.org/obo/RXNO_0000676) [date](http://purl.org/dc/terms/date) "2021-12-13T11:39:08Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Kolbe electrolysis `http://purl.obolibrary.org/obo/RXNO_0000128`
+
+#### Added
+- [Kolbe electrolysis](http://purl.obolibrary.org/obo/RXNO_0000128) SubClassOf [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) 
+
+
+### Kolbe-Schmitt reaction `http://purl.obolibrary.org/obo/RXNO_0000182`
+#### Removed
+- [Kolbe-Schmitt reaction](http://purl.obolibrary.org/obo/RXNO_0000182) SubClassOf [MOP_0000713](http://purl.obolibrary.org/obo/MOP_0000713) 
+
+- [Kolbe-Schmitt reaction](http://purl.obolibrary.org/obo/RXNO_0000182) SubClassOf [BFO_0000078](http://purl.obolibrary.org/obo/BFO_0000078) some [CHEBI_16526](http://purl.obolibrary.org/obo/CHEBI_16526) 
+
+#### Added
+- [Kolbe-Schmitt reaction](http://purl.obolibrary.org/obo/RXNO_0000182) [comment](http://www.w3.org/2000/01/rdf-schema#comment) "Prior to the resolving of https://github.com/rsc-ontology/rxno/issues/27 the parent of this class was wrongly also defined in RXNO under the ID MOP:0000713 ('acetylene reduction'). 
+Thus the &quot;has_participant some 'carboxy group'&quot; axiom, which was not yet present on 'carboxylation' (MOP:0000591) in MOP was copied from this wrongly defined  'carboxylation' in RXNO to the proper one in MOP.
+
+The only RXNO subclass 'Kolbe-Schmitt reaction' (RXNO:0000182) of 'carboxylation' was also moved to be correctly subsumed in RXNO." 
+  - [created_by](http://www.geneontology.org/formats/oboInOwl#created_by) [0000-0002-1595-3213](https://orcid.org/0000-0002-1595-3213) 
+
+- [Kolbe-Schmitt reaction](http://purl.obolibrary.org/obo/RXNO_0000182) SubClassOf [MOP_0000591](http://purl.obolibrary.org/obo/MOP_0000591) 
+
+- [Kolbe-Schmitt reaction](http://purl.obolibrary.org/obo/RXNO_0000182) SubClassOf [RO_0004009](http://purl.obolibrary.org/obo/RO_0004009) some [CHEBI_16526](http://purl.obolibrary.org/obo/CHEBI_16526) 
+
+
+### Kröhnke pyridine synthesis `http://purl.obolibrary.org/obo/RXNO_0000420`
+#### Removed
+- [Kröhnke pyridine synthesis](http://purl.obolibrary.org/obo/RXNO_0000420) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_26421](http://purl.obolibrary.org/obo/CHEBI_26421) 
+
+
+
+### Kulinkovich reaction `http://purl.obolibrary.org/obo/RXNO_0000682`
+#### Removed
+- [Kulinkovich reaction](http://purl.obolibrary.org/obo/RXNO_0000682) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Kulinkovich reaction](http://purl.obolibrary.org/obo/RXNO_0000682) [date](http://purl.org/dc/elements/1.1/date) "2021-12-15T09:10:05Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Kulinkovich reaction](http://purl.obolibrary.org/obo/RXNO_0000682) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Kulinkovich reaction](http://purl.obolibrary.org/obo/RXNO_0000682) [date](http://purl.org/dc/terms/date) "2021-12-15T09:10:05Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Kulinkovich-Szymoniak reaction `http://purl.obolibrary.org/obo/RXNO_0000684`
+#### Removed
+- [Kulinkovich-Szymoniak reaction](http://purl.obolibrary.org/obo/RXNO_0000684) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Kulinkovich-Szymoniak reaction](http://purl.obolibrary.org/obo/RXNO_0000684) [date](http://purl.org/dc/elements/1.1/date) "2021-12-15T10:47:43Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Kulinkovich-Szymoniak reaction](http://purl.obolibrary.org/obo/RXNO_0000684) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Kulinkovich-Szymoniak reaction](http://purl.obolibrary.org/obo/RXNO_0000684) [date](http://purl.org/dc/terms/date) "2021-12-15T10:47:43Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Kulinkovich-de Meijere reaction `http://purl.obolibrary.org/obo/RXNO_0000683`
+#### Removed
+- [Kulinkovich-de Meijere reaction](http://purl.obolibrary.org/obo/RXNO_0000683) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Kulinkovich-de Meijere reaction](http://purl.obolibrary.org/obo/RXNO_0000683) [date](http://purl.org/dc/elements/1.1/date) "2021-12-15T10:14:52Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Kulinkovich-de Meijere reaction](http://purl.obolibrary.org/obo/RXNO_0000683) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Kulinkovich-de Meijere reaction](http://purl.obolibrary.org/obo/RXNO_0000683) [date](http://purl.org/dc/terms/date) "2021-12-15T10:14:52Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Leimgruber-Batcho indole synthesis `http://purl.obolibrary.org/obo/RXNO_0000672`
+#### Removed
+- [Leimgruber-Batcho indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000672) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Leimgruber-Batcho indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000672) [date](http://purl.org/dc/elements/1.1/date) "2021-12-03T14:45:01Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Leimgruber-Batcho indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000672) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_24828](http://purl.obolibrary.org/obo/CHEBI_24828) 
+
+#### Added
+- [Leimgruber-Batcho indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000672) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Leimgruber-Batcho indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000672) [date](http://purl.org/dc/terms/date) "2021-12-03T14:45:01Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Lemieux-Johnson oxidation `http://purl.obolibrary.org/obo/RXNO_0000649`
+#### Removed
+- [Lemieux-Johnson oxidation](http://purl.obolibrary.org/obo/RXNO_0000649) SubClassOf [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) 
+
+#### Added
+- [Lemieux-Johnson oxidation](http://purl.obolibrary.org/obo/RXNO_0000649) SubClassOf [MOP_0000708](http://purl.obolibrary.org/obo/MOP_0000708) 
+
+
+### Leuckart aldehyde reaction `http://purl.obolibrary.org/obo/RXNO_0000552`
+#### Removed
+- [Leuckart aldehyde reaction](http://purl.obolibrary.org/obo/RXNO_0000552) SubClassOf [BFO_0000078](http://purl.obolibrary.org/obo/BFO_0000078) some [CHEBI_17478](http://purl.obolibrary.org/obo/CHEBI_17478) 
+
+#### Added
+- [Leuckart aldehyde reaction](http://purl.obolibrary.org/obo/RXNO_0000552) SubClassOf [RO_0004009](http://purl.obolibrary.org/obo/RO_0004009) some [CHEBI_17478](http://purl.obolibrary.org/obo/CHEBI_17478) 
+
+
+### Leuckart ketone reaction `http://purl.obolibrary.org/obo/RXNO_0000553`
+#### Removed
+- [Leuckart ketone reaction](http://purl.obolibrary.org/obo/RXNO_0000553) SubClassOf [BFO_0000078](http://purl.obolibrary.org/obo/BFO_0000078) some [CHEBI_17087](http://purl.obolibrary.org/obo/CHEBI_17087) 
+
+#### Added
+- [Leuckart ketone reaction](http://purl.obolibrary.org/obo/RXNO_0000553) SubClassOf [RO_0004009](http://purl.obolibrary.org/obo/RO_0004009) some [CHEBI_17087](http://purl.obolibrary.org/obo/CHEBI_17087) 
+
+
+### MOP_0000591 `http://purl.obolibrary.org/obo/MOP_0000591`
+
+#### Added
+- Class: [MOP_0000591](http://purl.obolibrary.org/obo/MOP_0000591) 
+
+
+### MOP_0000629 `http://purl.obolibrary.org/obo/MOP_0000629`
+
+#### Added
+- Class: [MOP_0000629](http://purl.obolibrary.org/obo/MOP_0000629) 
+
+
+### MOP_0000708 `http://purl.obolibrary.org/obo/MOP_0000708`
+
+#### Added
+- Class: [MOP_0000708](http://purl.obolibrary.org/obo/MOP_0000708) 
+
+
+### MOP_0000713 `http://purl.obolibrary.org/obo/MOP_0000713`
+#### Removed
+- Class: [MOP_0000713](http://purl.obolibrary.org/obo/MOP_0000713) 
+
+
+
+### MOP_0000714 `http://purl.obolibrary.org/obo/MOP_0000714`
+#### Removed
+- Class: [MOP_0000714](http://purl.obolibrary.org/obo/MOP_0000714) 
+
+
+
+### MOP_0000715 `http://purl.obolibrary.org/obo/MOP_0000715`
+#### Removed
+- Class: [MOP_0000715](http://purl.obolibrary.org/obo/MOP_0000715) 
+
+
+
+### MOP_0006370 `http://purl.obolibrary.org/obo/MOP_0006370`
+
+#### Added
+- Class: [MOP_0006370](http://purl.obolibrary.org/obo/MOP_0006370) 
+
+
+### MOP_0006371 `http://purl.obolibrary.org/obo/MOP_0006371`
+
+#### Added
+- Class: [MOP_0006371](http://purl.obolibrary.org/obo/MOP_0006371) 
+
+
+### Madelung indole synthesis `http://purl.obolibrary.org/obo/RXNO_0000511`
+#### Removed
+- [Madelung indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000511) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_24828](http://purl.obolibrary.org/obo/CHEBI_24828) 
+
+
+
+### Malaprade reaction `http://purl.obolibrary.org/obo/RXNO_0000650`
+#### Removed
+- [Malaprade reaction](http://purl.obolibrary.org/obo/RXNO_0000650) SubClassOf [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) 
+
+#### Added
+- [Malaprade reaction](http://purl.obolibrary.org/obo/RXNO_0000650) SubClassOf [MOP_0000708](http://purl.obolibrary.org/obo/MOP_0000708) 
+
+
+### Meerwein-Ponndorf-Verley reduction of a ketone `http://purl.obolibrary.org/obo/RXNO_0000623`
+#### Removed
+- [Meerwein-Ponndorf-Verley reduction of a ketone](http://purl.obolibrary.org/obo/RXNO_0000623) SubClassOf [functional group reduction](http://purl.obolibrary.org/obo/RXNO_0000037) 
+
+
+
+### Meerwein-Ponndorf-Verley reduction of an aldehyde `http://purl.obolibrary.org/obo/RXNO_0000622`
+#### Removed
+- [Meerwein-Ponndorf-Verley reduction of an aldehyde](http://purl.obolibrary.org/obo/RXNO_0000622) SubClassOf [functional group reduction](http://purl.obolibrary.org/obo/RXNO_0000037) 
+
+
+
+### Miyaura borylation `http://purl.obolibrary.org/obo/RXNO_0000659`
+#### Removed
+- [Miyaura borylation](http://purl.obolibrary.org/obo/RXNO_0000659) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Miyaura borylation](http://purl.obolibrary.org/obo/RXNO_0000659) [date](http://purl.org/dc/elements/1.1/date) "2021-11-04T10:48:44Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Miyaura borylation](http://purl.obolibrary.org/obo/RXNO_0000659) SubClassOf [has_catalyst](http://purl.obolibrary.org/obo/RXNO_0000425) some [CHEBI_33363](http://purl.obolibrary.org/obo/CHEBI_33363) 
+
+#### Added
+- [Miyaura borylation](http://purl.obolibrary.org/obo/RXNO_0000659) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Miyaura borylation](http://purl.obolibrary.org/obo/RXNO_0000659) [date](http://purl.org/dc/terms/date) "2021-11-04T10:48:44Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Miyaura borylation](http://purl.obolibrary.org/obo/RXNO_0000659) SubClassOf [palladium-catalysed carbon-carbon coupling reaction](http://purl.obolibrary.org/obo/RXNO_0000316) 
+
+
+### Monsanto process `http://purl.obolibrary.org/obo/RXNO_0000132`
+#### Removed
+- [Monsanto process](http://purl.obolibrary.org/obo/RXNO_0000132) [IAO_0000115](http://purl.obolibrary.org/obo/IAO_0000115) "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by a rhodium complex." 
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "https://orcid.org/0000-0001-5985-7429" 
+
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "https://orcid.org/0000-0002-4077-4719" 
+
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "RSC:db" 
+
+- [Monsanto process](http://purl.obolibrary.org/obo/RXNO_0000132) SubClassOf [has specified reactant](http://purl.obolibrary.org/obo/RXNO_0000424) some [CHEBI_17245](http://purl.obolibrary.org/obo/CHEBI_17245) 
+
+#### Added
+- [Monsanto process](http://purl.obolibrary.org/obo/RXNO_0000132) [IAO_0000115](http://purl.obolibrary.org/obo/IAO_0000115) "The reaction of formaldehyde with methanol to form acetic acid, catalysed by a rhodium complex." 
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "https://orcid.org/0000-0001-5985-7429" 
+
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "https://orcid.org/0000-0002-4077-4719" 
+
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "RSC:db" 
+
+- [Monsanto process](http://purl.obolibrary.org/obo/RXNO_0000132) SubClassOf [has specified reactant](http://purl.obolibrary.org/obo/RXNO_0000424) some [CHEBI_16842](http://purl.obolibrary.org/obo/CHEBI_16842) 
+
+
+### Mori-Ban indole synthesis `http://purl.obolibrary.org/obo/RXNO_0000307`
+#### Removed
+- [Mori-Ban indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000307) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_24828](http://purl.obolibrary.org/obo/CHEBI_24828) 
+
+
+
+### Mukaiyama hydration `http://purl.obolibrary.org/obo/RXNO_0000654`
+#### Removed
+- [Mukaiyama hydration](http://purl.obolibrary.org/obo/RXNO_0000654) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Mukaiyama hydration](http://purl.obolibrary.org/obo/RXNO_0000654) [date](http://purl.org/dc/elements/1.1/date) "2021-05-11T07:40:36Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Mukaiyama hydration](http://purl.obolibrary.org/obo/RXNO_0000654) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Mukaiyama hydration](http://purl.obolibrary.org/obo/RXNO_0000654) [date](http://purl.org/dc/terms/date) "2021-05-11T07:40:36Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Mukaiyama hydration](http://purl.obolibrary.org/obo/RXNO_0000654) SubClassOf [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) 
+
+
+### OBI_0000011 `http://purl.obolibrary.org/obo/OBI_0000011`
+#### Removed
+- Class: [OBI_0000011](http://purl.obolibrary.org/obo/OBI_0000011) 
+
+
+
+### Paal-Knorr pyrrole synthesis `http://purl.obolibrary.org/obo/RXNO_0000164`
+#### Removed
+- [Paal-Knorr pyrrole synthesis](http://purl.obolibrary.org/obo/RXNO_0000164) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_26455](http://purl.obolibrary.org/obo/CHEBI_26455) 
+
+
+
+### Peterson olefination `http://purl.obolibrary.org/obo/RXNO_0000080`
+#### Removed
+- [Peterson olefination](http://purl.obolibrary.org/obo/RXNO_0000080) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_33641](http://purl.obolibrary.org/obo/CHEBI_33641) 
+
+
+
+### Polonovski-Potier reaction `http://purl.obolibrary.org/obo/RXNO_0000222`
+#### Removed
+- [Polonovski-Potier reaction](http://purl.obolibrary.org/obo/RXNO_0000222) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_17478](http://purl.obolibrary.org/obo/CHEBI_17478) 
+
+
+
+### RO_0000057 `http://purl.obolibrary.org/obo/RO_0000057`
+
+#### Added
+- ObjectProperty: [RO_0000057](http://purl.obolibrary.org/obo/RO_0000057) 
+
+
+### RO_0004008 `http://purl.obolibrary.org/obo/RO_0004008`
+
+#### Added
+- ObjectProperty: [RO_0004008](http://purl.obolibrary.org/obo/RO_0004008) 
+
+
+### RO_0004009 `http://purl.obolibrary.org/obo/RO_0004009`
+
+#### Added
+- ObjectProperty: [RO_0004009](http://purl.obolibrary.org/obo/RO_0004009) 
+
+
+### Reimer-Tiemann reaction `http://purl.obolibrary.org/obo/RXNO_0000072`
+
+#### Added
+- [Reimer-Tiemann reaction](http://purl.obolibrary.org/obo/RXNO_0000072) SubClassOf [ring formation reaction step](http://purl.obolibrary.org/obo/RXNO_0000005) 
+
+
+### Rubottom oxidation `http://purl.obolibrary.org/obo/RXNO_0000669`
+#### Removed
+- [Rubottom oxidation](http://purl.obolibrary.org/obo/RXNO_0000669) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Rubottom oxidation](http://purl.obolibrary.org/obo/RXNO_0000669) [date](http://purl.org/dc/elements/1.1/date) "2021-11-15T09:44:42Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Rubottom oxidation](http://purl.obolibrary.org/obo/RXNO_0000669) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Rubottom oxidation](http://purl.obolibrary.org/obo/RXNO_0000669) [date](http://purl.org/dc/terms/date) "2021-11-15T09:44:42Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Sakurai reaction, aldehyde or ketone `http://purl.obolibrary.org/obo/RXNO_0000212`
+#### Removed
+- [Sakurai reaction, aldehyde or ketone](http://purl.obolibrary.org/obo/RXNO_0000212) SubClassOf [OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [molecular skeleton joining objective](http://purl.obolibrary.org/obo/RXNO_0000440) 
+
+
+
+### Seyferth-Gilbert homologation `http://purl.obolibrary.org/obo/RXNO_0000387`
+#### Removed
+- [Seyferth-Gilbert homologation](http://purl.obolibrary.org/obo/RXNO_0000387) SubClassOf [MOP_0000714](http://purl.obolibrary.org/obo/MOP_0000714) 
+
+#### Added
+- [Seyferth-Gilbert homologation](http://purl.obolibrary.org/obo/RXNO_0000387) SubClassOf [MOP_0006370](http://purl.obolibrary.org/obo/MOP_0006370) 
+
+
+### Shi epoxidation `http://purl.obolibrary.org/obo/RXNO_0000687`
+#### Removed
+- [Shi epoxidation](http://purl.obolibrary.org/obo/RXNO_0000687) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Shi epoxidation](http://purl.obolibrary.org/obo/RXNO_0000687) [date](http://purl.org/dc/elements/1.1/date) "2021-12-16T08:57:48Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Shi epoxidation](http://purl.obolibrary.org/obo/RXNO_0000687) SubClassOf [ring formation reaction step](http://purl.obolibrary.org/obo/RXNO_0000005) 
+
+#### Added
+- [Shi epoxidation](http://purl.obolibrary.org/obo/RXNO_0000687) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Shi epoxidation](http://purl.obolibrary.org/obo/RXNO_0000687) [date](http://purl.org/dc/terms/date) "2021-12-16T08:57:48Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [Shi epoxidation](http://purl.obolibrary.org/obo/RXNO_0000687) SubClassOf [oxacycle synthesis](http://purl.obolibrary.org/obo/RXNO_0000346) 
+
+
+### Skraup reaction `http://purl.obolibrary.org/obo/RXNO_0000062`
+#### Removed
+- [Skraup reaction](http://purl.obolibrary.org/obo/RXNO_0000062) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_26513](http://purl.obolibrary.org/obo/CHEBI_26513) 
+
+
+
+### Smith indole synthesis `http://purl.obolibrary.org/obo/RXNO_0000512`
+#### Removed
+- [Smith indole synthesis](http://purl.obolibrary.org/obo/RXNO_0000512) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_24828](http://purl.obolibrary.org/obo/CHEBI_24828) 
+
+
+
+### Sonogashira coupling `http://purl.obolibrary.org/obo/RXNO_0000137`
+#### Removed
+- [Sonogashira coupling](http://purl.obolibrary.org/obo/RXNO_0000137) SubClassOf [has_catalyst](http://purl.obolibrary.org/obo/RXNO_0000425) some [CHEBI_33363](http://purl.obolibrary.org/obo/CHEBI_33363) 
+
+
+
+### Stork-Wittig olefination `http://purl.obolibrary.org/obo/RXNO_0000251`
+#### Removed
+- [Stork-Wittig olefination](http://purl.obolibrary.org/obo/RXNO_0000251) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_33641](http://purl.obolibrary.org/obo/CHEBI_33641) 
+
+
+
+### Tamao oxidation `http://purl.obolibrary.org/obo/RXNO_0000211`
+#### Removed
+- [Tamao oxidation](http://purl.obolibrary.org/obo/RXNO_0000211) SubClassOf [OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [molecular substitution objective](http://purl.obolibrary.org/obo/RXNO_0000468) 
+
+
+
+### Tsuji-Wilkinson decarbonylation `http://purl.obolibrary.org/obo/RXNO_0000661`
+#### Removed
+- [Tsuji-Wilkinson decarbonylation](http://purl.obolibrary.org/obo/RXNO_0000661) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Tsuji-Wilkinson decarbonylation](http://purl.obolibrary.org/obo/RXNO_0000661) [date](http://purl.org/dc/elements/1.1/date) "2021-11-04T12:09:26Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [Tsuji-Wilkinson decarbonylation](http://purl.obolibrary.org/obo/RXNO_0000661) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [Tsuji-Wilkinson decarbonylation](http://purl.obolibrary.org/obo/RXNO_0000661) [date](http://purl.org/dc/terms/date) "2021-11-04T12:09:26Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### Vilsmeier-Haack reaction `http://purl.obolibrary.org/obo/RXNO_0000055`
+
+#### Added
+- [Vilsmeier-Haack reaction](http://purl.obolibrary.org/obo/RXNO_0000055) SubClassOf [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) 
+
+
+### Wittig reaction `http://purl.obolibrary.org/obo/RXNO_0000015`
+#### Removed
+- [Wittig reaction](http://purl.obolibrary.org/obo/RXNO_0000015) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_33641](http://purl.obolibrary.org/obo/CHEBI_33641) 
+
+
+
+### acetal protection `http://purl.obolibrary.org/obo/RXNO_0000658`
+#### Removed
+- [acetal protection](http://purl.obolibrary.org/obo/RXNO_0000658) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [acetal protection](http://purl.obolibrary.org/obo/RXNO_0000658) [date](http://purl.org/dc/elements/1.1/date) "2021-05-17T09:38:59Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [acetal protection](http://purl.obolibrary.org/obo/RXNO_0000658) SubClassOf [protects](http://purl.obolibrary.org/obo/RXNO_0000416) some [CHEBI_23019](http://purl.obolibrary.org/obo/CHEBI_23019) 
+
+#### Added
+- [acetal protection](http://purl.obolibrary.org/obo/RXNO_0000658) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [acetal protection](http://purl.obolibrary.org/obo/RXNO_0000658) [date](http://purl.org/dc/terms/date) "2021-05-17T09:38:59Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### acetoacetic ester synthesis `http://purl.obolibrary.org/obo/RXNO_0000459`
+#### Removed
+- [acetoacetic ester synthesis](http://purl.obolibrary.org/obo/RXNO_0000459) SubClassOf [OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [molecular skeleton joining objective](http://purl.obolibrary.org/obo/RXNO_0000440) 
+
+
+
+### alkene oxidative cleavage `http://purl.obolibrary.org/obo/RXNO_0000344`
+#### Removed
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) [created_by](http://www.geneontology.org/formats/oboInOwl#created_by) "batchelorc" 
+
+- [alkene oxidative cleavage](http://pur2l.obolibrary.org/obo/RXNO_0000344) [creation_date](http://www.geneontology.org/formats/oboInOwl#creation_date) "2012-03-22T03:15:25Z" 
+
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "NAMERXN:1.6" 
+
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) [hasOBONamespace](http://www.geneontology.org/formats/oboInOwl#hasOBONamespace) "RXNO" 
+
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) [id](http://www.geneontology.org/formats/oboInOwl#id) "RXNO:0000344" 
+
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) [IAO_0000115](http://purl.obolibrary.org/obo/IAO_0000115) "An alkene oxidation where the carbon-carbon double bond is cleaved." 
+  - [hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref) "https://orcid.org/0000-0001-5985-7429" 
+
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) [label](http://www.w3.org/2000/01/rdf-schema#label) "alkene oxidative cleavage" 
+
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) SubClassOf [MOP_0000581](http://purl.obolibrary.org/obo/MOP_0000581) 
+
+#### Added
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) [IAO_0100001](http://purl.obolibrary.org/obo/IAO_0100001) [MOP_0000708](http://purl.obolibrary.org/obo/MOP_0000708) 
+
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) [deprecated](http://www.w3.org/2002/07/owl#deprecated) true 
+
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) [comment](http://www.w3.org/2000/01/rdf-schema#comment) "This class belongs to MOP wrt its scope and was already present there." 
+
+- [alkene oxidative cleavage](http://purl.obolibrary.org/obo/RXNO_0000344) [label](http://www.w3.org/2000/01/rdf-schema#label) "DEPRECATED alkene oxidative cleavage" 
+
+
+### alkyne-azide click reaction `http://purl.obolibrary.org/obo/RXNO_0000269`
+#### Removed
+- [alkyne-azide click reaction](http://purl.obolibrary.org/obo/RXNO_0000269) SubClassOf [MOP_0000715](http://purl.obolibrary.org/obo/MOP_0000715) 
+
+#### Added
+- [alkyne-azide click reaction](http://purl.obolibrary.org/obo/RXNO_0000269) SubClassOf [MOP_0006371](http://purl.obolibrary.org/obo/MOP_0006371) 
+
+- [alkyne-azide click reaction](http://purl.obolibrary.org/obo/RXNO_0000269) SubClassOf [azacycle synthesis](http://purl.obolibrary.org/obo/RXNO_0000347) 
+
+
+### amide reduction to amine `http://purl.obolibrary.org/obo/RXNO_0000338`
+#### Removed
+- [amide reduction to amine](http://purl.obolibrary.org/obo/RXNO_0000338) SubClassOf [OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [functional group modification objective](http://purl.obolibrary.org/obo/RXNO_0000453) 
+
+
+
+### benzimidazole synthesis `http://purl.obolibrary.org/obo/RXNO_0000398`
+
+#### Added
+- [benzimidazole synthesis](http://purl.obolibrary.org/obo/RXNO_0000398) SubClassOf [azacycle synthesis](http://purl.obolibrary.org/obo/RXNO_0000347) 
+
+
+### benzyl ether protection `http://purl.obolibrary.org/obo/RXNO_0000324`
+#### Removed
+- [benzyl ether protection](http://purl.obolibrary.org/obo/RXNO_0000324) SubClassOf [protects](http://purl.obolibrary.org/obo/RXNO_0000416) some [CHEBI_43176](http://purl.obolibrary.org/obo/CHEBI_43176) 
+
+
+
+### benzylamine deprotection `http://purl.obolibrary.org/obo/RXNO_0000327`
+#### Removed
+- [benzylamine deprotection](http://purl.obolibrary.org/obo/RXNO_0000327) SubClassOf [deprotects](http://purl.obolibrary.org/obo/RXNO_0000417) some [CHEBI_46882](http://purl.obolibrary.org/obo/CHEBI_46882) 
+
+
+
+### carbonyl group protection `http://purl.obolibrary.org/obo/RXNO_0000657`
+#### Removed
+- [carbonyl group protection](http://purl.obolibrary.org/obo/RXNO_0000657) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [carbonyl group protection](http://purl.obolibrary.org/obo/RXNO_0000657) [date](http://purl.org/dc/elements/1.1/date) "2021-05-17T09:33:23Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [carbonyl group protection](http://purl.obolibrary.org/obo/RXNO_0000657) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [carbonyl group protection](http://purl.obolibrary.org/obo/RXNO_0000657) [date](http://purl.org/dc/terms/date) "2021-05-17T09:33:23Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### carboxylic acid to primary alcohol reduction `http://purl.obolibrary.org/obo/RXNO_0000431`
+#### Removed
+- [carboxylic acid to primary alcohol reduction](http://purl.obolibrary.org/obo/RXNO_0000431) SubClassOf [BFO_0000077](http://purl.obolibrary.org/obo/BFO_0000077) some [CHEBI_15734](http://purl.obolibrary.org/obo/CHEBI_15734) 
+
+- [carboxylic acid to primary alcohol reduction](http://purl.obolibrary.org/obo/RXNO_0000431) SubClassOf [BFO_0000078](http://purl.obolibrary.org/obo/BFO_0000078) some [CHEBI_33575](http://purl.obolibrary.org/obo/CHEBI_33575) 
+
+#### Added
+- [carboxylic acid to primary alcohol reduction](http://purl.obolibrary.org/obo/RXNO_0000431) SubClassOf [RO_0004008](http://purl.obolibrary.org/obo/RO_0004008) some [CHEBI_15734](http://purl.obolibrary.org/obo/CHEBI_15734) 
+
+- [carboxylic acid to primary alcohol reduction](http://purl.obolibrary.org/obo/RXNO_0000431) SubClassOf [RO_0004009](http://purl.obolibrary.org/obo/RO_0004009) some [CHEBI_33575](http://purl.obolibrary.org/obo/CHEBI_33575) 
+
+
+### copper(I)-catalyzed azide-alkyne cycloaddition `http://purl.obolibrary.org/obo/RXNO_0000270`
+#### Removed
+- [copper(I)-catalyzed azide-alkyne cycloaddition](http://purl.obolibrary.org/obo/RXNO_0000270) SubClassOf [MOP_0000715](http://purl.obolibrary.org/obo/MOP_0000715) 
+
+#### Added
+- [copper(I)-catalyzed azide-alkyne cycloaddition](http://purl.obolibrary.org/obo/RXNO_0000270) SubClassOf [MOP_0006371](http://purl.obolibrary.org/obo/MOP_0006371) 
+
+- [copper(I)-catalyzed azide-alkyne cycloaddition](http://purl.obolibrary.org/obo/RXNO_0000270) SubClassOf [azacycle synthesis](http://purl.obolibrary.org/obo/RXNO_0000347) 
+
+
+### creator `http://purl.org/dc/terms/creator`
+
+#### Added
+- AnnotationProperty: [creator](http://purl.org/dc/terms/creator) 
+
+
+### creator `http://purl.org/dc/elements/1.1/creator`
+#### Removed
+- AnnotationProperty: [creator](http://purl.org/dc/elements/1.1/creator) 
+
+
+
+### date `http://purl.org/dc/terms/date`
+
+#### Added
+- AnnotationProperty: [date](http://purl.org/dc/terms/date) 
+
+
+### date `http://purl.org/dc/elements/1.1/date`
+#### Removed
+- AnnotationProperty: [date](http://purl.org/dc/elements/1.1/date) 
+
+
+
+### decarboxylative cross-coupling `http://purl.obolibrary.org/obo/RXNO_0000674`
+#### Removed
+- [decarboxylative cross-coupling](http://purl.obolibrary.org/obo/RXNO_0000674) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [decarboxylative cross-coupling](http://purl.obolibrary.org/obo/RXNO_0000674) [date](http://purl.org/dc/elements/1.1/date) "2021-12-06T08:44:51Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [decarboxylative cross-coupling](http://purl.obolibrary.org/obo/RXNO_0000674) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [decarboxylative cross-coupling](http://purl.obolibrary.org/obo/RXNO_0000674) [date](http://purl.org/dc/terms/date) "2021-12-06T08:44:51Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### deprotection reaction `http://purl.obolibrary.org/obo/RXNO_0000203`
+#### Removed
+- [deprotection reaction](http://purl.obolibrary.org/obo/RXNO_0000203) SubClassOf [part_of](http://purl.obolibrary.org/obo/rxno.obo#part_of) some [planned synthesis](http://purl.obolibrary.org/obo/RXNO_0000329) 
+
+
+
+### deprotects `http://purl.obolibrary.org/obo/RXNO_0000417`
+#### Removed
+- [deprotects](http://purl.obolibrary.org/obo/RXNO_0000417) SubPropertyOf: [BFO_0000077](http://purl.obolibrary.org/obo/BFO_0000077) 
+
+#### Added
+- [deprotects](http://purl.obolibrary.org/obo/RXNO_0000417) SubPropertyOf: [RO_0004008](http://purl.obolibrary.org/obo/RO_0004008) 
+
+
+### description `http://purl.org/dc/terms/description`
+
+#### Added
+- AnnotationProperty: [description](http://purl.org/dc/terms/description) 
+
+
+### description `http://purl.org/dc/elements/1.1/description`
+#### Removed
+- AnnotationProperty: [description](http://purl.org/dc/elements/1.1/description) 
+
+
+
+### ester condensation reaction `http://purl.obolibrary.org/obo/RXNO_0000317`
+#### Removed
+- [ester condensation reaction](http://purl.obolibrary.org/obo/RXNO_0000317) EquivalentTo [MOP_0000627](http://purl.obolibrary.org/obo/MOP_0000627) and ([BFO_0000077](http://purl.obolibrary.org/obo/BFO_0000077) some [CHEBI_33308](http://purl.obolibrary.org/obo/CHEBI_33308)) 
+
+- [ester condensation reaction](http://purl.obolibrary.org/obo/RXNO_0000317) SubClassOf [BFO_0000077](http://purl.obolibrary.org/obo/BFO_0000077) some [CHEBI_33308](http://purl.obolibrary.org/obo/CHEBI_33308) 
+
+#### Added
+- [ester condensation reaction](http://purl.obolibrary.org/obo/RXNO_0000317) EquivalentTo [MOP_0000627](http://purl.obolibrary.org/obo/MOP_0000627) and ([RO_0004008](http://purl.obolibrary.org/obo/RO_0004008) some [CHEBI_33308](http://purl.obolibrary.org/obo/CHEBI_33308)) 
+
+- [ester condensation reaction](http://purl.obolibrary.org/obo/RXNO_0000317) SubClassOf [RO_0004008](http://purl.obolibrary.org/obo/RO_0004008) some [CHEBI_33308](http://purl.obolibrary.org/obo/CHEBI_33308) 
+
+
+### ethyl ester deprotection `http://purl.obolibrary.org/obo/RXNO_0000436`
+#### Removed
+- [ethyl ester deprotection](http://purl.obolibrary.org/obo/RXNO_0000436) SubClassOf [deprotects](http://purl.obolibrary.org/obo/RXNO_0000417) some [CHEBI_46883](http://purl.obolibrary.org/obo/CHEBI_46883) 
+
+
+
+### haloform reaction `http://purl.obolibrary.org/obo/RXNO_0000689`
+#### Removed
+- [haloform reaction](http://purl.obolibrary.org/obo/RXNO_0000689) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [haloform reaction](http://purl.obolibrary.org/obo/RXNO_0000689) [date](http://purl.org/dc/elements/1.1/date) "2021-12-16T11:10:42Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [haloform reaction](http://purl.obolibrary.org/obo/RXNO_0000689) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [haloform reaction](http://purl.obolibrary.org/obo/RXNO_0000689) [date](http://purl.org/dc/terms/date) "2021-12-16T11:10:42Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### has specified product `http://purl.obolibrary.org/obo/RXNO_0000423`
+#### Removed
+- [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) SubPropertyOf: [BFO_0000077](http://purl.obolibrary.org/obo/BFO_0000077) 
+
+#### Added
+- [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) SubPropertyOf: [RO_0004008](http://purl.obolibrary.org/obo/RO_0004008) 
+
+
+### has specified reactant `http://purl.obolibrary.org/obo/RXNO_0000424`
+#### Removed
+- [has specified reactant](http://purl.obolibrary.org/obo/RXNO_0000424) SubPropertyOf: [BFO_0000078](http://purl.obolibrary.org/obo/BFO_0000078) 
+
+#### Added
+- [has specified reactant](http://purl.obolibrary.org/obo/RXNO_0000424) SubPropertyOf: [RO_0004009](http://purl.obolibrary.org/obo/RO_0004009) 
+
+
+### has_catalyst `http://purl.obolibrary.org/obo/RXNO_0000425`
+#### Removed
+- [has_catalyst](http://purl.obolibrary.org/obo/RXNO_0000425) SubPropertyOf: [BFO_0000057](http://purl.obolibrary.org/obo/BFO_0000057) 
+
+#### Added
+- [has_catalyst](http://purl.obolibrary.org/obo/RXNO_0000425) SubPropertyOf: [RO_0000057](http://purl.obolibrary.org/obo/RO_0000057) 
+
+
+### has_intermediate `http://purl.obolibrary.org/obo/RXNO_0000469`
+#### Removed
+- [has_intermediate](http://purl.obolibrary.org/obo/RXNO_0000469) SubPropertyOf: [BFO_0000057](http://purl.obolibrary.org/obo/BFO_0000057) 
+
+#### Added
+- [has_intermediate](http://purl.obolibrary.org/obo/RXNO_0000469) SubPropertyOf: [RO_0000057](http://purl.obolibrary.org/obo/RO_0000057) 
+
+
+### intermolecular acyloin condensation `http://purl.obolibrary.org/obo/RXNO_0000461`
+#### Removed
+- [intermolecular acyloin condensation](http://purl.obolibrary.org/obo/RXNO_0000461) SubClassOf [OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [molecular skeleton joining objective](http://purl.obolibrary.org/obo/RXNO_0000440) 
+
+
+
+### intramolecular acyloin condensation `http://purl.obolibrary.org/obo/RXNO_0000460`
+#### Removed
+- [intramolecular acyloin condensation](http://purl.obolibrary.org/obo/RXNO_0000460) SubClassOf [OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [molecular ring formation objective](http://purl.obolibrary.org/obo/RXNO_0000439) 
+
+
+
+### malonic ester synthesis `http://purl.obolibrary.org/obo/RXNO_0000107`
+#### Removed
+- [malonic ester synthesis](http://purl.obolibrary.org/obo/RXNO_0000107) SubClassOf [OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [molecular skeleton joining objective](http://purl.obolibrary.org/obo/RXNO_0000440) 
+
+
+
+### methyl ester deprotection `http://purl.obolibrary.org/obo/RXNO_0000435`
+#### Removed
+- [methyl ester deprotection](http://purl.obolibrary.org/obo/RXNO_0000435) SubClassOf [deprotects](http://purl.obolibrary.org/obo/RXNO_0000417) some [CHEBI_46883](http://purl.obolibrary.org/obo/CHEBI_46883) 
+
+
+
+### nitro reduction to amine `http://purl.obolibrary.org/obo/RXNO_0000337`
+#### Removed
+- [nitro reduction to amine](http://purl.obolibrary.org/obo/RXNO_0000337) SubClassOf [OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [functional group modification objective](http://purl.obolibrary.org/obo/RXNO_0000453) 
+
+
+
+### nitroxide exchange reaction `http://purl.obolibrary.org/obo/RXNO_0000663`
+#### Removed
+- [nitroxide exchange reaction](http://purl.obolibrary.org/obo/RXNO_0000663) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [nitroxide exchange reaction](http://purl.obolibrary.org/obo/RXNO_0000663) [date](http://purl.org/dc/elements/1.1/date) "2021-11-12T08:28:13Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [nitroxide exchange reaction](http://purl.obolibrary.org/obo/RXNO_0000663) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [nitroxide exchange reaction](http://purl.obolibrary.org/obo/RXNO_0000663) [date](http://purl.org/dc/terms/date) "2021-11-12T08:28:13Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### oxa-Pictet-Spengler reaction `http://purl.obolibrary.org/obo/RXNO_0000404`
+#### Removed
+- [oxa-Pictet-Spengler reaction](http://purl.obolibrary.org/obo/RXNO_0000404) SubClassOf [has specified product](http://purl.obolibrary.org/obo/RXNO_0000423) some [CHEBI_38104](http://purl.obolibrary.org/obo/CHEBI_38104) 
+
+
+
+### palladium-catalysed Kumada coupling `http://purl.obolibrary.org/obo/RXNO_0000541`
+#### Removed
+- [palladium-catalysed Kumada coupling](http://purl.obolibrary.org/obo/RXNO_0000541) SubClassOf [has_catalyst](http://purl.obolibrary.org/obo/RXNO_0000425) some [CHEBI_33363](http://purl.obolibrary.org/obo/CHEBI_33363) 
+
+
+
+### phthalimide deprotection `http://purl.obolibrary.org/obo/RXNO_0000419`
+#### Removed
+- [phthalimide deprotection](http://purl.obolibrary.org/obo/RXNO_0000419) SubClassOf [deprotects](http://purl.obolibrary.org/obo/RXNO_0000417) some [CHEBI_46882](http://purl.obolibrary.org/obo/CHEBI_46882) 
+
+
+
+### phthalimide protection `http://purl.obolibrary.org/obo/RXNO_0000418`
+#### Removed
+- [phthalimide protection](http://purl.obolibrary.org/obo/RXNO_0000418) SubClassOf [protects](http://purl.obolibrary.org/obo/RXNO_0000416) some [CHEBI_46882](http://purl.obolibrary.org/obo/CHEBI_46882) 
+
+
+
+### pivaloyl deprotection `http://purl.obolibrary.org/obo/RXNO_0000429`
+#### Removed
+- [pivaloyl deprotection](http://purl.obolibrary.org/obo/RXNO_0000429) SubClassOf [deprotects](http://purl.obolibrary.org/obo/RXNO_0000417) some [CHEBI_43176](http://purl.obolibrary.org/obo/CHEBI_43176) 
+
+
+
+### planned reaction step `http://purl.obolibrary.org/obo/RXNO_0000001`
+#### Removed
+- [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) EquivalentTo [OBI_0000011](http://purl.obolibrary.org/obo/OBI_0000011) and ([OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [molecular transformation objective](http://purl.obolibrary.org/obo/RXNO_0000437)) 
+
+- [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) SubClassOf [OBI_0000011](http://purl.obolibrary.org/obo/OBI_0000011) 
+
+#### Added
+- [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) EquivalentTo [COB_0000082](http://purl.obolibrary.org/obo/COB_0000082) and ([OBI_0000417](http://purl.obolibrary.org/obo/OBI_0000417) some [molecular transformation objective](http://purl.obolibrary.org/obo/RXNO_0000437)) 
+
+- [planned reaction step](http://purl.obolibrary.org/obo/RXNO_0000001) SubClassOf [COB_0000035](http://purl.obolibrary.org/obo/COB_0000035) 
+
+
+### planned synthesis `http://purl.obolibrary.org/obo/RXNO_0000329`
+#### Removed
+- [planned synthesis](http://purl.obolibrary.org/obo/RXNO_0000329) SubClassOf [OBI_0000011](http://purl.obolibrary.org/obo/OBI_0000011) 
+
+#### Added
+- [planned synthesis](http://purl.obolibrary.org/obo/RXNO_0000329) SubClassOf [COB_0000082](http://purl.obolibrary.org/obo/COB_0000082) 
+
+
+### polymerisation reaction `http://purl.obolibrary.org/obo/RXNO_0000246`
+
+#### Added
+- [polymerisation reaction](http://purl.obolibrary.org/obo/RXNO_0000246) SubClassOf [MOP_0000629](http://purl.obolibrary.org/obo/MOP_0000629) 
+
+
+### protection reaction `http://purl.obolibrary.org/obo/RXNO_0000078`
+#### Removed
+- [protection reaction](http://purl.obolibrary.org/obo/RXNO_0000078) SubClassOf [part_of](http://purl.obolibrary.org/obo/rxno.obo#part_of) some [planned synthesis](http://purl.obolibrary.org/obo/RXNO_0000329) 
+
+
+
+### protects `http://purl.obolibrary.org/obo/RXNO_0000416`
+#### Removed
+- [protects](http://purl.obolibrary.org/obo/RXNO_0000416) SubPropertyOf: [BFO_0000078](http://purl.obolibrary.org/obo/BFO_0000078) 
+
+#### Added
+- [protects](http://purl.obolibrary.org/obo/RXNO_0000416) SubPropertyOf: [RO_0004009](http://purl.obolibrary.org/obo/RO_0004009) 
+
+
+### silyl deprotection `http://purl.obolibrary.org/obo/RXNO_0000692`
+#### Removed
+- [silyl deprotection](http://purl.obolibrary.org/obo/RXNO_0000692) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [silyl deprotection](http://purl.obolibrary.org/obo/RXNO_0000692) [date](http://purl.org/dc/elements/1.1/date) "2021-12-16T13:23:35Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+- [silyl deprotection](http://purl.obolibrary.org/obo/RXNO_0000692) SubClassOf [deprotects](http://purl.obolibrary.org/obo/RXNO_0000417) some [CHEBI_43176](http://purl.obolibrary.org/obo/CHEBI_43176) 
+
+#### Added
+- [silyl deprotection](http://purl.obolibrary.org/obo/RXNO_0000692) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [silyl deprotection](http://purl.obolibrary.org/obo/RXNO_0000692) [date](http://purl.org/dc/terms/date) "2021-12-16T13:23:35Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### tert-butyl ester deprotection `http://purl.obolibrary.org/obo/RXNO_0000434`
+#### Removed
+- [tert-butyl ester deprotection](http://purl.obolibrary.org/obo/RXNO_0000434) SubClassOf [deprotects](http://purl.obolibrary.org/obo/RXNO_0000417) some [CHEBI_46883](http://purl.obolibrary.org/obo/CHEBI_46883) 
+
+
+
+### tert-butyl protection `http://purl.obolibrary.org/obo/RXNO_0000432`
+#### Removed
+- [tert-butyl protection](http://purl.obolibrary.org/obo/RXNO_0000432) SubClassOf [protects](http://purl.obolibrary.org/obo/RXNO_0000416) some [CHEBI_46883](http://purl.obolibrary.org/obo/CHEBI_46883) 
+
+
+
+### thiol-yne reaction `http://purl.obolibrary.org/obo/RXNO_0000383`
+#### Removed
+- [thiol-yne reaction](http://purl.obolibrary.org/obo/RXNO_0000383) [creator](http://purl.org/dc/elements/1.1/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [thiol-yne reaction](http://purl.obolibrary.org/obo/RXNO_0000383) [date](http://purl.org/dc/elements/1.1/date) "2021-05-05T09:08:42Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+#### Added
+- [thiol-yne reaction](http://purl.obolibrary.org/obo/RXNO_0000383) [creator](http://purl.org/dc/terms/creator) [0000-0002-4378-6061](http://orcid.org/0000-0002-4378-6061) 
+
+- [thiol-yne reaction](http://purl.obolibrary.org/obo/RXNO_0000383) [date](http://purl.org/dc/terms/date) "2021-05-05T09:08:42Z"^^[dateTime](http://www.w3.org/2001/XMLSchema#dateTime) 
+
+
+### title `http://purl.org/dc/terms/title`
+
+#### Added
+- AnnotationProperty: [title](http://purl.org/dc/terms/title) 
+
+
+### title `http://purl.org/dc/elements/1.1/title`
+#### Removed
+- AnnotationProperty: [title](http://purl.org/dc/elements/1.1/title) 
+
+
