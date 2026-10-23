@@ -62,9 +62,9 @@ Here is the list of terms and IRIs were this change took place:
 - thiol-yne reaction `http://purl.obolibrary.org/obo/RXNO_0000383`
 
 
-### Classes axiomitization
+### Classes axiomatization
 #### Classes with more specific parent
-Some classes were inferred to be under a class that is already under their original parent, so they were moved accordingly turning their original parent into a grand parent. Those classes will be asserted later under their new parents accoring to [issue #76](https://github.com/rsc-ontology/rxno/issues/76). Here is the list of terms and IRIs were this change took place:
+Some classes were inferred to be under a class that is already under their original parent, so they were moved accordingly, turning their original parent into a grand parent. Those classes will be asserted later under their new parents according to [issue #76](https://github.com/rsc-ontology/rxno/issues/76). Here is the list of terms and IRIs were this change took place:
 
 - Asinger reaction `http://purl.obolibrary.org/obo/RXNO_0000688`
 - Baeyer oxindole synthesis `http://purl.obolibrary.org/obo/RXNO_0000671`
@@ -77,7 +77,7 @@ Some classes were inferred to be under a class that is already under their origi
 - Meerwein-Ponndorf-Verley reduction of an aldehyde `http://purl.obolibrary.org/obo/RXNO_0000622`
 
 #### Classes with duplicated axioms
-In these cases, the same axiom appears under both "SubClass of" and "SubClass of anonymous ancestor". In these cases, we should delete the axiom under SubClass of [issue #76](https://github.com/rsc-ontology/rxno/issues/76). Here is a full list:
+In these cases, the same axiom appears under both the class and one of its ancestors, in Protege, this would be under "SubClass of" and "SubClass of anonymous ancestor". In these cases, we should delete the axiom under SubClass of [issue #76](https://github.com/rsc-ontology/rxno/issues/76). Here is a full list:
 - Bartoli indole synthesis `http://purl.obolibrary.org/obo/RXNO_0000494`
 - Barton-Zard reaction `http://purl.obolibrary.org/obo/RXNO_0000496`
 - Bergmann degradation `http://purl.obolibrary.org/obo/RXNO_0000516`
@@ -168,18 +168,18 @@ Some classes just got a new axiom subsuming them under an additional parent. The
 ### Imported classes
 #### BFO to RO
 Many BFO object properties were replaced by RO counterparts. This was done in the PR: [Import ontology modules
-#68](https://github.com/rsc-ontology/rxno/pull/68). Here is the list of terms and IRIs were this change took place, along with the affercted classes:
-- BFO_0000057 `http://purl.obolibrary.org/obo/BFO_0000057` to RO_0000057 `http://purl.obolibrary.org/obo/RO_0000057`
+#68](https://github.com/rsc-ontology/rxno/pull/68). Here is the list of terms and IRIs were this change took place, along with the affected classes:
+- has participant: BFO_0000057 `http://purl.obolibrary.org/obo/BFO_0000057` to has primary output: RO_0000057 `http://purl.obolibrary.org/obo/RO_0000057`
   - Crabbé homologation `http://purl.obolibrary.org/obo/RXNO_0000368`
   - Feist-Bénary synthesis `http://purl.obolibrary.org/obo/RXNO_0000501`
   -  has_catalyst `http://purl.obolibrary.org/obo/RXNO_0000425`
   - has_intermediate `http://purl.obolibrary.org/obo/RXNO_0000469`
-- BFO_0000077 `http://purl.obolibrary.org/obo/BFO_0000077` to RO_0004008 `http://purl.obolibrary.org/obo/RO_0004008`
+- has participant beginning to exist: BFO_0000077 `http://purl.obolibrary.org/obo/BFO_0000077` to has primary output: RO_0004008 `http://purl.obolibrary.org/obo/RO_0004008`
   - carboxylic acid to primary alcohol reduction `http://purl.obolibrary.org/obo/RXNO_0000431`
   - deprotects `http://purl.obolibrary.org/obo/RXNO_0000417`
   - ester condensation reaction `http://purl.obolibrary.org/obo/RXNO_0000317`
   - has specified product `http://purl.obolibrary.org/obo/RXNO_0000423`
-- BFO_0000078 `http://purl.obolibrary.org/obo/BFO_0000078` to RO_0004009 `http://purl.obolibrary.org/obo/RO_0004009`
+- has participant ceasing to exist: BFO_0000078 `http://purl.obolibrary.org/obo/BFO_0000078` to has primary input: RO_0004009 `http://purl.obolibrary.org/obo/RO_0004009`
   - Kolbe-Schmitt reaction `http://purl.obolibrary.org/obo/RXNO_0000182`
   - Leuckart aldehyde reaction `http://purl.obolibrary.org/obo/RXNO_0000552`
   - Leuckart ketone reaction `http://purl.obolibrary.org/obo/RXNO_0000553`
@@ -189,17 +189,17 @@ Many BFO object properties were replaced by RO counterparts. This was done in th
 
 #### Imported MOP classes 
 - Newly imported MOP classes: The direct import of MOP into RXNO with `owl:import` resulted in the addition of new MOP classes:
-  - MOP_0000629 `http://purl.obolibrary.org/obo/MOP_0000629`
+  - polymerisation: MOP_0000629 `http://purl.obolibrary.org/obo/MOP_0000629`
 - Imported MOP classes as a replacement to other MOP classes defined in RXNO with same label and different MOP ID:
 
-  Same classes were defined in both RXNO and MOP using same labels but different MOP IDs. Those casesd were described in the iussue [Disentangle MOP and RXNO - #63](https://github.com/rsc-ontology/rxno/pull/63)
-    - MOP_0000591 `http://purl.obolibrary.org/obo/MOP_0000591` as a replacement to MOP_0000713 `http://purl.obolibrary.org/obo/MOP_0000713`
+  Same classes were defined in both RXNO and MOP using the same labels but different MOP IDs. Those cases were described in the issue [Disentangle MOP and RXNO - #63](https://github.com/rsc-ontology/rxno/pull/63)
+    - carboxylation: MOP_0000591 `http://purl.obolibrary.org/obo/MOP_0000591` as a replacement to acetylene reduction: MOP_0000713 `http://purl.obolibrary.org/obo/MOP_0000713`
 
-- Some other classes were defined in both of RXNO and MOP using same labels but different RXNO and MOP IDs. RXNO classes were deprecated in favor of the imported MOP classes and their children got their axioms updated accordingly:
-  - MOP_0000708 `http://purl.obolibrary.org/obo/MOP_0000708` to replace RXNO_0000344 `http://purl.obolibrary.org/obo/RXNO_0000344`
-  - MOP_0006370 `http://purl.obolibrary.org/obo/MOP_0006370` to replace MOP_0000714 `http://purl.obolibrary.org/obo/MOP_0000714`
+- Some other classes were defined in both RXNO and MOP using the same labels but different RXNO and MOP IDs. RXNO classes were deprecated in favor of the imported MOP classes and their children got their axioms updated accordingly:
+  - alkene oxidative cleavage: MOP_0000708 `http://purl.obolibrary.org/obo/MOP_0000708` to replace alkene oxidative cleavage: RXNO_0000344 `http://purl.obolibrary.org/obo/RXNO_0000344`
+  - ligand exchange reaction: MOP_0006370 `http://purl.obolibrary.org/obo/MOP_0006370` to replace ligand exchange reaction: MOP_0000714 `http://purl.obolibrary.org/obo/MOP_0000714`
     - Seyferth-Gilbert homologation `http://purl.obolibrary.org/obo/RXNO_0000387`
-  - MOP_0006371 `http://purl.obolibrary.org/obo/MOP_0006371` to replace MOP_0000715 `http://purl.obolibrary.org/obo/MOP_0000715`
+  - trimerization: MOP_0006371 `http://purl.obolibrary.org/obo/MOP_0006371` to replace trimerization: MOP_0000715 `http://purl.obolibrary.org/obo/MOP_0000715`
     - alkyne-azide click reaction `http://purl.obolibrary.org/obo/RXNO_0000269`
     - copper(I)-catalyzed azide-alkyne cycloaddition `http://purl.obolibrary.org/obo/RXNO_0000270`
 
@@ -217,7 +217,7 @@ Several COB classes were added either as new classes or as a replacement to the 
 
 
 ### Single class changes
-Here we list the changes that were appplied uniqely to single classes.:
+Here we list the changes that were applied uniquely to single classes.:
 
 #### Cativa process `http://purl.obolibrary.org/obo/RXNO_0000133` 
 Done in [PR:Fix cativa process definition - #48](https://github.com/rsc-ontology/rxno/pull/48)
