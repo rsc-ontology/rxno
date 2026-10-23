@@ -193,16 +193,16 @@ Many BFO object properties were replaced by RO counterparts. This was done in th
 - Imported MOP classes as a replacement to other MOP classes defined in RXNO with same label and different MOP ID:
 
   Same classes were defined in both RXNO and MOP using the same labels but different MOP IDs. Those cases were described in the issue [Disentangle MOP and RXNO - #63](https://github.com/rsc-ontology/rxno/pull/63)
-    - carboxylation: MOP_0000591 `http://purl.obolibrary.org/obo/MOP_0000591` as a replacement to acetylene reduction: MOP_0000713 `http://purl.obolibrary.org/obo/MOP_0000713`
+    - carboxylation: MOP_0000591 `http://purl.obolibrary.org/obo/MOP_0000591` as a replacement to carboxylation: MOP_0000713 `http://purl.obolibrary.org/obo/MOP_0000713`
 
 - Some other classes were defined in both RXNO and MOP using the same labels but different RXNO and MOP IDs. RXNO classes were deprecated in favor of the imported MOP classes and their children got their axioms updated accordingly:
   - alkene oxidative cleavage: MOP_0000708 `http://purl.obolibrary.org/obo/MOP_0000708` to replace alkene oxidative cleavage: RXNO_0000344 `http://purl.obolibrary.org/obo/RXNO_0000344`
-  - ligand exchange reaction: MOP_0006370 `http://purl.obolibrary.org/obo/MOP_0006370` to replace ligand exchange reaction: MOP_0000714 `http://purl.obolibrary.org/obo/MOP_0000714`
-    - Seyferth-Gilbert homologation `http://purl.obolibrary.org/obo/RXNO_0000387`
   - trimerization: MOP_0006371 `http://purl.obolibrary.org/obo/MOP_0006371` to replace trimerization: MOP_0000715 `http://purl.obolibrary.org/obo/MOP_0000715`
     - alkyne-azide click reaction `http://purl.obolibrary.org/obo/RXNO_0000269`
     - copper(I)-catalyzed azide-alkyne cycloaddition `http://purl.obolibrary.org/obo/RXNO_0000270`
 
+- Some IDs were used in both  RXNO and MOP to reflect different classes: 
+  - http://purl.obolibrary.org/obo/MOP_0000714 was used for `carbonyl oxidation to alkyne` in RXNO but for `ligand exchange reaction` in MOP. `carbonyl oxidation to alkyne` received a new ID in MOP `http://purl.obolibrary.org/obo/MOP_0006370` and the axcioms of its child Seyferth-Gilbert homologation `http://purl.obolibrary.org/obo/RXNO_0000387` were updated accordingly.
 
 ### Adopting COB
 Several COB classes were added either as new classes or as a replacement to the deprecated OBI ones. Here is a list of these COB classes and the affected children:
