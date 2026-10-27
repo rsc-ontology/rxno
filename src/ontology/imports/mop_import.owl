@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/mop_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-10-02/imports/mop_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/mop/releases/2026-09-29/mop.owl>)
-Annotation(owl:versionInfo "2026-10-02")
+<http://purl.obolibrary.org/obo/rxno/releases/2026-10-27/imports/mop_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/mop/releases/2026-10-26/mop.owl>)
+Annotation(owl:versionInfo "2026-10-27")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -117,7 +117,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000102>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MOP_0000003>))
-Declaration(Class(<http://purl.obolibrary.org/obo/MOP_0000028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MOP_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MOP_0000339>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MOP_0000364>))
@@ -271,6 +270,7 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000423>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OMO_0001000>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OMO_0001002>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-1595-3213>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000231>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
@@ -371,7 +371,7 @@ AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "An alternative label for a class or property which has a more general meaning than the preferred name/primary label.")
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "has broad synonym"@en)
 
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (database_cross_reference)
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (has cross-reference)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.")
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "database_cross_reference")
@@ -2221,15 +2221,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000003> "for
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000003> <http://purl.obolibrary.org/obo/MOP_0000029>)
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/CHEBI_42485>))
 
-# Class: <http://purl.obolibrary.org/obo/MOP_0000028> (carboacylation)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "RSC:xp") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000028> "Formation of a covalent bond between a substrate and a carboacyl group.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/MOP_0000028> "carboacylation")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000028> "MOP:0000028")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000028> "carboacylation")
-SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000028> <http://purl.obolibrary.org/obo/MOP_0000479>)
-SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/CHEBI_37838>))
-
 # Class: <http://purl.obolibrary.org/obo/MOP_0000029> (univalent carboacylation)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "RSC:xp") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000029> "Formation of a covalent bond between a substrate and an univalent carboacyl group.")
@@ -2237,7 +2228,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000029> "MOP:0000029")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MOP_0000029> "has_participant: CHEBI:27207")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000029> "univalent carboacylation")
-SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000029> <http://purl.obolibrary.org/obo/MOP_0000028>)
+SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000029> <http://purl.obolibrary.org/obo/MOP_0000458>)
 
 # Class: <http://purl.obolibrary.org/obo/MOP_0000339> (silylation)
 
@@ -2349,9 +2340,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000555> <http://purl.obolibrary.
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "RSC:xp") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0000556> "Formation of a covalent bond between a substrate and a nitro group.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000556> "MOP:0000556")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MOP_0000556> "has_participant: CHEBI:29785")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000556> "nitration")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000556> <http://purl.obolibrary.org/obo/MOP_0000802>)
+SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000556> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/CHEBI_29785>))
 
 # Class: <http://purl.obolibrary.org/obo/MOP_0000561> (cyclization)
 
@@ -2494,13 +2485,10 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/MOP_0000591> "batchelorc")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/MOP_0000591> "2009-06-05T04:57:07Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000591> "MOP:0000591")
+AnnotationAssertion(Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-1595-3213>) rdfs:comment <http://purl.obolibrary.org/obo/MOP_0000591> "Before the migration of MOP and RXNO to an ODK based workflow, this class was wrongly also defined in RXNO under the ID MOP:0000713, which in MOP was already used for 'acetylene reduction'. Thus, the \"'has participant' some 'carboxy group'\" axiom, which was not yet present on 'carboxylation' in MOP, was copied over from this wrongly defined 'carboxylation' in RXNO to MOP:0000591. The only RXNO subclass 'Kolbe-Schmitt reaction' (RXNO:0000182) of 'carboxylation' was also moved to be correctly subsumed in RXNO.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MOP_0000591> "CHEBI:46883.")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#created_by> <https://orcid.org/0000-0002-1595-3213>) rdfs:comment <http://purl.obolibrary.org/obo/MOP_0000591> "Prior to the resolving of https://github.com/rsc-ontology/rxno/issues/27 this class was wrongly also defined in RXNO under the ID MOP:0000713 ('acetylene reduction'). 
-Thus the \"has_participant some 'carboxy group'\" axiom, which was not yet present on 'carboxylation' (MOP:0000591) in MOP was copied from this wrongly defined  'carboxylation' in RXNO to the proper one in MOP.
-
-The only RXNO subclass 'Kolbe-Schmitt reaction' (RXNO:0000182) of 'carboxylation' was also moved to be correctly subsumed in RXNO.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000591> "carboxylation")
-SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000591> <http://purl.obolibrary.org/obo/MOP_0000479>)
+SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000591> <http://purl.obolibrary.org/obo/MOP_0000458>)
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000591> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/CHEBI_46883>))
 
 # Class: <http://purl.obolibrary.org/obo/MOP_0000596> (pseudohalogenation)
@@ -2805,7 +2793,6 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0000802> "MOP:0000802")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0000802> "formation of covalent bond with nitrogen centre")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000802> <http://purl.obolibrary.org/obo/MOP_0000566>)
-SubClassOf(<http://purl.obolibrary.org/obo/MOP_0000802> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/CHEBI_29785>))
 
 # Class: <http://purl.obolibrary.org/obo/MOP_0000810> (formation of covalent bond with silicon centre)
 
@@ -2941,6 +2928,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0006369> <http://purl.obolibrary.
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0006370> "Oxidation of a carbonyl group to an alkyne.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0006370> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0006370> "MOP:0006370")
+AnnotationAssertion(Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-1595-3213>) rdfs:comment <http://purl.obolibrary.org/obo/MOP_0006370> "Before the migration of MOP and RXNO to an ODK based workflow, this term was only defined in the RXNO release using the IRI MOP:0000714, which was already used in MOP for 'ligand exchange reaction'(see also: https://github.com/rsc-ontology/rxno/issues/27). To resolve this IRI clash, 'carbonyl oxidation to alkyne' (MOP:0006370) was minted in MOP and all axioms wrongly asserted in RXNO on MOP:0000714 were copied over to it.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0006370> "carbonyl oxidation to alkyne")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0006370> <http://purl.obolibrary.org/obo/MOP_0000568>)
 
@@ -2949,6 +2937,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/MOP_0006370> <http://purl.obolibrary.
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MOP_0006371> "A cycloaddition in which one participant contributes three electrons and the other participant contributes two electrons to the transformation of reactants to products.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/MOP_0006371> "MOP")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/MOP_0006371> "MOP:0006371")
+AnnotationAssertion(Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-1595-3213>) rdfs:comment <http://purl.obolibrary.org/obo/MOP_0006371> "Before the migration of MOP and RXNO to an ODK based workflow, this term was only defined in the RXNO release using the IRI MOP:0000715, which was already used in MOP for 'trimerization' (see also: https://github.com/rsc-ontology/rxno/issues/27). To resolve this IRI clash, '[3+2] cycloaddition' (MOP:0006371) was minted in MOP and all axioms wrongly asserted in RXNO on MOP:0000715 were copied over to it.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MOP_0006371> "[3+2] cycloaddition")
 SubClassOf(<http://purl.obolibrary.org/obo/MOP_0006371> <http://purl.obolibrary.org/obo/MOP_0000562>)
 
@@ -3068,6 +3057,10 @@ ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMO_0001002> "The term was added to the ontology on the assumption it was a valid domain entity, but it turns out the entity does not exist in reality."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001002> "domain entity does not exist")
 ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/OMO_0001002>)
+
+# Individual: <https://orcid.org/0000-0002-1595-3213> (Philip Strömert)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "Philip Strömert")
 
 
 DifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>)

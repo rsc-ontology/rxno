@@ -21,6 +21,11 @@ Import(<http://purl.obolibrary.org/obo/rxno/imports/mop_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rxno/imports/ro_import.owl>)
+Annotation(dcterms:contributor <https://orcid.org/0000-0001-5985-7429>)
+Annotation(dcterms:contributor <https://orcid.org/0000-0002-1595-3213>)
+Annotation(dcterms:contributor <https://orcid.org/0000-0002-4378-6061>)
+Annotation(dcterms:contributor <https://orcid.org/0000-0003-4423-4370>)
+Annotation(dcterms:contributor <https://orcid.org/0009-0001-5998-5030>)
 Annotation(dcterms:description "RXNO is the name reaction ontology. It contains more than 500 classes representing organic reactions such as the Diels–Alder cyclization.")
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "RXNO")
@@ -722,6 +727,10 @@ Declaration(ObjectProperty(obo:RXNO_0000425))
 Declaration(ObjectProperty(obo:RXNO_0000469))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/rxno.obo#has_part>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/rxno.obo#part_of>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-5985-7429>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-4378-6061>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0003-4423-4370>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0001-5998-5030>))
 Declaration(AnnotationProperty(chebi:charge))
 Declaration(AnnotationProperty(chebi:formula))
 Declaration(AnnotationProperty(chebi:inchi))
@@ -8152,6 +8161,27 @@ AnnotationAssertion(rdfs:label obo:RXNO_0000692 "silyl deprotection"@en)
 SubClassOf(obo:RXNO_0000692 obo:RXNO_0000430)
 SubClassOf(obo:RXNO_0000692 ObjectSomeValuesFrom(obo:RXNO_0000417 obo:CHEBI_43176))
 SubClassOf(obo:RXNO_0000692 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_47988))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://orcid.org/0000-0001-5985-7429> (Colin Batchelor)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-5985-7429> "Colin Batchelor")
+
+# Individual: <https://orcid.org/0000-0002-4378-6061> (Johannes Hunold)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-4378-6061> "Johannes Hunold")
+
+# Individual: <https://orcid.org/0000-0003-4423-4370> (Charles Tapley Hoyt)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-4423-4370> "Charles Tapley Hoyt")
+
+# Individual: <https://orcid.org/0009-0001-5998-5030> (Noura Rayya)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0001-5998-5030> "Noura Rayya")
 
 
 )
