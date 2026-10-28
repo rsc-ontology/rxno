@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: rxno/releases/2026-10-27/rxno-base.owl
+data-version: rxno/releases/2026-10-28/rxno-base.owl
 date: 16:12:2021 15:55
 default-namespace: RXNO
 idspace: dc http://purl.org/dc/elements/1.1/ 
@@ -7,10 +7,15 @@ idspace: dcterms http://purl.org/dc/terms/
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 ontology: rxno/rxno-base
 property_value: dc:type IAO:8000001
+property_value: dcterms:contributor https://orcid.org/0000-0001-5985-7429
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0000-0002-4378-6061
+property_value: dcterms:contributor https://orcid.org/0000-0003-4423-4370
+property_value: dcterms:contributor https://orcid.org/0009-0001-5998-5030
 property_value: dcterms:description "RXNO is the name reaction ontology. It contains more than 500 classes representing organic reactions such as the Diels–Alder cyclization." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "RXNO" xsd:string
-property_value: owl:versionInfo "2026-10-27" xsd:string
+property_value: owl:versionInfo "2026-10-28" xsd:string
 
 [Term]
 id: MOP:0000562
@@ -1273,18 +1278,18 @@ is_a: RXNO:0000130 ! Wacker-Tsuji oxidation
 [Term]
 id: RXNO:0000132
 name: Monsanto process
-def: "The reaction of formaldehyde with methanol to form acetic acid, catalysed by a rhodium complex." [https://orcid.org/0000-0001-5985-7429, https://orcid.org/0000-0002-4077-4719, RSC:db]
+def: "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by a rhodium complex." [https://orcid.org/0000-0001-5985-7429, https://orcid.org/0000-0002-4077-4719, RSC:db]
 xref: https://www.wikidata.org/wiki/Q901246
 is_a: RXNO:0000000 ! molecular skeleton joining reaction
-relationship: RXNO:0000424 CHEBI:16842 ! has specified reactant
+relationship: RXNO:0000424 CHEBI:17245 ! has specified reactant
 
 [Term]
 id: RXNO:0000133
 name: Cativa process
-def: "The reaction of formaldehyde with methanol to form acetic acid, catalysed by an iridium complex." [https://orcid.org/0000-0001-5985-7429, https://orcid.org/0000-0002-4077-4719, RSC:db]
+def: "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by an iridium complex." [https://orcid.org/0000-0001-5985-7429, https://orcid.org/0000-0002-4077-4719, RSC:db]
 xref: https://www.wikidata.org/wiki/Q579304
 is_a: RXNO:0000000 ! molecular skeleton joining reaction
-relationship: RXNO:0000424 CHEBI:16842 ! has specified reactant
+relationship: RXNO:0000424 CHEBI:17245 ! has specified reactant
 
 [Term]
 id: RXNO:0000134

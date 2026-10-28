@@ -3,6 +3,21 @@
     "id" : "http://purl.obolibrary.org/obo/rxno/rxno-full.json",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0001-5985-7429"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0002-1595-3213"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0002-4378-6061"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0003-4423-4370"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0009-0001-5998-5030"
+      }, {
         "pred" : "http://purl.org/dc/terms/description",
         "val" : "RXNO is the name reaction ontology. It contains more than 500 classes representing organic reactions such as the Diels–Alder cyclization."
       }, {
@@ -22,9 +37,9 @@
         "val" : "1.4"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-10-27"
+        "val" : "2026-10-28"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rxno/releases/2026-10-27/rxno-full.json"
+      "version" : "http://purl.obolibrary.org/obo/rxno/releases/2026-10-28/rxno-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -24353,7 +24368,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The reaction of formaldehyde with methanol to form acetic acid, catalysed by a rhodium complex.",
+          "val" : "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by a rhodium complex.",
           "xrefs" : [ "RSC:db", "https://orcid.org/0000-0001-5985-7429", "https://orcid.org/0000-0002-4077-4719" ]
         },
         "xrefs" : [ {
@@ -24370,7 +24385,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The reaction of formaldehyde with methanol to form acetic acid, catalysed by an iridium complex.",
+          "val" : "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by an iridium complex.",
           "xrefs" : [ "RSC:db", "https://orcid.org/0000-0001-5985-7429", "https://orcid.org/0000-0002-4077-4719" ]
         },
         "xrefs" : [ {
@@ -35322,6 +35337,19 @@
           "pred" : "hasExactSynonym",
           "val" : "triggered by process",
           "xrefs" : [ "https://orcid.org/0000-0002-6601-2165" ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6996-0040"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-7073-9172"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-8461-9745"
         } ]
       }
     }, {
@@ -35936,8 +35964,24 @@
         } ]
       }
     }, {
+      "id" : "https://orcid.org/0000-0001-5985-7429",
+      "lbl" : "Colin Batchelor",
+      "type" : "INDIVIDUAL"
+    }, {
       "id" : "https://orcid.org/0000-0002-1595-3213",
       "lbl" : "Philip Strömert",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0002-4378-6061",
+      "lbl" : "Johannes Hunold",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0003-4423-4370",
+      "lbl" : "Charles Tapley Hoyt",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0009-0001-5998-5030",
+      "lbl" : "Noura Rayya",
       "type" : "INDIVIDUAL"
     }, {
       "id" : "http://protege.stanford.edu/plugins/owl/protege#defaultLanguage",
@@ -42240,7 +42284,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RXNO_0000132",
       "pred" : "http://purl.obolibrary.org/obo/RXNO_0000424",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_16842"
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_17245"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RXNO_0000133",
       "pred" : "is_a",
@@ -42248,7 +42292,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RXNO_0000133",
       "pred" : "http://purl.obolibrary.org/obo/RXNO_0000424",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_16842"
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_17245"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RXNO_0000134",
       "pred" : "is_a",
