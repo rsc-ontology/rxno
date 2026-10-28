@@ -2386,13 +2386,13 @@ SubClassOf(obo:RXNO_0000132 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_1724
 
 # Class: obo:RXNO_0000133 (Cativa process)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:db") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-4077-4719") obo:IAO_0000115 obo:RXNO_0000133 "The reaction of formaldehyde with methanol to form acetic acid, catalysed by an iridium complex.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:db") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-4077-4719") obo:IAO_0000115 obo:RXNO_0000133 "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by an iridium complex.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:RXNO_0000133 "https://www.wikidata.org/wiki/Q579304")
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000133 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000133 "RXNO:0000133")
 AnnotationAssertion(rdfs:label obo:RXNO_0000133 "Cativa process")
 SubClassOf(obo:RXNO_0000133 obo:RXNO_0000000)
-SubClassOf(obo:RXNO_0000133 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_16842))
+SubClassOf(obo:RXNO_0000133 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_17245))
 
 # Class: obo:RXNO_0000134 (Barton-McCombie deoxygenation)
 
