@@ -8166,10 +8166,6 @@ SubClassOf(obo:RXNO_0000692 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_4798
 #   Named Individuals
 ############################
 
-# Individual: <https://orcid.org/0000-0001-5985-7429> (Colin Batchelor)
-
-AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-5985-7429> "Colin Batchelor")
-
 # Individual: <https://orcid.org/0000-0002-4378-6061> (Johannes Hunold)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-4378-6061> "Johannes Hunold")
@@ -8177,10 +8173,6 @@ AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-4378-6061> "Johannes
 # Individual: <https://orcid.org/0000-0003-4423-4370> (Charles Tapley Hoyt)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-4423-4370> "Charles Tapley Hoyt")
-
-# Individual: <https://orcid.org/0009-0001-5998-5030> (Noura Rayya)
-
-AnnotationAssertion(rdfs:label <https://orcid.org/0009-0001-5998-5030> "Noura Rayya")
 
 
 )
