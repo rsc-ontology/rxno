@@ -2376,23 +2376,23 @@ SubClassOf(obo:RXNO_0000131 obo:RXNO_0000130)
 
 # Class: obo:RXNO_0000132 (Monsanto process)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:db") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-4077-4719") obo:IAO_0000115 obo:RXNO_0000132 "The reaction of formaldehyde with methanol to form acetic acid, catalysed by a rhodium complex.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:db") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-4077-4719") obo:IAO_0000115 obo:RXNO_0000132 "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by a rhodium complex.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:RXNO_0000132 "https://www.wikidata.org/wiki/Q901246")
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000132 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000132 "RXNO:0000132")
 AnnotationAssertion(rdfs:label obo:RXNO_0000132 "Monsanto process")
 SubClassOf(obo:RXNO_0000132 obo:RXNO_0000000)
-SubClassOf(obo:RXNO_0000132 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_16842))
+SubClassOf(obo:RXNO_0000132 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_17245))
 
 # Class: obo:RXNO_0000133 (Cativa process)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:db") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-4077-4719") obo:IAO_0000115 obo:RXNO_0000133 "The reaction of formaldehyde with methanol to form acetic acid, catalysed by an iridium complex.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "RSC:db") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-4077-4719") obo:IAO_0000115 obo:RXNO_0000133 "The reaction of carbon monoxide with methanol to form acetic acid, catalysed by an iridium complex.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:RXNO_0000133 "https://www.wikidata.org/wiki/Q579304")
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000133 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000133 "RXNO:0000133")
 AnnotationAssertion(rdfs:label obo:RXNO_0000133 "Cativa process")
 SubClassOf(obo:RXNO_0000133 obo:RXNO_0000000)
-SubClassOf(obo:RXNO_0000133 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_16842))
+SubClassOf(obo:RXNO_0000133 ObjectSomeValuesFrom(obo:RXNO_0000424 obo:CHEBI_17245))
 
 # Class: obo:RXNO_0000134 (Barton-McCombie deoxygenation)
 
@@ -6938,7 +6938,6 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000580 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000580 "RXNO:0000580")
 AnnotationAssertion(rdfs:label obo:RXNO_0000580 "iodo Suzuki coupling")
 SubClassOf(obo:RXNO_0000580 obo:RXNO_0000140)
-SubClassOf(obo:RXNO_0000580 obo:RXNO_0000580)
 
 # Class: obo:RXNO_0000581 (iodo Suzuki-type coupling)
 
