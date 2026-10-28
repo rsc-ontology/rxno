@@ -6938,7 +6938,6 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:RXNO_0000580 "RXNO")
 AnnotationAssertion(oboInOwl:id obo:RXNO_0000580 "RXNO:0000580")
 AnnotationAssertion(rdfs:label obo:RXNO_0000580 "iodo Suzuki coupling")
 SubClassOf(obo:RXNO_0000580 obo:RXNO_0000140)
-SubClassOf(obo:RXNO_0000580 obo:RXNO_0000580)
 
 # Class: obo:RXNO_0000581 (iodo Suzuki-type coupling)
 
