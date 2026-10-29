@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2026-10-28
+data-version: releases/2026-10-29
 date: 16:12:2021 15:55
 subsetdef: 1:STAR ""
 subsetdef: 2:STAR ""
@@ -41,7 +41,7 @@ property_value: dcterms:contributor https://orcid.org/0009-0001-5998-5030
 property_value: dcterms:description "RXNO is the name reaction ontology. It contains more than 500 classes representing organic reactions such as the Diels–Alder cyclization." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "RXNO" xsd:string
-property_value: owl:versionInfo "2026-10-28" xsd:string
+property_value: owl:versionInfo "2026-10-29" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -6543,6 +6543,7 @@ is_a: CHEBI:33521 ! metal atom
 id: COB:0000035
 name: completely executed planned process
 is_a: COB:0000082 ! planned process
+relationship: BFO:0000055 OBI:0000260 ! realizes
 
 [Term]
 id: COB:0000082
@@ -7469,7 +7470,7 @@ id: RXNO:0000001
 name: planned reaction step
 def: "A molecular process with which the experimenters aim to achieve a particular molecular transformation." [https://orcid.org/0000-0001-5985-7429]
 is_a: COB:0000035 ! completely executed planned process
-intersection_of: COB:0000082 ! planned process
+intersection_of: COB:0000035 ! completely executed planned process
 intersection_of: OBI:0000417 RXNO:0000437 ! achieves_planned_objective molecular transformation objective
 relationship: OBI:0000417 RXNO:0000437 ! achieves_planned_objective molecular transformation objective
 relationship: part_of RXNO:0000329 ! planned synthesis
@@ -10224,7 +10225,7 @@ is_a: RXNO:0000323 ! hydroxyl group protection
 id: RXNO:0000329
 name: planned synthesis
 def: "An experimental procedure with the aim of producing a portion of a given compound or mixture." [https://orcid.org/0000-0001-5985-7429]
-is_a: COB:0000082 ! planned process
+is_a: COB:0000035 ! completely executed planned process
 
 [Term]
 id: RXNO:0000330

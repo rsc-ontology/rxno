@@ -21,7 +21,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rxno/rxno-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rxno/releases/2026-10-28/rxno-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rxno/releases/2026-10-29/rxno-full.owl"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-5985-7429"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-4378-6061"/>
@@ -33,7 +33,7 @@
         <oboInOwl:date>16:12:2021 15:55</oboInOwl:date>
         <oboInOwl:default-namespace>RXNO</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
-        <owl:versionInfo>2026-10-28</owl:versionInfo>
+        <owl:versionInfo>2026-10-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -25764,6 +25764,12 @@ For example, the relationship between a salt and a freebased compound is a &quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">completely executed planned process</rdfs:label>
     </owl:Class>
     
@@ -27969,6 +27975,12 @@ No imports</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000260"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RXNO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RXNO_0000000">
@@ -28012,7 +28024,7 @@ No imports</obo:IAO_0000115>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000082"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000035"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RXNO_0000437"/>
@@ -36290,7 +36302,7 @@ The only RXNO subclass &apos;Kolbe-Schmitt reaction&apos; (RXNO:0000182) of &apo
     <!-- http://purl.obolibrary.org/obo/RXNO_0000329 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RXNO_0000329">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000115>An experimental procedure with the aim of producing a portion of a given compound or mixture.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>RXNO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>RXNO:0000329</oboInOwl:id>
