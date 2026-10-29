@@ -7,12 +7,15 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rxno/imports/cob_import.owl>
-<http://purl.obolibrary.org/obo/rxno/releases/2026-10-28/imports/cob_import.owl>
+<http://purl.obolibrary.org/obo/rxno/releases/2026-10-29/imports/cob_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/cob/releases/2025-12-15/cob-base.owl>)
-Annotation(owl:versionInfo "2026-10-28")
+Annotation(owl:versionInfo "2026-10-29")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000260>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
@@ -27,6 +30,12 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000035> (completely executed planned process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000035> "completely executed planned process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000035> <http://purl.obolibrary.org/obo/COB_0000082>)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
 
 # Class: <http://purl.obolibrary.org/obo/COB_0000082> (planned process)
 

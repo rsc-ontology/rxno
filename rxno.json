@@ -37,9 +37,9 @@
         "val" : "1.4"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-10-28"
+        "val" : "2026-10-29"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rxno/releases/2026-10-28/rxno.json"
+      "version" : "http://purl.obolibrary.org/obo/rxno/releases/2026-10-29/rxno.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -21727,6 +21727,9 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000260",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RXNO_0000000",
       "lbl" : "molecular skeleton joining reaction",
       "type" : "CLASS",
@@ -40702,6 +40705,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/COB_0000082"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/COB_0000035",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000055",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000260"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/COB_0000082",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
@@ -43528,7 +43535,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RXNO_0000329",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/COB_0000082"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RXNO_0000330",
       "pred" : "is_a",
@@ -46534,7 +46541,7 @@
       } ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/RXNO_0000001",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/COB_0000082" ],
+      "genusIds" : [ "http://purl.obolibrary.org/obo/COB_0000035" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/OBI_0000417",
         "fillerId" : "http://purl.obolibrary.org/obo/RXNO_0000437"
