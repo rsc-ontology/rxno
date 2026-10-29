@@ -1,0 +1,1325 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://rsc-ontology.github.io/rxno/odk-diff/">
+      
+      
+        <link rel="prev" href="../cite/">
+      
+      
+        <link rel="next" href="../odk-workflows/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>RXNO to ODK Migration - Named Reaction Ontology</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#systematic-comparison-of-rxno-before-and-after-the-odk-migration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Named Reaction Ontology" class="md-header__button md-logo" aria-label="Named Reaction Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Named Reaction Ontology
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              RXNO to ODK Migration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rsc-ontology/rxno/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Named Reaction Ontology" class="md-nav__button md-logo" aria-label="Named Reaction Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Named Reaction Ontology
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rsc-ontology/rxno/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    RXNO to ODK Migration
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    RXNO to ODK Migration
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-odk-migration-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-ODK Migration Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#odk-migration-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      ODK Migration Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-and-archiving-a-pre-odk-release-of-rxno-and-mop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and Archiving a Pre-ODK Release of RXNO and MOP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-robot-diff-comparing-rxno-before-and-after-the-odk-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating ROBOT diff Comparing RXNO Before and After the ODK Migration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysing-robot-diff-comparing-rxno-before-and-after-the-odk-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysing ROBOT diff Comparing RXNO Before and After the ODK Migration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysing ROBOT diff Comparing RXNO Before and After the ODK Migration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-artifact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline Artifact
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pipeline Artifact">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removal-or-addition-of-external-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removal or Addition of External Terms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deletion-of-inherited-subclassof-axioms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deletion of Inherited SubClassOf Axioms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#materialization-of-inferred-parents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Materialization of Inferred Parents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Changes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Semantic Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replacement-of-bfo-with-ro-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replacement of BFO with RO Relations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resynchronization-after-mop-disentanglement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resynchronization After MOP Disentanglement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cob-dependency-adoption" class="md-nav__link">
+    <span class="md-ellipsis">
+      COB Dependency Adoption
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadata-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata Changes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadata Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ontology-annotation-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ontology Annotation Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-annotations-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes Annotations Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Components management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageAutomatedTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing your automated testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-odk-migration-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-ODK Migration Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#odk-migration-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      ODK Migration Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-and-archiving-a-pre-odk-release-of-rxno-and-mop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and Archiving a Pre-ODK Release of RXNO and MOP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-robot-diff-comparing-rxno-before-and-after-the-odk-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating ROBOT diff Comparing RXNO Before and After the ODK Migration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysing-robot-diff-comparing-rxno-before-and-after-the-odk-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysing ROBOT diff Comparing RXNO Before and After the ODK Migration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysing ROBOT diff Comparing RXNO Before and After the ODK Migration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-artifact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline Artifact
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pipeline Artifact">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removal-or-addition-of-external-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removal or Addition of External Terms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deletion-of-inherited-subclassof-axioms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deletion of Inherited SubClassOf Axioms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#materialization-of-inferred-parents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Materialization of Inferred Parents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Changes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Semantic Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replacement-of-bfo-with-ro-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replacement of BFO with RO Relations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resynchronization-after-mop-disentanglement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resynchronization After MOP Disentanglement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cob-dependency-adoption" class="md-nav__link">
+    <span class="md-ellipsis">
+      COB Dependency Adoption
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadata-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata Changes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadata Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ontology-annotation-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ontology Annotation Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-annotations-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes Annotations Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="systematic-comparison-of-rxno-before-and-after-the-odk-migration">Systematic Comparison of RXNO Before and After the ODK Migration</h1>
+<p><a href="http://purl.org/dc/terms/creator">author</a>: <a href="https://orcid.org/0000-0002-1595-3213">Philip Strömert</a> | <a href="http://purl.org/dc/terms/creator">author</a>: <a href="https://orcid.org/0009-0001-5998-5030">Noura Rayya</a> | <a href="http://purl.org/dc/terms/created">created on</a>: 06.10.2026</p>
+<h2 id="pre-odk-migration-background">Pre-ODK Migration Background</h2>
+<p>Before the migration to an Ontology Development Kit (ODK) based workflow, the two ontologies RXNO and MOP were maintained within the same GitHub repository: https://github.com/rsc-ontology/rxno. Their release workflow relied on editing the release files <code>rxno.owl</code>and <code>mop.owl</code> directly in Protégé and then converting them to OBO format with ROBOT. Hence, these files were the source of truth for both ontologies, which is in contrast to an ODK-based workflow, where release files in different serialisation formats are generated automatically from a separate editor OWL file and/or component files (OWL files and/or ROBOT TSV files).</p>
+<p>In 2021, as a result of the <a href="https://doi.org/10.1515/pac-2021-2007">Ontologies4Chem: the landscape of ontologies in chemistry</a> overview paper, the NFDI4Chem team began improving both ontologies by filing issues and pull requests in this single RXNO repository. One of the first suggestions was to properly import MOP into RXNO using <code>owl:import</code> instead of (re)defining the MOP classes within the <code>rxno.owl</code> file (see <a href="https://github.com/rsc-ontology/rxno/issues/27">issue #27</a>). While trying to resolve this issue in 2022, more issues were identified in the MOP side, which are described in more detail in the <a href="https://rsc-ontology.github.io/mop/odk-diff/#pre-odk-migration-background">MOP ODK migration documentation</a>.</p>
+<h2 id="odk-migration-background">ODK Migration Background</h2>
+<p>All issues preventing a proper import of MOP into RXNO have since been resolved with the migration of RXNO and MOP  to ODK-based repositories. As part of this, all RXNO terms and axioms defined in the pre-ODK RXNO release version were copied into the ODK-based <a href="https://github.com/rsc-ontology/rxno/blob/main/src/ontology/rxno-edit.owl">RXNO editor file</a>, from which different release artifacts were then generated automatically with standard ODK commands.</p>
+<h2 id="creating-and-archiving-a-pre-odk-release-of-rxno-and-mop">Creating and Archiving a Pre-ODK Release of RXNO and MOP</h2>
+<p>Before the migration to ODK, both ontologies were published only directly in the GitHub repository's code base; no GitHub releases had ever been created. We therefore created a pre-ODK release and tag so that these versions of RXNO and MOP could be referenced properly: https://github.com/rsc-ontology/rxno/tree/pre-odk-release .</p>
+<h2 id="creating-robot-diff-comparing-rxno-before-and-after-the-odk-migration">Creating ROBOT diff Comparing RXNO Before and After the ODK Migration</h2>
+<p>We used <a href="https://robot.obolibrary.org/">ROBOT</a> to generate a diff between the pre and post ODK RXNO release versions, to make sure the ODK migration did not produce any unaccounted changes of RXNO. These are the steps and commands we used for generating this diff:</p>
+<ol>
+<li>Download the pre-ODK RXNO file <a href="docs\odk-diff\rxno_pre_odk.owl">rxno_pre_odk.owl</a>
+    <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-o<span class="w"> </span>rxno_pre_odk.owl<span class="w"> </span>https://raw.githubusercontent.com/rsc-ontology/rxno/refs/tags/pre-odk-release/rxno.owl
+</code></pre></div></li>
+<li>
+<p>Generate a base release from the previously downloaded pre-ODK RXNO version <a href="docs\odk-diff\rxno_base_pre_odk.owl">rxno_base_pre_odk.owl</a> that only contains the RXNO classes and just references all external ontology terms via their PURL:
+    <div class="highlight"><pre><span></span><code>robot<span class="w"> </span>remove<span class="w"> </span>-i<span class="w"> </span>rxno_pre_odk.owl<span class="w"> </span>--base-iri<span class="w"> </span>RXNO<span class="w"> </span>--exclude-term<span class="w"> </span>owl:versionIRI<span class="w"> </span>--axioms<span class="w"> </span>external<span class="w"> </span>--preserve-structure<span class="w"> </span><span class="nb">false</span><span class="w"> </span>--trim<span class="w"> </span><span class="nb">false</span><span class="w"> </span>-o<span class="w"> </span>rxno_base_pre_odk.owl
+</code></pre></div>
+    This step is necessary to produce a slimmer diff later, as it excludes any axioms and annotations asserted on imported external terms. </p>
+</li>
+<li>
+<p>Download the base release of the post-ODK RXNO version <a href="docs\odk-diff\rxno_base_post_odk.owl">rxno_base_post_odk.owl</a>
+    <code>shell
+     curl -o rxno_base_post_odk.owl https://raw.githubusercontent.com/rsc-ontology/rxno/refs/tags/v2026-10-29/rxno-base.owl</code></p>
+</li>
+<li>Produce the diff to see the changes after the ODK migration in HTML (<a href="docs\odk-diff\rxno_pre_vs_post_odk_diff.html">rxno_pre_vs_post_odk_diff.html</a>) and Markdown format (<a href="docs\odk-diff\rxno_pre_vs_post_odk_diff.md">rxno_pre_vs_post_odk_diff.md</a>): 
+    <div class="highlight"><pre><span></span><code>robot<span class="w"> </span>diff<span class="w"> </span>--left<span class="w"> </span>rxno_base_pre_odk.owl<span class="w"> </span>--right<span class="w"> </span>rxno_base_post_odk.owl<span class="w">  </span><span class="se">\</span>
+<span class="w">      </span>-f<span class="w"> </span>html<span class="w"> </span>-o<span class="w"> </span>rxno_pre_vs_post_odk_diff.html<span class="w"> </span><span class="o">&amp;&amp;</span>
+robot<span class="w"> </span>diff<span class="w"> </span>--left<span class="w"> </span>rxno_base_pre_odk.owl<span class="w"> </span>--right<span class="w"> </span>rxno_base_post_odk.owl<span class="w">  </span><span class="se">\</span>
+<span class="w">      </span>-f<span class="w"> </span>markdown<span class="w"> </span>-o<span class="w"> </span>rxno_pre_vs_post_odk_diff.md
+</code></pre></div></li>
+</ol>
+<h2 id="analysing-robot-diff-comparing-rxno-before-and-after-the-odk-migration">Analysing ROBOT diff Comparing RXNO Before and After the ODK Migration</h2>
+<h3 id="pipeline-artifact">Pipeline Artifact</h3>
+<h4 id="removal-or-addition-of-external-terms">Removal or Addition of External Terms</h4>
+<p><strong>Cause:</strong> The diff compares two OWL files that each contain only the axioms relevant to RXNO terms. An external term (from BFO, COB, IAO, MOP, OBI, RO, etc.) is declared in one file but not the other depending on whether it is referenced in an axiom on a RXNO term <em>in that specific file</em>. </p>
+<p><strong>Action:</strong> Ignore. The <em>axiom</em> difference is the semantic issue (covered under <strong>Semantic Changes</strong> below); the <em>presence of the external term declaration</em> is a pipeline artifact associated with the OWL syntax.</p>
+<p><strong>Removed external terms (11):</strong> <code>BFO_0000057</code>, <code>BFO_0000077</code>, <code>BFO_0000078</code>, <code>MOP_0000713</code>, <code>MOP_0000714</code>, <code>MOP_0000715</code>, <code>OBI_0000011</code>, <code>http://purl.org/dc/elements/1.1/creator</code>, <code>http://purl.org/dc/elements/1.1/date</code>, <code>http://purl.org/dc/elements/1.1/description</code>, <code>http://purl.org/dc/elements/1.1/title</code> </p>
+<p><strong>Added external terms (17):</strong> <code>COB_0000035</code>, <code>COB_0000082</code>, <code>MOP_0000591</code>, <code>MOP_0000629</code>, <code>MOP_0000708</code>, <code>MOP_0006370</code>, <code>MOP_0006371</code>, <code>RO_0000057</code>, <code>RO_0004008</code>, <code>RO_0004009</code>, <code>http://purl.org/dc/terms/contributor</code>, <code>http://purl.org/dc/terms/creator</code>, <code>http://purl.org/dc/terms/date</code>, <code>http://purl.org/dc/terms/description</code>, <code>http://purl.org/dc/terms/title</code>, <code>http://purl.org/dc/elements/1.1/type</code></p>
+<h4 id="deletion-of-inherited-subclassof-axioms">Deletion of Inherited SubClassOf Axioms</h4>
+<p><strong>Cause:</strong>
+Because we compare release versions, the file generated automatically by ODK from the RXNO editor file differs from the pre‑ODK one, owing to the <a href="https://robot.obolibrary.org/reduce">ROBOT reduce</a> step in the ODK release build pipeline. For example if an axiom is asserted on an RXNO term in the editor file (e.g., <code>'has specified product' some olefin</code> on <code>'Horner reaction'</code>) but the same axiom is already present on the parent of this term (e.g., <code>olefination</code>), the ROBOT reduce step will delete this axiom from the child, as it is already inherited by the parent (see 'Horner reaction' in the RXNO release versus the editor file.) </p>
+<p><strong>Action:</strong>
+TODO: Delete these redundant axioms from the terms in the RXNO editor file (<a href="https://github.com/rsc-ontology/rxno/issues/76">issue #76</a>)</p>
+<p><strong>Affected terms (56):</strong></p>
+<ul>
+<li>Bartoli indole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000494</code></li>
+<li>Barton-Zard reaction <code>http://purl.obolibrary.org/obo/RXNO_0000496</code></li>
+<li>Bergmann degradation <code>http://purl.obolibrary.org/obo/RXNO_0000516</code></li>
+<li>Bernthsen acridine synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000519</code></li>
+<li>Bischler-Möhlau indole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000523</code></li>
+<li>Boc protection <code>http://purl.obolibrary.org/obo/RXNO_0000079</code></li>
+<li>Borsche-Drechsel cyclisation <code>http://purl.obolibrary.org/obo/RXNO_0000532</code></li>
+<li>Cadogan carbazole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000252</code></li>
+<li>Cadogan indole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000509</code></li>
+<li>Camps quinoline synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000524</code></li>
+<li>Castro-Stephens coupling <code>http://purl.obolibrary.org/obo/RXNO_0000525</code></li>
+<li>Chichibabin pyridine synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000526</code></li>
+<li>Clauson-Kaas reaction <code>http://purl.obolibrary.org/obo/RXNO_0000312</code></li>
+<li>Doebner reaction <code>http://purl.obolibrary.org/obo/RXNO_0000126</code></li>
+<li>Edman degradation <code>http://purl.obolibrary.org/obo/RXNO_0000071</code></li>
+<li>Fmoc protection <code>http://purl.obolibrary.org/obo/RXNO_0000160</code></li>
+<li>Fukuyama coupling <code>http://purl.obolibrary.org/obo/RXNO_0000605</code></li>
+<li>Horner reaction <code>http://purl.obolibrary.org/obo/RXNO_0000057</code></li>
+<li>Horner-Wadsworth-Emmons reaction <code>http://purl.obolibrary.org/obo/RXNO_0000056</code></li>
+<li>Julia olefination <code>http://purl.obolibrary.org/obo/RXNO_0000117</code></li>
+<li>Julia-Kocienski olefination <code>http://purl.obolibrary.org/obo/RXNO_0000304</code></li>
+<li>Kröhnke pyridine synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000420</code></li>
+<li>Leimgruber-Batcho indole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000672</code></li>
+<li>Madelung indole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000511</code></li>
+<li>Miyaura borylation <code>http://purl.obolibrary.org/obo/RXNO_0000659</code></li>
+<li>Mori-Ban indole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000307</code></li>
+<li>Paal-Knorr pyrrole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000164</code></li>
+<li>Peterson olefination <code>http://purl.obolibrary.org/obo/RXNO_0000080</code></li>
+<li>Polonovski-Potier reaction <code>http://purl.obolibrary.org/obo/RXNO_0000222</code></li>
+<li>Sakurai reaction, aldehyde or ketone <code>http://purl.obolibrary.org/obo/RXNO_0000212</code></li>
+<li>Shi epoxidation <code>http://purl.obolibrary.org/obo/RXNO_0000687</code></li>
+<li>Skraup reaction <code>http://purl.obolibrary.org/obo/RXNO_0000062</code></li>
+<li>Smith indole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000512</code></li>
+<li>Sonogashira coupling <code>http://purl.obolibrary.org/obo/RXNO_0000137</code></li>
+<li>Stork-Wittig olefination <code>http://purl.obolibrary.org/obo/RXNO_0000251</code></li>
+<li>Tamao oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000211</code></li>
+<li>Wittig reaction <code>http://purl.obolibrary.org/obo/RXNO_0000015</code></li>
+<li>acetoacetic ester synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000459</code></li>
+<li>amide reduction to amine <code>http://purl.obolibrary.org/obo/RXNO_0000338</code></li>
+<li>benzyl ether protection <code>http://purl.obolibrary.org/obo/RXNO_0000324</code></li>
+<li>benzylamine deprotection <code>http://purl.obolibrary.org/obo/RXNO_0000327</code></li>
+<li>deprotection reaction <code>http://purl.obolibrary.org/obo/RXNO_0000203</code></li>
+<li>ethyl ester deprotection <code>http://purl.obolibrary.org/obo/RXNO_0000436</code></li>
+<li>intermolecular acyloin condensation <code>http://purl.obolibrary.org/obo/RXNO_0000461</code></li>
+<li>intramolecular acyloin condensation <code>http://purl.obolibrary.org/obo/RXNO_0000460</code></li>
+<li>malonic ester synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000107</code></li>
+<li>methyl ester deprotection <code>http://purl.obolibrary.org/obo/RXNO_0000435</code></li>
+<li>nitro reduction to amine <code>http://purl.obolibrary.org/obo/RXNO_0000337</code></li>
+<li>palladium-catalysed Kumada coupling <code>http://purl.obolibrary.org/obo/RXNO_0000541</code></li>
+<li>phthalimide deprotection <code>http://purl.obolibrary.org/obo/RXNO_0000419</code></li>
+<li>phthalimide protection <code>http://purl.obolibrary.org/obo/RXNO_0000418</code></li>
+<li>pivaloyl deprotection <code>http://purl.obolibrary.org/obo/RXNO_0000429</code></li>
+<li>protection reaction <code>http://purl.obolibrary.org/obo/RXNO_0000078</code></li>
+<li>silyl deprotection <code>http://purl.obolibrary.org/obo/RXNO_0000692</code></li>
+<li>tert-butyl ester deprotection <code>http://purl.obolibrary.org/obo/RXNO_0000434</code></li>
+<li>tert-butyl protection <code>http://purl.obolibrary.org/obo/RXNO_0000432</code></li>
+</ul>
+<h4 id="materialization-of-inferred-parents">Materialization of Inferred Parents</h4>
+<p><strong>Cause:</strong>
+Within the reasoning step that is done automatically by ODK when producing the RXNO release artifact from the editor file, an additional inferred parent will be materialized on some classes. </p>
+<p><strong>Action:</strong>
+TODO: Whether this axiomatisation is intended will be checked in a later stage, see also <a href="https://github.com/rsc-ontology/rxno/issues/76">issue #76</a> and <a href="https://github.com/rsc-ontology/rxno/issues/77">issue #77</a>. Here is the list of terms and IRIs were this change took place:</p>
+<p><strong>Affected terms (34):</strong></p>
+<ul>
+<li>Asinger reaction <code>http://purl.obolibrary.org/obo/RXNO_0000688</code></li>
+<li>Baeyer oxindole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000671</code></li>
+<li>Fenton 1,2-glycol oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000651</code></li>
+<li>Fenton alpha-hydroxy carboxylic acid oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000652</code></li>
+<li>Fenton hydrogen peroxide reduction <code>http://purl.obolibrary.org/obo/RXNO_0000653</code></li>
+<li>Jacobsen epoxidation <code>http://purl.obolibrary.org/obo/RXNO_0000686</code></li>
+<li>Meerwein-Ponndorf-Verley reduction of a ketone <code>http://purl.obolibrary.org/obo/RXNO_0000623</code></li>
+<li>Meerwein-Ponndorf-Verley reduction of an aldehyde <code>http://purl.obolibrary.org/obo/RXNO_0000622</code></li>
+<li>Baeyer diarylmethane synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000691</code></li>
+<li>Balsohn alkylation <code>http://purl.obolibrary.org/obo/RXNO_0000675</code></li>
+<li>Diimide reduction <code>http://purl.obolibrary.org/obo/RXNO_0000656</code></li>
+<li>Duff reaction <code>http://purl.obolibrary.org/obo/RXNO_0000447</code></li>
+<li>Elbs persulfate oxidation, tolyl variant <code>http://purl.obolibrary.org/obo/RXNO_0000180</code></li>
+<li>Favorskii reaction <code>http://purl.obolibrary.org/obo/RXNO_0000655</code></li>
+<li>Friedel-Crafts reaction <code>http://purl.obolibrary.org/obo/RXNO_0000369</code></li>
+<li>Fukuyama coupling <code>http://purl.obolibrary.org/obo/RXNO_0000605</code></li>
+<li>Gattermann reaction <code>http://purl.obolibrary.org/obo/RXNO_0000139</code></li>
+<li>Groebke-Blackburn-Bienaymé reaction <code>http://purl.obolibrary.org/obo/RXNO_0000670</code></li>
+<li>Heck reaction <code>http://purl.obolibrary.org/obo/RXNO_0000024</code></li>
+<li>Hell-Volhard-Zelinsky reaction <code>http://purl.obolibrary.org/obo/RXNO_0000621</code></li>
+<li>Hofmann-Löffler-Freytag piperidine synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000619</code></li>
+<li>Hofmann-Löffler-Freytag pyrrolidine synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000620</code></li>
+<li>Johnson-Corey-Chaykovsky aziridine synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000601</code></li>
+<li>Johnson-Corey-Chaykovsky epoxide synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000599</code></li>
+<li>Johnson-Corey-Chaykovsky thiirane synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000602</code></li>
+<li>Kolbe electrolysis <code>http://purl.obolibrary.org/obo/RXNO_0000128</code></li>
+<li>Miyaura borylation <code>http://purl.obolibrary.org/obo/RXNO_0000659</code></li>
+<li>Mukaiyama hydration <code>http://purl.obolibrary.org/obo/RXNO_0000654</code></li>
+<li>Reimer-Tiemann reaction <code>http://purl.obolibrary.org/obo/RXNO_0000072</code></li>
+<li>Vilsmeier-Haack reaction <code>http://purl.obolibrary.org/obo/RXNO_0000055</code></li>
+<li>alkyne-azide click reaction <code>http://purl.obolibrary.org/obo/RXNO_0000269</code></li>
+<li>benzimidazole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000398</code></li>
+<li>oxa-Pictet-Spengler reaction <code>http://purl.obolibrary.org/obo/RXNO_0000404</code></li>
+<li>polymerisation reaction <code>http://purl.obolibrary.org/obo/RXNO_0000246</code></li>
+</ul>
+<h3 id="semantic-changes">Semantic Changes</h3>
+<h4 id="replacement-of-bfo-with-ro-relations">Replacement of BFO with RO Relations</h4>
+<p><strong>Cause:</strong>
+In the axiomatization of RXNO terms, BFO relations, such as <code>BFO_0000057 # has_participant</code>, were used that are not supported by the BFO classes only version used in the OBO Foundry. According to the <a href="https://obofoundry.org/principles/fp-007-relations.html">OBO Foundry principle 7</a> relations defined in the Relations Ontology (RO) should be used whenever possible, which is the case for such high level BFO relations.</p>
+<p><strong>Action:</strong>
+In the ODK migration these BFO relations were replaced with suitable RO equivalents in <a href="https://github.com/rsc-ontology/rxno/pull/68">PR#68</a>. Here is the list of terms and IRIs were this change took place, along with the affected classes:</p>
+<p><strong>Affected terms (14):</strong></p>
+<ul>
+<li><a href="http://purl.obolibrary.org/obo/BFO_0000057">BFO_0000057</a> <code>has participant</code> → <a href="http://purl.obolibrary.org/obo/RO_0000057">RO_0000057</a> <code>has participant</code></li>
+<li>Crabbé homologation <code>http://purl.obolibrary.org/obo/RXNO_0000368</code></li>
+<li>Feist-Bénary synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000501</code></li>
+<li>has_catalyst <code>http://purl.obolibrary.org/obo/RXNO_0000425</code></li>
+<li>has_intermediate <code>http://purl.obolibrary.org/obo/RXNO_0000469</code></li>
+<li><a href="http://purl.obolibrary.org/obo/BFO_0000077">BFO_0000077</a> <code>has participant beginning to exist</code> → <a href="http://purl.obolibrary.org/obo/RO_0004008">RO_0004008</a> <code>has primary output</code></li>
+<li>carboxylic acid to primary alcohol reduction <code>http://purl.obolibrary.org/obo/RXNO_0000431</code></li>
+<li>deprotects <code>http://purl.obolibrary.org/obo/RXNO_0000417</code></li>
+<li>ester condensation reaction <code>http://purl.obolibrary.org/obo/RXNO_0000317</code></li>
+<li>has specified product <code>http://purl.obolibrary.org/obo/RXNO_0000423</code></li>
+<li><a href="http://purl.obolibrary.org/obo/BFO_0000078">BFO_0000078</a> <code>has participant ceasing to exist</code> → <a href="http://purl.obolibrary.org/obo/RO_0004009">RO_0004009</a> <code>has primary input</code></li>
+<li>Kolbe-Schmitt reaction <code>http://purl.obolibrary.org/obo/RXNO_0000182</code></li>
+<li>Leuckart aldehyde reaction <code>http://purl.obolibrary.org/obo/RXNO_0000552</code></li>
+<li>Leuckart ketone reaction <code>http://purl.obolibrary.org/obo/RXNO_0000553</code></li>
+<li>carboxylic acid to primary alcohol reduction <code>http://purl.obolibrary.org/obo/RXNO_0000431</code></li>
+<li>has specified reactant <code>http://purl.obolibrary.org/obo/RXNO_0000424</code></li>
+<li>protects <code>http://purl.obolibrary.org/obo/RXNO_0000416</code></li>
+</ul>
+<h4 id="resynchronization-after-mop-disentanglement">Resynchronization After MOP Disentanglement</h4>
+<p><strong>Cause:</strong>
+Before the ODK migration, RXNO used wrong IDs for some MOP classes that were used as parents for RXNO classes, e.g. <code>MOP_0000713</code> was used for <code>carboxylation</code>, whereas <code>MOP_0000591</code> is the correct ID in MOP. For more details, check MOP ODM migration docs: <a href="https://rsc-ontology.github.io/mop/odk-diff/#critical-severity-iri-clashes-one-iri-two-different-reactions">Critical Severity: IRI clashes - One IRI, two different reactions</a>.</p>
+<p><strong>Action:</strong>
+Those RXNO classes got their subClassOf axioms updated. </p>
+<p><strong>Affected terms (7):</strong>
+- Kolbe-Schmitt reaction <code>http://purl.obolibrary.org/obo/RXNO_0000182</code>
+- Lemieux-Johnson oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000649</code>
+- Criegee oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000257</code>
+- Malaprade reaction <code>http://purl.obolibrary.org/obo/RXNO_0000650</code>
+- alkyne-azide click reaction <code>http://purl.obolibrary.org/obo/RXNO_0000269</code>
+- copper(I)-catalyzed azide-alkyne cycloaddition <code>http://purl.obolibrary.org/obo/RXNO_0000270</code>
+- Seyferth-Gilbert homologation <code>http://purl.obolibrary.org/obo/RXNO_0000387</code></p>
+<h4 id="cob-dependency-adoption">COB Dependency Adoption</h4>
+<p><strong>Cause:</strong>
+With the <a href="https://github.com/obi-ontology/obi/releases#release-v2025-12-18">2025-12-18 Release</a>, the Ontology for Biomedical Investigations (OBI) started using the BFO-aligned Core Ontology for Biology and Biomedicine (COB) as their top-level ontology. This change included the deprecation of some of their terms in favor of COB terms. Since RXNO reused the now deprecated <code>planned process</code> <a href="http://purl.obolibrary.org/obo/OBI_0000011">OBI_0000011</a>, all relevant axioms had to be updated to point to its COB replacement: <code>completely executed planned process</code> <a href="http://purl.obolibrary.org/obo/COB_0000035">COB_0000035</a>. </p>
+<p><strong>Affected terms: (2)</strong></p>
+<ul>
+<li>planned reaction step <code>http://purl.obolibrary.org/obo/RXNO_0000001</code></li>
+<li>planned synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000329</code></li>
+</ul>
+<h3 id="metadata-changes">Metadata Changes</h3>
+<h4 id="ontology-annotation-changes">Ontology Annotation Changes</h4>
+<p>The ontology annotations of RXNO were updated in the course of the ODK migration. This included switching from using DC Elements predicates to DC Terms ones for <code>title</code> and <code>description</code> (see https://github.com/rsc-ontology/rxno/pull/74), adding Colin Batchelor and the NFDI4Chem team as contributors and using the <code>owl:versionInfo</code> autogenerated by ODK. The fact that we are also comparing base releases (versions that only declare external terms but not further define them), explains also the additional DC Elements <code>type</code> annotation. It is added automatically by ODK for any base release, whereas it was not added for the pre-ODK RXNO version, because we manually created this base release with ROBOT.</p>
+<h3 id="classes-annotations-changes">Classes Annotations Changes</h3>
+<p>The two annotations properties <a href="http://purl.org/dc/elements/1.1/creator">dc11:creator</a> and <a href="http://purl.org/dc/elements/1.1/date">dc11:date</a> were removed and instead, the annotations properties <a href="http://purl.org/dc/terms/creator">dcterms:creator</a> and <a href="http://purl.org/dc/terms/date">dcterms:date</a> were added respectively. 
+This was done in the <a href="https://github.com/rsc-ontology/rxno/pull/74">PR: Update from using the deprecated DC Elements to using the recommended DC Terms - #74</a></p>
+<p><strong>Affected terms: (38)</strong></p>
+<ul>
+<li>Albright-Goldman oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000668</code></li>
+<li>Asinger reaction <code>http://purl.obolibrary.org/obo/RXNO_0000688</code></li>
+<li>Aston-Greenburg rearrangement <code>http://purl.obolibrary.org/obo/RXNO_0000678</code></li>
+<li>Atherton-Todd reaction <code>http://purl.obolibrary.org/obo/RXNO_0000690</code></li>
+<li>Baddeley isomerization <code>http://purl.obolibrary.org/obo/RXNO_0000679</code></li>
+<li>Baekeland-Manasse-Lederer reaction <code>http://purl.obolibrary.org/obo/RXNO_0000677</code></li>
+<li>Baeyer diarylmethane synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000691</code></li>
+<li>Baeyer oxindole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000671</code></li>
+<li>Baeyer pyridine synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000664</code></li>
+<li>Balsohn alkylation <code>http://purl.obolibrary.org/obo/RXNO_0000675</code></li>
+<li>Corey-Kim oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000665</code></li>
+<li>Corey-Schmidt oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000667</code></li>
+<li>Corey-Seebach reaction <code>http://purl.obolibrary.org/obo/RXNO_0000662</code></li>
+<li>Corey-Suggs oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000666</code></li>
+<li>Corey-Winter elimination <code>http://purl.obolibrary.org/obo/RXNO_0000660</code></li>
+<li>Diimide reduction <code>http://purl.obolibrary.org/obo/RXNO_0000656</code></li>
+<li>Dötz reaction <code>http://purl.obolibrary.org/obo/RXNO_0000681</code></li>
+<li>Fukuyama reduction <code>http://purl.obolibrary.org/obo/RXNO_0000680</code></li>
+<li>Groebke-Blackburn-Bienaymé reaction <code>http://purl.obolibrary.org/obo/RXNO_0000670</code></li>
+<li>IBX oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000673</code></li>
+<li>Jacobsen epoxidation <code>http://purl.obolibrary.org/obo/RXNO_0000686</code></li>
+<li>Kabachnik-Fields reaction <code>http://purl.obolibrary.org/obo/RXNO_0000676</code></li>
+<li>Kulinkovich reaction <code>http://purl.obolibrary.org/obo/RXNO_0000682</code></li>
+<li>Kulinkovich-Szymoniak reaction <code>http://purl.obolibrary.org/obo/RXNO_0000684</code></li>
+<li>Kulinkovich-de Meijere reaction <code>http://purl.obolibrary.org/obo/RXNO_0000683</code></li>
+<li>Leimgruber-Batcho indole synthesis <code>http://purl.obolibrary.org/obo/RXNO_0000672</code></li>
+<li>Miyaura borylation <code>http://purl.obolibrary.org/obo/RXNO_0000659</code></li>
+<li>Mukaiyama hydration <code>http://purl.obolibrary.org/obo/RXNO_0000654</code></li>
+<li>Rubottom oxidation <code>http://purl.obolibrary.org/obo/RXNO_0000669</code></li>
+<li>Shi epoxidation <code>http://purl.obolibrary.org/obo/RXNO_0000687</code></li>
+<li>Tsuji-Wilkinson decarbonylation <code>http://purl.obolibrary.org/obo/RXNO_0000661</code></li>
+<li>acetal protection <code>http://purl.obolibrary.org/obo/RXNO_0000658</code></li>
+<li>carbonyl group protection <code>http://purl.obolibrary.org/obo/RXNO_0000657</code></li>
+<li>decarboxylative cross-coupling <code>http://purl.obolibrary.org/obo/RXNO_0000674</code></li>
+<li>haloform reaction <code>http://purl.obolibrary.org/obo/RXNO_0000689</code></li>
+<li>nitroxide exchange reaction <code>http://purl.obolibrary.org/obo/RXNO_0000663</code></li>
+<li>silyl deprotection <code>http://purl.obolibrary.org/obo/RXNO_0000692</code></li>
+<li>thiol-yne reaction <code>http://purl.obolibrary.org/obo/RXNO_0000383</code></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
