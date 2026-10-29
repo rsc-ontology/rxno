@@ -162,6 +162,7 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 id: BFO:0000017
 name: realizable entity
 is_a: BFO:0000020 ! specifically dependent continuant
+is_a: COB:0000502 ! characteristic
 relationship: BFO:0000050 BFO:0000017 {all_only="true"} ! part of realizable entity
 property_value: BFO:0000179 "realizable" xsd:string
 property_value: BFO:0000180 "RealizableEntity" xsd:string
@@ -6543,13 +6544,17 @@ is_a: CHEBI:33521 ! metal atom
 id: COB:0000035
 name: completely executed planned process
 is_a: COB:0000082 ! planned process
-relationship: BFO:0000055 OBI:0000260 ! realizes
+relationship: BFO:0000055 OBI:0000260 ! realizes plan
 
 [Term]
 id: COB:0000082
 name: planned process
 def: "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification." []
 is_a: BFO:0000015 ! process
+
+[Term]
+id: COB:0000502
+name: characteristic
 
 [Term]
 id: IAO:0000005
@@ -7453,6 +7458,12 @@ namespace: MOP
 def: "A cycloaddition in which one participant contributes three electrons and the other participant contributes two electrons to the transformation of reactants to products." [https://orcid.org/0000-0001-5985-7429]
 comment: Before the migration of MOP and RXNO to an ODK based workflow, this term was only defined in the RXNO release using the IRI MOP:0000715, which was already used in MOP for 'trimerization' (see also: https://github.com/rsc-ontology/rxno/issues/27). To resolve this IRI clash, '[3+2] cycloaddition' (MOP:0006371) was minted in MOP and all axioms wrongly asserted in RXNO on MOP:0000715 were copied over to it. {dcterms:creator="https://orcid.org/0000-0002-1595-3213"}
 is_a: MOP:0000562 ! cycloaddition
+
+[Term]
+id: OBI:0000260
+name: plan
+def: "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a completely executed planned process." []
+is_a: BFO:0000017 ! realizable entity
 
 [Term]
 id: RXNO:0000000

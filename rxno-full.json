@@ -20031,6 +20031,10 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/COB_0000502",
+      "lbl" : "characteristic",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000005",
       "lbl" : "objective specification",
       "type" : "CLASS",
@@ -21728,7 +21732,13 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0000260",
-      "type" : "CLASS"
+      "lbl" : "plan",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a completely executed planned process."
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RXNO_0000000",
       "lbl" : "molecular skeleton joining reaction",
@@ -37817,6 +37827,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000017",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000502"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/BFO_0000020",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000002"
@@ -41268,6 +41282,10 @@
       "sub" : "http://purl.obolibrary.org/obo/MOP_0006371",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/MOP_0000562"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0000260",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000017"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RXNO_0000000",
       "pred" : "is_a",
